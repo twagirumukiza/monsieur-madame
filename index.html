@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#182a4a">
+<meta name="description" content="Catalogue bilingue et carnet de collection des 90 figurines Monsieur Madame Happy Meal McDonald's France, édition 2017.">
+<title>Monsieur Madame — Happy Meal Collection</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="hero">
+  <div class="topline"><span class="brandmark">MM<span>90</span></span><div class="top-actions"><button id="langBtn" class="quiet">EN</button><button id="exportBtn" class="quiet" data-i18n="export">Exporter</button><label class="import-btn quiet" data-i18n="import">Importer<input id="importFile" type="file" accept=".json,application/json" hidden></label></div></div>
+  <div class="hero-copy"><p class="eyebrow" data-i18n="eyebrow">CATALOGUE DE COLLECTION · FRANCE</p><h1 data-i18n="title">Monsieur Madame<br><em>Happy Meal 2017</em></h1><p class="lede" data-i18n="lede">Les 90 figurines, une collection à inventorier, documenter et compléter.</p><div class="hero-tags"><span>90 FIGURINES</span><span>2017–2018</span><span>FR / EN</span></div></div>
+  <div class="hero-art" aria-hidden="true"><div class="orb orb1">?</div><div class="orb orb2">!</div><div class="orb orb3">☺</div><div class="orbit"></div></div>
+</header>
+<main>
+  <section class="stats" aria-label="Collection statistics">
+    <div class="stat"><span data-i18n="owned">En collection</span><strong id="ownedCount">0 / 90</strong><small id="ownedPercent">0 %</small></div>
+    <div class="stat"><span data-i18n="duplicates">Doubles</span><strong id="duplicateCount">0</strong><small data-i18n="duplicateHint">exemplaires en surplus</small></div>
+    <div class="stat"><span data-i18n="wanted">À rechercher</span><strong id="wantedCount">0</strong><small data-i18n="wantedHint">figurines marquées</small></div>
+    <div class="stat"><span data-i18n="estimated">Valeur estimée</span><strong id="totalValue">—</strong><small data-i18n="estimateHint">uniquement les prix saisis</small></div>
+  </section>
+  <section class="toolbar">
+    <div class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="Rechercher un personnage…" data-i18n-placeholder="searchPlaceholder"></div>
+    <select id="filter"><option value="all" data-i18n="all">Toute la collection</option><option value="owned" data-i18n="filterOwned">Je les possède</option><option value="missing" data-i18n="filterMissing">Manquantes</option><option value="wanted" data-i18n="filterWanted">À rechercher</option><option value="duplicates" data-i18n="filterDuplicates">Doubles</option><option value="priced" data-i18n="filterPriced">Prix renseigné</option></select>
+    <select id="sort"><option value="default" data-i18n="sortDefault">Ordre du catalogue</option><option value="name" data-i18n="sortName">Nom A–Z</option><option value="rarity" data-i18n="sortRarity">Rareté décroissante</option><option value="price" data-i18n="sortPrice">Prix décroissant</option></select>
+    <button id="viewBtn" class="view-btn" aria-label="Basculer l’affichage">☷</button>
+  </section>
+  <div class="catalog-heading"><div><p class="eyebrow" data-i18n="catalogEyebrow">L’INVENTAIRE</p><h2 data-i18n="catalogTitle">Le catalogue <span id="resultCount">90</span></h2></div><p class="muted" data-i18n="catalogHint">Ouvre une fiche pour saisir tes exemplaires, doubles, cote et notes.</p></div>
+  <div id="catalog" class="catalog"></div>
+  <section class="sources">
+    <p class="eyebrow" data-i18n="sourcesEyebrow">TRANSPARENCE DES DONNÉES</p><h2 data-i18n="sourcesTitle">Sources & méthode</h2>
+    <p data-i18n="sourcesText">La liste des noms et les dates de distribution sont transcrites à partir de sources de collectionneurs. Les prix et scores de rareté sont laissés vides tant qu’une valeur vérifiable n’a pas été saisie. Les noms anglais sont des équivalents descriptifs, pas une validation de noms officiels localisés.</p>
+    <div class="source-links"><a href="https://www.coleka.com/fr/jouets-happy-meal-mcdonald-s/de-2015-a-2019/happy-meal-monsieur-madame-2017_r3218" target="_blank" rel="noopener">Coleka — liste et cotes ↗</a><a href="https://www.bibelotmania.com/?idf=3&idm=7640&pag=cid508_alb" target="_blank" rel="noopener">Bibelotmania — checklist ↗</a><a href="https://cest-trop-bien.blogspot.com/2018/01/les-90-figurines-monsieur-madame-des.html" target="_blank" rel="noopener">Article de collectionneur (2018) ↗</a></div>
+    <p class="fineprint" data-i18n="disclaimer">Projet indépendant de collectionneur, non affilié à McDonald’s ni aux ayants droit de Monsieur Madame. Les valeurs affichées sont des notes personnelles, sauf mention explicite de la source et de la date.</p>
+  </section>
+</main>
+<footer><span>MM90 · 2017</span><span data-i18n="footer">Sauvegarde locale sur cet appareil · Export conseillé régulièrement</span></footer>
+<div id="modal" class="modal" hidden><div class="modal-backdrop" data-close></div><section class="dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="close" data-close aria-label="Fermer">×</button><div id="modalBody"></div></section></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body></html>
