@@ -224,6 +224,9 @@
       color: var(--header-text);
       font-size: 0.9rem;
     }
+    .series-title { grid-column: 1 / -1; margin: 1.4rem 0 .1rem; font-size: 1.3rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: .6rem; scroll-margin-top: 5rem; }
+    .series-title:first-child { margin-top: 0; }
+    .series-title small { font-size: .85rem; font-weight: 500; opacity: .7; }
     .products-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -733,640 +736,733 @@
   <script>
     const products = [
   {
+    id: 89,
+    slug: "monsieur-silence",
+    series: 1,
+    year: 2017,
+    en: { name: "Mr. Quiet", desc: "Reference: MM17-001\nCharacter: Mr. Quiet\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 1\nDistribution: 22 – 28 November 2017", tag: "Series 1 · Happy Meal 2017" },
+    fr: { name: "Monsieur Silence", desc: "Référence : MM17-001\nPersonnage : Monsieur Silence\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 1\nDistribution : du 22 au 28 novembre 2017", tag: "Série 1 · Happy Meal 2017" }
+  },
+  {
     id: 1,
     slug: "madame-acrobate",
+    series: 1,
     cond: "new",
     qty: 1,
     rarity: 84,
     demand: 87,
     collIndex: 85,
     year: 2017,
-    en: { name: "Little Miss Acrobat MM17-001", desc: "Reference: MM17-001\nCharacter: Little Miss Acrobat\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Acrobate MM17-001", desc: "Référence : MM17-001\nPersonnage : Madame Acrobate\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 2,
-    slug: "madame-anniversaire",
-    year: 2017,
-    en: { name: "Little Miss Birthday", desc: "Reference: MM17-002\nCharacter: Little Miss Birthday\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Anniversaire", desc: "Référence : MM17-002\nPersonnage : Madame Anniversaire\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 3,
-    slug: "madame-autoritaire",
-    year: 2017,
-    en: { name: "Little Miss Bossy", desc: "Reference: MM17-003\nCharacter: Little Miss Bossy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Autoritaire", desc: "Référence : MM17-003\nPersonnage : Madame Autoritaire\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 4,
-    slug: "madame-bavarde",
-    year: 2017,
-    en: { name: "Little Miss Chatterbox", desc: "Reference: MM17-004\nCharacter: Little Miss Chatterbox\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Bavarde", desc: "Référence : MM17-004\nPersonnage : Madame Bavarde\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 5,
-    slug: "madame-beaute",
-    year: 2017,
-    en: { name: "Little Miss Beautiful", desc: "Reference: MM17-005\nCharacter: Little Miss Beautiful\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Beauté", desc: "Référence : MM17-005\nPersonnage : Madame Beauté\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 6,
-    slug: "madame-bonheur",
-    year: 2017,
-    en: { name: "Little Miss Happiness", desc: "Reference: MM17-006\nCharacter: Little Miss Happiness\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Bonheur", desc: "Référence : MM17-006\nPersonnage : Madame Bonheur\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 7,
-    slug: "madame-boulot",
-    year: 2017,
-    en: { name: "Little Miss Busy", desc: "Reference: MM17-007\nCharacter: Little Miss Busy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Boulot", desc: "Référence : MM17-007\nPersonnage : Madame Boulot\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 8,
-    slug: "madame-boute-en-train",
-    year: 2017,
-    en: { name: "Little Miss Fun", desc: "Reference: MM17-008\nCharacter: Little Miss Fun\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Boute-en-train", desc: "Référence : MM17-008\nPersonnage : Madame Boute-en-train\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 9,
-    slug: "madame-calin",
-    year: 2017,
-    en: { name: "Little Miss Hug", desc: "Reference: MM17-009\nCharacter: Little Miss Hug\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Câlin", desc: "Référence : MM17-009\nPersonnage : Madame Câlin\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 10,
-    slug: "madame-canaille",
-    year: 2017,
-    en: { name: "Little Miss Naughty", desc: "Reference: MM17-010\nCharacter: Little Miss Naughty\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Canaille", desc: "Référence : MM17-010\nPersonnage : Madame Canaille\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 11,
-    slug: "madame-catastrophe",
-    year: 2017,
-    en: { name: "Little Miss Calamity", desc: "Reference: MM17-011\nCharacter: Little Miss Calamity\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Catastrophe", desc: "Référence : MM17-011\nPersonnage : Madame Catastrophe\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 12,
-    slug: "madame-chance",
-    year: 2017,
-    en: { name: "Little Miss Lucky", desc: "Reference: MM17-012\nCharacter: Little Miss Lucky\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Chance", desc: "Référence : MM17-012\nPersonnage : Madame Chance\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 13,
-    slug: "madame-chipie",
-    cond: "new",
-    year: 2017,
-    en: { name: "Little Miss Bad MM17-013", desc: "Reference: MM17-013\nCharacter: Little Miss Bad\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Chipie MM17-013", desc: "Référence : MM17-013\nPersonnage : Madame Chipie\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 14,
-    slug: "madame-contraire",
-    year: 2017,
-    en: { name: "Little Miss Contrary", desc: "Reference: MM17-014\nCharacter: Little Miss Contrary\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Contraire", desc: "Référence : MM17-014\nPersonnage : Madame Contraire\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 15,
-    slug: "madame-dodue",
-    year: 2017,
-    en: { name: "Little Miss Plump", desc: "Reference: MM17-015\nCharacter: Little Miss Plump\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Dodue", desc: "Référence : MM17-015\nPersonnage : Madame Dodue\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 16,
-    slug: "madame-double",
-    year: 2017,
-    en: { name: "Little Miss Double", desc: "Reference: MM17-016\nCharacter: Little Miss Double\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Double", desc: "Référence : MM17-016\nPersonnage : Madame Double\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 17,
-    slug: "madame-en-retard",
-    year: 2017,
-    en: { name: "Little Miss Late", desc: "Reference: MM17-017\nCharacter: Little Miss Late\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame En Retard", desc: "Référence : MM17-017\nPersonnage : Madame En Retard\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 18,
-    slug: "madame-fabuleuse",
-    year: 2017,
-    en: { name: "Little Miss Fabulous", desc: "Reference: MM17-018\nCharacter: Little Miss Fabulous\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Fabuleuse", desc: "Référence : MM17-018\nPersonnage : Madame Fabuleuse\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 19,
-    slug: "madame-farceuse",
-    year: 2017,
-    en: { name: "Little Miss Prankster", desc: "Reference: MM17-019\nCharacter: Little Miss Prankster\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Farceuse", desc: "Référence : MM17-019\nPersonnage : Madame Farceuse\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 20,
-    slug: "madame-follette",
-    year: 2017,
-    en: { name: "Little Miss Scatterbrain", desc: "Reference: MM17-020\nCharacter: Little Miss Scatterbrain\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Follette", desc: "Référence : MM17-020\nPersonnage : Madame Follette\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 21,
-    slug: "madame-indecise",
-    year: 2017,
-    en: { name: "Little Miss Fickle", desc: "Reference: MM17-021\nCharacter: Little Miss Fickle\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Indécise", desc: "Référence : MM17-021\nPersonnage : Madame Indécise\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 22,
-    slug: "madame-je-sais-tout",
-    year: 2017,
-    en: { name: "Little Miss Brainy", desc: "Reference: MM17-022\nCharacter: Little Miss Brainy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Je-Sais-Tout", desc: "Référence : MM17-022\nPersonnage : Madame Je-Sais-Tout\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 23,
-    slug: "madame-lumineuse",
-    year: 2017,
-    en: { name: "Little Miss Sunshine", desc: "Reference: MM17-023\nCharacter: Little Miss Sunshine\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Lumineuse", desc: "Référence : MM17-023\nPersonnage : Madame Lumineuse\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 24,
-    slug: "madame-magie",
-    year: 2017,
-    en: { name: "Little Miss Magic", desc: "Reference: MM17-024\nCharacter: Little Miss Magic\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Magie", desc: "Référence : MM17-024\nPersonnage : Madame Magie\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 25,
-    slug: "madame-malchance",
-    year: 2017,
-    en: { name: "Little Miss Trouble", desc: "Reference: MM17-025\nCharacter: Little Miss Trouble\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Malchance", desc: "Référence : MM17-025\nPersonnage : Madame Malchance\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 26,
-    slug: "madame-noel",
-    year: 2017,
-    en: { name: "Little Miss Christmas", desc: "Reference: MM17-026\nCharacter: Little Miss Christmas\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Noël", desc: "Référence : MM17-026\nPersonnage : Madame Noël\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 27,
-    slug: "madame-petite",
-    year: 2017,
-    en: { name: "Little Miss Tiny", desc: "Reference: MM17-027\nCharacter: Little Miss Tiny\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Petite", desc: "Référence : MM17-027\nPersonnage : Madame Petite\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 28,
-    slug: "madame-pourquoi",
-    year: 2017,
-    en: { name: "Little Miss Curious", desc: "Reference: MM17-028\nCharacter: Little Miss Curious\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Pourquoi", desc: "Référence : MM17-028\nPersonnage : Madame Pourquoi\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 29,
-    slug: "madame-princesse",
-    year: 2017,
-    en: { name: "Little Miss Princess", desc: "Reference: MM17-029\nCharacter: Little Miss Princess\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Princesse", desc: "Référence : MM17-029\nPersonnage : Madame Princesse\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 30,
-    slug: "madame-proprette",
-    year: 2017,
-    en: { name: "Little Miss Neat", desc: "Reference: MM17-030\nCharacter: Little Miss Neat\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Proprette", desc: "Référence : MM17-030\nPersonnage : Madame Proprette\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 31,
-    slug: "madame-range-tout",
-    year: 2017,
-    en: { name: "Little Miss Tidy", desc: "Reference: MM17-031\nCharacter: Little Miss Tidy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Range-Tout", desc: "Référence : MM17-031\nPersonnage : Madame Range-Tout\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 32,
-    slug: "madame-risette",
-    year: 2017,
-    en: { name: "Little Miss Giggles", desc: "Reference: MM17-032\nCharacter: Little Miss Giggles\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Risette", desc: "Référence : MM17-032\nPersonnage : Madame Risette\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 33,
-    slug: "madame-sage",
-    year: 2017,
-    en: { name: "Little Miss Wise", desc: "Reference: MM17-033\nCharacter: Little Miss Wise\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Sage", desc: "Référence : MM17-033\nPersonnage : Madame Sage\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 34,
-    slug: "madame-terreur",
-    year: 2017,
-    en: { name: "Little Miss Scary", desc: "Reference: MM17-034\nCharacter: Little Miss Scary\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Terreur", desc: "Référence : MM17-034\nPersonnage : Madame Terreur\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 35,
-    slug: "madame-tete-en-l-air",
-    year: 2017,
-    en: { name: "Little Miss Scatterbrain", desc: "Reference: MM17-035\nCharacter: Little Miss Scatterbrain\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Tête-en-l'air", desc: "Référence : MM17-035\nPersonnage : Madame Tête-en-l'air\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 36,
-    slug: "madame-tetue",
-    year: 2017,
-    en: { name: "Little Miss Stubborn", desc: "Reference: MM17-036\nCharacter: Little Miss Stubborn\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Têtue", desc: "Référence : MM17-036\nPersonnage : Madame Têtue\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 37,
-    slug: "madame-timide",
-    year: 2017,
-    en: { name: "Little Miss Shy", desc: "Reference: MM17-037\nCharacter: Little Miss Shy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Timide", desc: "Référence : MM17-037\nPersonnage : Madame Timide\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 38,
-    slug: "madame-vedette",
-    year: 2017,
-    en: { name: "Little Miss Star", desc: "Reference: MM17-038\nCharacter: Little Miss Star\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Vedette", desc: "Référence : MM17-038\nPersonnage : Madame Vedette\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 39,
-    slug: "madame-vite-fait",
-    year: 2017,
-    en: { name: "Little Miss Quick", desc: "Reference: MM17-039\nCharacter: Little Miss Quick\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Madame Vite-Fait", desc: "Référence : MM17-039\nPersonnage : Madame Vite-Fait\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 40,
-    slug: "monsieur-a-l-envers",
-    year: 2017,
-    en: { name: "Mr. Topsy-Turvy", desc: "Reference: MM17-040\nCharacter: Mr. Topsy-Turvy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur A l'envers", desc: "Référence : MM17-040\nPersonnage : Monsieur A l'envers\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
+    en: { name: "Little Miss Acrobat MM17-002", desc: "Reference: MM17-002\nCharacter: Little Miss Acrobat\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 1\nDistribution: 22 – 28 November 2017", tag: "Series 1 · Happy Meal 2017" },
+    fr: { name: "Madame Acrobate MM17-002", desc: "Référence : MM17-002\nPersonnage : Madame Acrobate\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 1\nDistribution : du 22 au 28 novembre 2017", tag: "Série 1 · Happy Meal 2017" }
   },
   {
     id: 41,
     slug: "monsieur-anniversaire",
+    series: 1,
     year: 2017,
-    en: { name: "Mr. Birthday", desc: "Reference: MM17-041\nCharacter: Mr. Birthday\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Anniversaire", desc: "Référence : MM17-041\nPersonnage : Monsieur Anniversaire\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
+    en: { name: "Mr. Birthday", desc: "Reference: MM17-003\nCharacter: Mr. Birthday\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 1\nDistribution: 22 – 28 November 2017", tag: "Series 1 · Happy Meal 2017" },
+    fr: { name: "Monsieur Anniversaire", desc: "Référence : MM17-003\nPersonnage : Monsieur Anniversaire\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 1\nDistribution : du 22 au 28 novembre 2017", tag: "Série 1 · Happy Meal 2017" }
   },
   {
-    id: 42,
-    slug: "monsieur-atchoum",
+    id: 15,
+    slug: "madame-dodue",
+    series: 1,
     year: 2017,
-    en: { name: "Mr. Sneeze", desc: "Reference: MM17-042\nCharacter: Mr. Sneeze\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Atchoum", desc: "Référence : MM17-042\nPersonnage : Monsieur Atchoum\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
+    en: { name: "Little Miss Plump", desc: "Reference: MM17-004\nCharacter: Little Miss Plump\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 1\nDistribution: 22 – 28 November 2017", tag: "Series 1 · Happy Meal 2017" },
+    fr: { name: "Madame Dodue", desc: "Référence : MM17-004\nPersonnage : Madame Dodue\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 1\nDistribution : du 22 au 28 novembre 2017", tag: "Série 1 · Happy Meal 2017" }
   },
   {
     id: 43,
     slug: "monsieur-avare",
+    series: 1,
     year: 2017,
-    en: { name: "Mr. Mean", desc: "Reference: MM17-043\nCharacter: Mr. Mean\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Avare", desc: "Référence : MM17-043\nPersonnage : Monsieur Avare\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 44,
-    slug: "monsieur-aventure",
-    year: 2017,
-    en: { name: "Mr. Adventure", desc: "Reference: MM17-044\nCharacter: Mr. Adventure\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Aventure", desc: "Référence : MM17-044\nPersonnage : Monsieur Aventure\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
+    en: { name: "Mr. Mean", desc: "Reference: MM17-005\nCharacter: Mr. Mean\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 1\nDistribution: 22 – 28 November 2017", tag: "Series 1 · Happy Meal 2017" },
+    fr: { name: "Monsieur Avare", desc: "Référence : MM17-005\nPersonnage : Monsieur Avare\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 1\nDistribution : du 22 au 28 novembre 2017", tag: "Série 1 · Happy Meal 2017" }
   },
   {
     id: 45,
     slug: "monsieur-bavard",
+    series: 1,
     year: 2017,
-    en: { name: "Mr. Chatterbox", desc: "Reference: MM17-045\nCharacter: Mr. Chatterbox\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Bavard", desc: "Référence : MM17-045\nPersonnage : Monsieur Bavard\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
+    en: { name: "Mr. Chatterbox", desc: "Reference: MM17-006\nCharacter: Mr. Chatterbox\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 1\nDistribution: 22 – 28 November 2017", tag: "Series 1 · Happy Meal 2017" },
+    fr: { name: "Monsieur Bavard", desc: "Référence : MM17-006\nPersonnage : Monsieur Bavard\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 1\nDistribution : du 22 au 28 novembre 2017", tag: "Série 1 · Happy Meal 2017" }
   },
   {
     id: 46,
     slug: "monsieur-bing",
+    series: 1,
+    angles: ["front", "back"],
     year: 2017,
-    en: { name: "Mr. Bump", desc: "Reference: MM17-046\nCharacter: Mr. Bump\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Bing", desc: "Référence : MM17-046\nPersonnage : Monsieur Bing\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
+    en: { name: "Mr. Bump", desc: "Reference: MM17-007\nCharacter: Mr. Bump\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 1\nDistribution: 22 – 28 November 2017", tag: "Series 1 · Happy Meal 2017" },
+    fr: { name: "Monsieur Bing", desc: "Référence : MM17-007\nPersonnage : Monsieur Bing\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 1\nDistribution : du 22 au 28 novembre 2017", tag: "Série 1 · Happy Meal 2017" }
   },
   {
-    id: 47,
-    slug: "monsieur-bizarre",
+    id: 22,
+    slug: "madame-je-sais-tout",
+    series: 1,
     year: 2017,
-    en: { name: "Mr. Funny", desc: "Reference: MM17-047\nCharacter: Mr. Funny\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Bizarre", desc: "Référence : MM17-047\nPersonnage : Monsieur Bizarre\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 48,
-    slug: "monsieur-bruit",
-    year: 2017,
-    en: { name: "Mr. Noisy", desc: "Reference: MM17-048\nCharacter: Mr. Noisy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Bruit", desc: "Référence : MM17-048\nPersonnage : Monsieur Bruit\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 49,
-    slug: "monsieur-chatouille",
-    year: 2017,
-    en: { name: "Mr. Tickle", desc: "Reference: MM17-049\nCharacter: Mr. Tickle\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Chatouille", desc: "Référence : MM17-049\nPersonnage : Monsieur Chatouille\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
+    en: { name: "Little Miss Brainy", desc: "Reference: MM17-008\nCharacter: Little Miss Brainy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 1\nDistribution: 22 – 28 November 2017", tag: "Series 1 · Happy Meal 2017" },
+    fr: { name: "Madame Je-sais-tout", desc: "Référence : MM17-008\nPersonnage : Madame Je-sais-tout\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 1\nDistribution : du 22 au 28 novembre 2017", tag: "Série 1 · Happy Meal 2017" }
   },
   {
     id: 50,
     slug: "monsieur-costaud",
+    series: 1,
     year: 2017,
-    en: { name: "Mr. Strong", desc: "Reference: MM17-050\nCharacter: Mr. Strong\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Costaud", desc: "Référence : MM17-050\nPersonnage : Monsieur Costaud\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
+    en: { name: "Mr. Strong", desc: "Reference: MM17-009\nCharacter: Mr. Strong\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 1\nDistribution: 22 – 28 November 2017", tag: "Series 1 · Happy Meal 2017" },
+    fr: { name: "Monsieur Costaud", desc: "Référence : MM17-009\nPersonnage : Monsieur Costaud\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 1\nDistribution : du 22 au 28 novembre 2017", tag: "Série 1 · Happy Meal 2017" }
   },
   {
-    id: 51,
-    slug: "monsieur-courageux",
+    id: 37,
+    slug: "madame-timide",
+    series: 1,
     year: 2017,
-    en: { name: "Mr. Brave", desc: "Reference: MM17-051\nCharacter: Mr. Brave\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Courageux", desc: "Référence : MM17-051\nPersonnage : Monsieur Courageux\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 52,
-    slug: "monsieur-curieux",
-    year: 2017,
-    en: { name: "Mr. Curious", desc: "Reference: MM17-052\nCharacter: Mr. Curious\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Curieux", desc: "Référence : MM17-052\nPersonnage : Monsieur Curieux\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 53,
-    slug: "monsieur-endormi",
-    year: 2017,
-    en: { name: "Mr. Lazy", desc: "Reference: MM17-053\nCharacter: Mr. Lazy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Endormi", desc: "Référence : MM17-053\nPersonnage : Monsieur Endormi\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 54,
-    slug: "monsieur-etonnant",
-    year: 2017,
-    en: { name: "Mr. Marvelous", desc: "Reference: MM17-054\nCharacter: Mr. Marvelous\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Étonnant", desc: "Référence : MM17-054\nPersonnage : Monsieur Étonnant\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 55,
-    slug: "monsieur-etourdi",
-    year: 2017,
-    en: { name: "Mr. Forgetful", desc: "Reference: MM17-055\nCharacter: Mr. Forgetful\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Étourdi", desc: "Référence : MM17-055\nPersonnage : Monsieur Étourdi\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 56,
-    slug: "monsieur-farceur",
-    year: 2017,
-    en: { name: "Mr. Mischief", desc: "Reference: MM17-056\nCharacter: Mr. Mischief\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Farceur", desc: "Référence : MM17-056\nPersonnage : Monsieur Farceur\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 57,
-    slug: "monsieur-farfelu",
-    year: 2017,
-    en: { name: "Mr. Silly", desc: "Reference: MM17-057\nCharacter: Mr. Silly\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Farfelu", desc: "Référence : MM17-057\nPersonnage : Monsieur Farfelu\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 58,
-    slug: "monsieur-formidable",
-    year: 2017,
-    en: { name: "Mr. Wonderful", desc: "Reference: MM17-058\nCharacter: Mr. Wonderful\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Formidable", desc: "Référence : MM17-058\nPersonnage : Monsieur Formidable\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 59,
-    slug: "monsieur-genial",
-    year: 2017,
-    en: { name: "Mr. Clever", desc: "Reference: MM17-059\nCharacter: Mr. Clever\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Génial", desc: "Référence : MM17-059\nPersonnage : Monsieur Génial\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 60,
-    slug: "monsieur-gentil",
-    year: 2017,
-    en: { name: "Mr. Nice", desc: "Reference: MM17-060\nCharacter: Mr. Nice\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Gentil", desc: "Référence : MM17-060\nPersonnage : Monsieur Gentil\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 61,
-    slug: "monsieur-glouton",
-    year: 2017,
-    en: { name: "Mr. Greedy", desc: "Reference: MM17-061\nCharacter: Mr. Greedy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Glouton", desc: "Référence : MM17-061\nPersonnage : Monsieur Glouton\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 62,
-    slug: "monsieur-grand",
-    year: 2017,
-    en: { name: "Mr. Tall", desc: "Reference: MM17-062\nCharacter: Mr. Tall\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Grand", desc: "Référence : MM17-062\nPersonnage : Monsieur Grand\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 63,
-    slug: "monsieur-grincheux",
-    year: 2017,
-    en: { name: "Mr. Grumpy", desc: "Reference: MM17-063\nCharacter: Mr. Grumpy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Grincheux", desc: "Référence : MM17-063\nPersonnage : Monsieur Grincheux\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 64,
-    slug: "monsieur-grognon",
-    year: 2017,
-    en: { name: "Mr. Grumble", desc: "Reference: MM17-064\nCharacter: Mr. Grumble\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Grognon", desc: "Référence : MM17-064\nPersonnage : Monsieur Grognon\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 65,
-    slug: "monsieur-heureux",
-    year: 2017,
-    en: { name: "Mr. Happy", desc: "Reference: MM17-065\nCharacter: Mr. Happy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Heureux", desc: "Référence : MM17-065\nPersonnage : Monsieur Heureux\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
+    en: { name: "Little Miss Shy", desc: "Reference: MM17-010\nCharacter: Little Miss Shy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 1\nDistribution: 22 – 28 November 2017", tag: "Series 1 · Happy Meal 2017" },
+    fr: { name: "Madame Timide", desc: "Référence : MM17-010\nPersonnage : Madame Timide\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 1\nDistribution : du 22 au 28 novembre 2017", tag: "Série 1 · Happy Meal 2017" }
   },
   {
     id: 66,
     slug: "monsieur-incroyable",
+    series: 1,
     year: 2017,
-    en: { name: "Mr. Incredible", desc: "Reference: MM17-066\nCharacter: Mr. Incredible\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Incroyable", desc: "Référence : MM17-066\nPersonnage : Monsieur Incroyable\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
+    en: { name: "Mr. Incredible", desc: "Reference: MM17-011\nCharacter: Mr. Incredible\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 1\nDistribution: 22 – 28 November 2017", tag: "Series 1 · Happy Meal 2017" },
+    fr: { name: "Monsieur Incroyable", desc: "Référence : MM17-011\nPersonnage : Monsieur Incroyable\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 1\nDistribution : du 22 au 28 novembre 2017", tag: "Série 1 · Happy Meal 2017" }
   },
   {
-    id: 67,
-    slug: "monsieur-inquiet",
+    id: 28,
+    slug: "madame-pourquoi",
+    series: 1,
     year: 2017,
-    en: { name: "Mr. Worry", desc: "Reference: MM17-067\nCharacter: Mr. Worry\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Inquiet", desc: "Référence : MM17-067\nPersonnage : Monsieur Inquiet\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 68,
-    slug: "monsieur-joyeux",
-    year: 2017,
-    en: { name: "Mr. Cheerful", desc: "Reference: MM17-068\nCharacter: Mr. Cheerful\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Joyeux", desc: "Référence : MM17-068\nPersonnage : Monsieur Joyeux\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 69,
-    slug: "monsieur-lent",
-    year: 2017,
-    en: { name: "Mr. Slow", desc: "Reference: MM17-069\nCharacter: Mr. Slow\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Lent", desc: "Référence : MM17-069\nPersonnage : Monsieur Lent\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
+    en: { name: "Little Miss Curious", desc: "Reference: MM17-012\nCharacter: Little Miss Curious\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 1\nDistribution: 22 – 28 November 2017", tag: "Series 1 · Happy Meal 2017" },
+    fr: { name: "Madame Pourquoi", desc: "Référence : MM17-012\nPersonnage : Madame Pourquoi\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 1\nDistribution : du 22 au 28 novembre 2017", tag: "Série 1 · Happy Meal 2017" }
   },
   {
     id: 70,
     slug: "monsieur-maigre",
+    series: 2,
     year: 2017,
-    en: { name: "Mr. Skinny", desc: "Reference: MM17-070\nCharacter: Mr. Skinny\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Maigre", desc: "Référence : MM17-070\nPersonnage : Monsieur Maigre\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
+    en: { name: "Mr. Skinny", desc: "Reference: MM17-013\nCharacter: Mr. Skinny\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 2\nDistribution: 29 November – 5 December 2017", tag: "Series 2 · Happy Meal 2017" },
+    fr: { name: "Monsieur Maigre", desc: "Référence : MM17-013\nPersonnage : Monsieur Maigre\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 2\nDistribution : du 29 novembre au 5 décembre 2017", tag: "Série 2 · Happy Meal 2017" }
   },
   {
-    id: 71,
-    slug: "monsieur-mal-eleve",
+    id: 12,
+    slug: "madame-chance",
+    series: 2,
     year: 2017,
-    en: { name: "Mr. Rude", desc: "Reference: MM17-071\nCharacter: Mr. Rude\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Mal élevé", desc: "Référence : MM17-071\nPersonnage : Monsieur Mal élevé\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 72,
-    slug: "monsieur-maladroit",
-    year: 2017,
-    en: { name: "Mr. Clumsy", desc: "Reference: MM17-072\nCharacter: Mr. Clumsy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Maladroit", desc: "Référence : MM17-072\nPersonnage : Monsieur Maladroit\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 73,
-    slug: "monsieur-malchance",
-    year: 2017,
-    en: { name: "Mr. Muddle", desc: "Reference: MM17-073\nCharacter: Mr. Muddle\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Malchance", desc: "Référence : MM17-073\nPersonnage : Monsieur Malchance\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 74,
-    slug: "monsieur-malin",
-    year: 2017,
-    en: { name: "Mr. Clever", desc: "Reference: MM17-074\nCharacter: Mr. Clever\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Malin", desc: "Référence : MM17-074\nPersonnage : Monsieur Malin\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 75,
-    slug: "monsieur-malpoli",
-    year: 2017,
-    en: { name: "Mr. Rude", desc: "Reference: MM17-075\nCharacter: Mr. Rude\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Malpoli", desc: "Référence : MM17-075\nPersonnage : Monsieur Malpoli\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 76,
-    slug: "monsieur-meli-melo",
-    year: 2017,
-    en: { name: "Mr. Mix-Up", desc: "Reference: MM17-076\nCharacter: Mr. Mix-Up\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Méli-Mélo", desc: "Référence : MM17-076\nPersonnage : Monsieur Méli-Mélo\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 77,
-    slug: "monsieur-neige",
-    year: 2017,
-    en: { name: "Mr. Snow", desc: "Reference: MM17-077\nCharacter: Mr. Snow\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Neige", desc: "Référence : MM17-077\nPersonnage : Monsieur Neige\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 78,
-    slug: "monsieur-nigaud",
-    year: 2017,
-    en: { name: "Mr. Silly", desc: "Reference: MM17-078\nCharacter: Mr. Silly\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Nigaud", desc: "Référence : MM17-078\nPersonnage : Monsieur Nigaud\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 79,
-    slug: "monsieur-noel",
-    year: 2017,
-    en: { name: "Mr. Christmas", desc: "Reference: MM17-079\nCharacter: Mr. Christmas\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Noël", desc: "Référence : MM17-079\nPersonnage : Monsieur Noël\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 80,
-    slug: "monsieur-parfait",
-    year: 2017,
-    en: { name: "Mr. Perfect", desc: "Reference: MM17-080\nCharacter: Mr. Perfect\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Parfait", desc: "Référence : MM17-080\nPersonnage : Monsieur Parfait\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 81,
-    slug: "monsieur-personne",
-    year: 2017,
-    en: { name: "Mr. Nobody", desc: "Reference: MM17-081\nCharacter: Mr. Nobody\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Personne", desc: "Référence : MM17-081\nPersonnage : Monsieur Personne\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 82,
-    slug: "monsieur-petit",
-    year: 2017,
-    en: { name: "Mr. Small", desc: "Reference: MM17-082\nCharacter: Mr. Small\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Petit", desc: "Référence : MM17-082\nPersonnage : Monsieur Petit\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
-  },
-  {
-    id: 83,
-    slug: "monsieur-peureux",
-    year: 2017,
-    en: { name: "Mr. Nervous", desc: "Reference: MM17-083\nCharacter: Mr. Nervous\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Peureux", desc: "Référence : MM17-083\nPersonnage : Monsieur Peureux\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
+    en: { name: "Little Miss Lucky", desc: "Reference: MM17-014\nCharacter: Little Miss Lucky\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 2\nDistribution: 29 November – 5 December 2017", tag: "Series 2 · Happy Meal 2017" },
+    fr: { name: "Madame Chance", desc: "Référence : MM17-014\nPersonnage : Madame Chance\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 2\nDistribution : du 29 novembre au 5 décembre 2017", tag: "Série 2 · Happy Meal 2017" }
   },
   {
     id: 84,
     slug: "monsieur-presse",
+    series: 2,
     year: 2017,
-    en: { name: "Mr. Rush", desc: "Reference: MM17-084\nCharacter: Mr. Rush\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Pressé", desc: "Référence : MM17-084\nPersonnage : Monsieur Pressé\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
+    en: { name: "Mr. Rush", desc: "Reference: MM17-015\nCharacter: Mr. Rush\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 2\nDistribution: 29 November – 5 December 2017", tag: "Series 2 · Happy Meal 2017" },
+    fr: { name: "Monsieur Pressé", desc: "Référence : MM17-015\nPersonnage : Monsieur Pressé\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 2\nDistribution : du 29 novembre au 5 décembre 2017", tag: "Série 2 · Happy Meal 2017" }
   },
   {
-    id: 85,
-    slug: "monsieur-rapide",
+    id: 17,
+    slug: "madame-en-retard",
+    series: 2,
     year: 2017,
-    en: { name: "Mr. Fast", desc: "Reference: MM17-085\nCharacter: Mr. Fast\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Rapide", desc: "Référence : MM17-085\nPersonnage : Monsieur Rapide\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
+    en: { name: "Little Miss Late", desc: "Reference: MM17-016\nCharacter: Little Miss Late\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 2\nDistribution: 29 November – 5 December 2017", tag: "Series 2 · Happy Meal 2017" },
+    fr: { name: "Madame En retard", desc: "Référence : MM17-016\nPersonnage : Madame En retard\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 2\nDistribution : du 29 novembre au 5 décembre 2017", tag: "Série 2 · Happy Meal 2017" }
+  },
+  {
+    id: 62,
+    slug: "monsieur-grand",
+    series: 2,
+    year: 2017,
+    en: { name: "Mr. Tall", desc: "Reference: MM17-017\nCharacter: Mr. Tall\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 2\nDistribution: 29 November – 5 December 2017", tag: "Series 2 · Happy Meal 2017" },
+    fr: { name: "Monsieur Grand", desc: "Référence : MM17-017\nPersonnage : Monsieur Grand\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 2\nDistribution : du 29 novembre au 5 décembre 2017", tag: "Série 2 · Happy Meal 2017" }
+  },
+  {
+    id: 20,
+    slug: "madame-follette",
+    series: 2,
+    year: 2017,
+    en: { name: "Little Miss Scatterbrain", desc: "Reference: MM17-018\nCharacter: Little Miss Scatterbrain\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 2\nDistribution: 29 November – 5 December 2017", tag: "Series 2 · Happy Meal 2017" },
+    fr: { name: "Madame Follette", desc: "Référence : MM17-018\nPersonnage : Madame Follette\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 2\nDistribution : du 29 novembre au 5 décembre 2017", tag: "Série 2 · Happy Meal 2017" }
+  },
+  {
+    id: 69,
+    slug: "monsieur-lent",
+    series: 2,
+    year: 2017,
+    en: { name: "Mr. Slow", desc: "Reference: MM17-019\nCharacter: Mr. Slow\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 2\nDistribution: 29 November – 5 December 2017", tag: "Series 2 · Happy Meal 2017" },
+    fr: { name: "Monsieur Lent", desc: "Référence : MM17-019\nPersonnage : Monsieur Lent\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 2\nDistribution : du 29 novembre au 5 décembre 2017", tag: "Série 2 · Happy Meal 2017" }
+  },
+  {
+    id: 38,
+    slug: "madame-vedette",
+    series: 2,
+    year: 2017,
+    en: { name: "Little Miss Star", desc: "Reference: MM17-020\nCharacter: Little Miss Star\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 2\nDistribution: 29 November – 5 December 2017", tag: "Series 2 · Happy Meal 2017" },
+    fr: { name: "Madame Vedette", desc: "Référence : MM17-020\nPersonnage : Madame Vedette\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 2\nDistribution : du 29 novembre au 5 décembre 2017", tag: "Série 2 · Happy Meal 2017" }
+  },
+  {
+    id: 78,
+    slug: "monsieur-nigaud",
+    series: 2,
+    year: 2017,
+    en: { name: "Mr. Silly", desc: "Reference: MM17-021\nCharacter: Mr. Silly\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 2\nDistribution: 29 November – 5 December 2017", tag: "Series 2 · Happy Meal 2017" },
+    fr: { name: "Monsieur Nigaud", desc: "Référence : MM17-021\nPersonnage : Monsieur Nigaud\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 2\nDistribution : du 29 novembre au 5 décembre 2017", tag: "Série 2 · Happy Meal 2017" }
+  },
+  {
+    id: 32,
+    slug: "madame-risette",
+    series: 2,
+    angles: ["front", "back"],
+    year: 2017,
+    en: { name: "Little Miss Giggles", desc: "Reference: MM17-022\nCharacter: Little Miss Giggles\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 2\nDistribution: 29 November – 5 December 2017", tag: "Series 2 · Happy Meal 2017" },
+    fr: { name: "Madame Risette", desc: "Référence : MM17-022\nPersonnage : Madame Risette\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 2\nDistribution : du 29 novembre au 5 décembre 2017", tag: "Série 2 · Happy Meal 2017" }
+  },
+  {
+    id: 44,
+    slug: "monsieur-aventure",
+    series: 3,
+    year: 2017,
+    en: { name: "Mr. Adventure", desc: "Reference: MM17-023\nCharacter: Mr. Adventure\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 3\nDistribution: 6 – 12 December 2017", tag: "Series 3 · Happy Meal 2017" },
+    fr: { name: "Monsieur Aventure", desc: "Référence : MM17-023\nPersonnage : Monsieur Aventure\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 3\nDistribution : du 6 au 12 décembre 2017", tag: "Série 3 · Happy Meal 2017" }
+  },
+  {
+    id: 39,
+    slug: "madame-vite-fait",
+    series: 3,
+    year: 2017,
+    en: { name: "Little Miss Quick", desc: "Reference: MM17-024\nCharacter: Little Miss Quick\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 3\nDistribution: 6 – 12 December 2017", tag: "Series 3 · Happy Meal 2017" },
+    fr: { name: "Madame Vite-fait", desc: "Référence : MM17-024\nPersonnage : Madame Vite-fait\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 3\nDistribution : du 6 au 12 décembre 2017", tag: "Série 3 · Happy Meal 2017" }
+  },
+  {
+    id: 80,
+    slug: "monsieur-parfait",
+    series: 3,
+    year: 2017,
+    en: { name: "Mr. Perfect", desc: "Reference: MM17-025\nCharacter: Mr. Perfect\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 3\nDistribution: 6 – 12 December 2017", tag: "Series 3 · Happy Meal 2017" },
+    fr: { name: "Monsieur Parfait", desc: "Référence : MM17-025\nPersonnage : Monsieur Parfait\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 3\nDistribution : du 6 au 12 décembre 2017", tag: "Série 3 · Happy Meal 2017" }
+  },
+  {
+    id: 14,
+    slug: "madame-contraire",
+    series: 3,
+    year: 2017,
+    en: { name: "Little Miss Contrary", desc: "Reference: MM17-026\nCharacter: Little Miss Contrary\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 3\nDistribution: 6 – 12 December 2017", tag: "Series 3 · Happy Meal 2017" },
+    fr: { name: "Madame Contraire", desc: "Référence : MM17-026\nPersonnage : Madame Contraire\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 3\nDistribution : du 6 au 12 décembre 2017", tag: "Série 3 · Happy Meal 2017" }
+  },
+  {
+    id: 56,
+    slug: "monsieur-farceur",
+    series: 3,
+    year: 2017,
+    en: { name: "Mr. Mischief", desc: "Reference: MM17-027\nCharacter: Mr. Mischief\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 3\nDistribution: 6 – 12 December 2017", tag: "Series 3 · Happy Meal 2017" },
+    fr: { name: "Monsieur Farceur", desc: "Référence : MM17-027\nPersonnage : Monsieur Farceur\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 3\nDistribution : du 6 au 12 décembre 2017", tag: "Série 3 · Happy Meal 2017" }
+  },
+  {
+    id: 33,
+    slug: "madame-sage",
+    series: 3,
+    year: 2017,
+    en: { name: "Little Miss Wise", desc: "Reference: MM17-028\nCharacter: Little Miss Wise\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 3\nDistribution: 6 – 12 December 2017", tag: "Series 3 · Happy Meal 2017" },
+    fr: { name: "Madame Sage", desc: "Référence : MM17-028\nPersonnage : Madame Sage\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 3\nDistribution : du 6 au 12 décembre 2017", tag: "Série 3 · Happy Meal 2017" }
+  },
+  {
+    id: 57,
+    slug: "monsieur-farfelu",
+    series: 3,
+    year: 2017,
+    en: { name: "Mr. Silly", desc: "Reference: MM17-029\nCharacter: Mr. Silly\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 3\nDistribution: 6 – 12 December 2017", tag: "Series 3 · Happy Meal 2017" },
+    fr: { name: "Monsieur Farfelu", desc: "Référence : MM17-029\nPersonnage : Monsieur Farfelu\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 3\nDistribution : du 6 au 12 décembre 2017", tag: "Série 3 · Happy Meal 2017" }
+  },
+  {
+    id: 36,
+    slug: "madame-tetue",
+    series: 3,
+    year: 2017,
+    en: { name: "Little Miss Stubborn", desc: "Reference: MM17-030\nCharacter: Little Miss Stubborn\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 3\nDistribution: 6 – 12 December 2017", tag: "Series 3 · Happy Meal 2017" },
+    fr: { name: "Madame Têtue", desc: "Référence : MM17-030\nPersonnage : Madame Têtue\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 3\nDistribution : du 6 au 12 décembre 2017", tag: "Série 3 · Happy Meal 2017" }
+  },
+  {
+    id: 64,
+    slug: "monsieur-grognon",
+    series: 3,
+    year: 2017,
+    en: { name: "Mr. Grumble", desc: "Reference: MM17-031\nCharacter: Mr. Grumble\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 3\nDistribution: 6 – 12 December 2017", tag: "Series 3 · Happy Meal 2017" },
+    fr: { name: "Monsieur Grognon", desc: "Référence : MM17-031\nPersonnage : Monsieur Grognon\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 3\nDistribution : du 6 au 12 décembre 2017", tag: "Série 3 · Happy Meal 2017" }
+  },
+  {
+    id: 23,
+    slug: "madame-lumineuse",
+    series: 3,
+    year: 2017,
+    en: { name: "Little Miss Sunshine", desc: "Reference: MM17-032\nCharacter: Little Miss Sunshine\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 3\nDistribution: 6 – 12 December 2017", tag: "Series 3 · Happy Meal 2017" },
+    fr: { name: "Madame Lumineuse", desc: "Référence : MM17-032\nPersonnage : Madame Lumineuse\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 3\nDistribution : du 6 au 12 décembre 2017", tag: "Série 3 · Happy Meal 2017" }
+  },
+  {
+    id: 65,
+    slug: "monsieur-heureux",
+    series: 3,
+    year: 2017,
+    en: { name: "Mr. Happy", desc: "Reference: MM17-033\nCharacter: Mr. Happy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 3\nDistribution: 6 – 12 December 2017", tag: "Series 3 · Happy Meal 2017" },
+    fr: { name: "Monsieur Heureux", desc: "Référence : MM17-033\nPersonnage : Monsieur Heureux\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 3\nDistribution : du 6 au 12 décembre 2017", tag: "Série 3 · Happy Meal 2017" }
+  },
+  {
+    id: 34,
+    slug: "madame-terreur",
+    series: 3,
+    year: 2017,
+    en: { name: "Little Miss Scary", desc: "Reference: MM17-034\nCharacter: Little Miss Scary\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 3\nDistribution: 6 – 12 December 2017", tag: "Series 3 · Happy Meal 2017" },
+    fr: { name: "Madame Terreur", desc: "Référence : MM17-034\nPersonnage : Madame Terreur\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 3\nDistribution : du 6 au 12 décembre 2017", tag: "Série 3 · Happy Meal 2017" }
+  },
+  {
+    id: 42,
+    slug: "monsieur-atchoum",
+    series: 4,
+    year: 2017,
+    en: { name: "Mr. Sneeze", desc: "Reference: MM17-035\nCharacter: Mr. Sneeze\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 4\nDistribution: 13 – 19 December 2017", tag: "Series 4 · Happy Meal 2017" },
+    fr: { name: "Monsieur Atchoum", desc: "Référence : MM17-035\nPersonnage : Monsieur Atchoum\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 4\nDistribution : du 13 au 19 décembre 2017", tag: "Série 4 · Happy Meal 2017" }
+  },
+  {
+    id: 2,
+    slug: "madame-anniversaire",
+    series: 4,
+    angles: ["front", "back"],
+    year: 2017,
+    en: { name: "Little Miss Birthday", desc: "Reference: MM17-036\nCharacter: Little Miss Birthday\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 4\nDistribution: 13 – 19 December 2017", tag: "Series 4 · Happy Meal 2017" },
+    fr: { name: "Madame Anniversaire", desc: "Référence : MM17-036\nPersonnage : Madame Anniversaire\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 4\nDistribution : du 13 au 19 décembre 2017", tag: "Série 4 · Happy Meal 2017" }
+  },
+  {
+    id: 79,
+    slug: "monsieur-noel",
+    series: 4,
+    year: 2017,
+    en: { name: "Mr. Christmas", desc: "Reference: MM17-037\nCharacter: Mr. Christmas\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 4\nDistribution: 13 – 19 December 2017", tag: "Series 4 · Happy Meal 2017" },
+    fr: { name: "Monsieur Noël", desc: "Référence : MM17-037\nPersonnage : Monsieur Noël\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 4\nDistribution : du 13 au 19 décembre 2017", tag: "Série 4 · Happy Meal 2017" }
+  },
+  {
+    id: 47,
+    slug: "monsieur-bizarre",
+    series: 4,
+    year: 2017,
+    en: { name: "Mr. Funny", desc: "Reference: MM17-038\nCharacter: Mr. Funny\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 4\nDistribution: 13 – 19 December 2017", tag: "Series 4 · Happy Meal 2017" },
+    fr: { name: "Monsieur Bizarre", desc: "Référence : MM17-038\nPersonnage : Monsieur Bizarre\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 4\nDistribution : du 13 au 19 décembre 2017", tag: "Série 4 · Happy Meal 2017" }
+  },
+  {
+    id: 75,
+    slug: "monsieur-malpoli",
+    series: 4,
+    year: 2017,
+    en: { name: "Mr. Rude", desc: "Reference: MM17-039\nCharacter: Mr. Rude\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 4\nDistribution: 13 – 19 December 2017", tag: "Series 4 · Happy Meal 2017" },
+    fr: { name: "Monsieur Malpoli", desc: "Référence : MM17-039\nPersonnage : Monsieur Malpoli\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 4\nDistribution : du 13 au 19 décembre 2017", tag: "Série 4 · Happy Meal 2017" }
+  },
+  {
+    id: 6,
+    slug: "madame-bonheur",
+    series: 4,
+    year: 2017,
+    en: { name: "Little Miss Happiness", desc: "Reference: MM17-040\nCharacter: Little Miss Happiness\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 4\nDistribution: 13 – 19 December 2017", tag: "Series 4 · Happy Meal 2017" },
+    fr: { name: "Madame Bonheur", desc: "Référence : MM17-040\nPersonnage : Madame Bonheur\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 4\nDistribution : du 13 au 19 décembre 2017", tag: "Série 4 · Happy Meal 2017" }
+  },
+  {
+    id: 49,
+    slug: "monsieur-chatouille",
+    series: 4,
+    year: 2017,
+    en: { name: "Mr. Tickle", desc: "Reference: MM17-041\nCharacter: Mr. Tickle\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 4\nDistribution: 13 – 19 December 2017", tag: "Series 4 · Happy Meal 2017" },
+    fr: { name: "Monsieur Chatouille", desc: "Référence : MM17-041\nPersonnage : Monsieur Chatouille\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 4\nDistribution : du 13 au 19 décembre 2017", tag: "Série 4 · Happy Meal 2017" }
+  },
+  {
+    id: 7,
+    slug: "madame-boulot",
+    series: 4,
+    year: 2017,
+    en: { name: "Little Miss Busy", desc: "Reference: MM17-042\nCharacter: Little Miss Busy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 4\nDistribution: 13 – 19 December 2017", tag: "Series 4 · Happy Meal 2017" },
+    fr: { name: "Madame Boulot", desc: "Référence : MM17-042\nPersonnage : Madame Boulot\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 4\nDistribution : du 13 au 19 décembre 2017", tag: "Série 4 · Happy Meal 2017" }
+  },
+  {
+    id: 55,
+    slug: "monsieur-etourdi",
+    series: 4,
+    year: 2017,
+    en: { name: "Mr. Forgetful", desc: "Reference: MM17-043\nCharacter: Mr. Forgetful\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 4\nDistribution: 13 – 19 December 2017", tag: "Series 4 · Happy Meal 2017" },
+    fr: { name: "Monsieur Étourdi", desc: "Référence : MM17-043\nPersonnage : Monsieur Étourdi\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 4\nDistribution : du 13 au 19 décembre 2017", tag: "Série 4 · Happy Meal 2017" }
+  },
+  {
+    id: 8,
+    slug: "madame-boute-en-train",
+    series: 4,
+    year: 2017,
+    en: { name: "Little Miss Fun", desc: "Reference: MM17-044\nCharacter: Little Miss Fun\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 4\nDistribution: 13 – 19 December 2017", tag: "Series 4 · Happy Meal 2017" },
+    fr: { name: "Madame Boute-en-train", desc: "Référence : MM17-044\nPersonnage : Madame Boute-en-train\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 4\nDistribution : du 13 au 19 décembre 2017", tag: "Série 4 · Happy Meal 2017" }
+  },
+  {
+    id: 51,
+    slug: "monsieur-courageux",
+    series: 4,
+    year: 2017,
+    en: { name: "Mr. Brave", desc: "Reference: MM17-045\nCharacter: Mr. Brave\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 4\nDistribution: 13 – 19 December 2017", tag: "Series 4 · Happy Meal 2017" },
+    fr: { name: "Monsieur Courageux", desc: "Référence : MM17-045\nPersonnage : Monsieur Courageux\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 4\nDistribution : du 13 au 19 décembre 2017", tag: "Série 4 · Happy Meal 2017" }
+  },
+  {
+    id: 61,
+    slug: "monsieur-glouton",
+    series: 4,
+    year: 2017,
+    en: { name: "Mr. Greedy", desc: "Reference: MM17-046\nCharacter: Mr. Greedy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 4\nDistribution: 13 – 19 December 2017", tag: "Series 4 · Happy Meal 2017" },
+    fr: { name: "Monsieur Glouton", desc: "Référence : MM17-046\nPersonnage : Monsieur Glouton\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 4\nDistribution : du 13 au 19 décembre 2017", tag: "Série 4 · Happy Meal 2017" }
+  },
+  {
+    id: 74,
+    slug: "monsieur-malin",
+    series: 5,
+    year: 2017,
+    en: { name: "Mr. Clever", desc: "Reference: MM17-047\nCharacter: Mr. Clever\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 5\nDistribution: 20 – 26 December 2017", tag: "Series 5 · Happy Meal 2017" },
+    fr: { name: "Monsieur Malin", desc: "Référence : MM17-047\nPersonnage : Monsieur Malin\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 5\nDistribution : du 20 au 26 décembre 2017", tag: "Série 5 · Happy Meal 2017" }
+  },
+  {
+    id: 4,
+    slug: "madame-bavarde",
+    series: 5,
+    year: 2017,
+    en: { name: "Little Miss Chatterbox", desc: "Reference: MM17-048\nCharacter: Little Miss Chatterbox\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 5\nDistribution: 20 – 26 December 2017", tag: "Series 5 · Happy Meal 2017" },
+    fr: { name: "Madame Bavarde", desc: "Référence : MM17-048\nPersonnage : Madame Bavarde\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 5\nDistribution : du 20 au 26 décembre 2017", tag: "Série 5 · Happy Meal 2017" }
   },
   {
     id: 86,
     slug: "monsieur-reve",
+    series: 5,
     year: 2017,
-    en: { name: "Mr. Daydream", desc: "Reference: MM17-086\nCharacter: Mr. Daydream\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Rêve", desc: "Référence : MM17-086\nPersonnage : Monsieur Rêve\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
+    en: { name: "Mr. Daydream", desc: "Reference: MM17-049\nCharacter: Mr. Daydream\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 5\nDistribution: 20 – 26 December 2017", tag: "Series 5 · Happy Meal 2017" },
+    fr: { name: "Monsieur Rêve", desc: "Référence : MM17-049\nPersonnage : Monsieur Rêve\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 5\nDistribution : du 20 au 26 décembre 2017", tag: "Série 5 · Happy Meal 2017" }
   },
   {
-    id: 87,
-    slug: "monsieur-rigolo",
+    id: 19,
+    slug: "madame-farceuse",
+    series: 5,
     year: 2017,
-    en: { name: "Mr. Funny", desc: "Reference: MM17-087\nCharacter: Mr. Funny\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Rigolo", desc: "Référence : MM17-087\nPersonnage : Monsieur Rigolo\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
+    en: { name: "Little Miss Prankster", desc: "Reference: MM17-050\nCharacter: Little Miss Prankster\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 5\nDistribution: 20 – 26 December 2017", tag: "Series 5 · Happy Meal 2017" },
+    fr: { name: "Madame Farceuse", desc: "Référence : MM17-050\nPersonnage : Madame Farceuse\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 5\nDistribution : du 20 au 26 décembre 2017", tag: "Série 5 · Happy Meal 2017" }
   },
   {
-    id: 88,
-    slug: "monsieur-sale",
+    id: 59,
+    slug: "monsieur-genial",
+    series: 5,
     year: 2017,
-    en: { name: "Mr. Messy", desc: "Reference: MM17-088\nCharacter: Mr. Messy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Sale", desc: "Référence : MM17-088\nPersonnage : Monsieur Sale\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
+    en: { name: "Mr. Clever", desc: "Reference: MM17-051\nCharacter: Mr. Clever\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 5\nDistribution: 20 – 26 December 2017", tag: "Series 5 · Happy Meal 2017" },
+    fr: { name: "Monsieur Génial", desc: "Référence : MM17-051\nPersonnage : Monsieur Génial\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 5\nDistribution : du 20 au 26 décembre 2017", tag: "Série 5 · Happy Meal 2017" }
   },
   {
-    id: 89,
-    slug: "monsieur-silence",
+    id: 21,
+    slug: "madame-indecise",
+    series: 5,
     year: 2017,
-    en: { name: "Mr. Quiet", desc: "Reference: MM17-089\nCharacter: Mr. Quiet\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Silence", desc: "Référence : MM17-089\nPersonnage : Monsieur Silence\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
+    en: { name: "Little Miss Fickle", desc: "Reference: MM17-052\nCharacter: Little Miss Fickle\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 5\nDistribution: 20 – 26 December 2017", tag: "Series 5 · Happy Meal 2017" },
+    fr: { name: "Madame Indécise", desc: "Référence : MM17-052\nPersonnage : Madame Indécise\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 5\nDistribution : du 20 au 26 décembre 2017", tag: "Série 5 · Happy Meal 2017" }
+  },
+  {
+    id: 73,
+    slug: "monsieur-malchance",
+    series: 5,
+    year: 2017,
+    en: { name: "Mr. Muddle", desc: "Reference: MM17-053\nCharacter: Mr. Muddle\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 5\nDistribution: 20 – 26 December 2017", tag: "Series 5 · Happy Meal 2017" },
+    fr: { name: "Monsieur Malchance", desc: "Référence : MM17-053\nPersonnage : Monsieur Malchance\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 5\nDistribution : du 20 au 26 décembre 2017", tag: "Série 5 · Happy Meal 2017" }
+  },
+  {
+    id: 26,
+    slug: "madame-noel",
+    series: 5,
+    year: 2017,
+    en: { name: "Little Miss Christmas", desc: "Reference: MM17-054\nCharacter: Little Miss Christmas\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 5\nDistribution: 20 – 26 December 2017", tag: "Series 5 · Happy Meal 2017" },
+    fr: { name: "Madame Noël", desc: "Référence : MM17-054\nPersonnage : Madame Noël\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 5\nDistribution : du 20 au 26 décembre 2017", tag: "Série 5 · Happy Meal 2017" }
+  },
+  {
+    id: 83,
+    slug: "monsieur-peureux",
+    series: 5,
+    year: 2017,
+    en: { name: "Mr. Nervous", desc: "Reference: MM17-055\nCharacter: Mr. Nervous\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 5\nDistribution: 20 – 26 December 2017", tag: "Series 5 · Happy Meal 2017" },
+    fr: { name: "Monsieur Peureux", desc: "Référence : MM17-055\nPersonnage : Monsieur Peureux\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 5\nDistribution : du 20 au 26 décembre 2017", tag: "Série 5 · Happy Meal 2017" }
+  },
+  {
+    id: 30,
+    slug: "madame-proprette",
+    series: 5,
+    year: 2017,
+    en: { name: "Little Miss Neat", desc: "Reference: MM17-056\nCharacter: Little Miss Neat\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 5\nDistribution: 20 – 26 December 2017", tag: "Series 5 · Happy Meal 2017" },
+    fr: { name: "Madame Proprette", desc: "Référence : MM17-056\nPersonnage : Madame Proprette\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 5\nDistribution : du 20 au 26 décembre 2017", tag: "Série 5 · Happy Meal 2017" }
+  },
+  {
+    id: 85,
+    slug: "monsieur-rapide",
+    series: 5,
+    year: 2017,
+    en: { name: "Mr. Fast", desc: "Reference: MM17-057\nCharacter: Mr. Fast\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 5\nDistribution: 20 – 26 December 2017", tag: "Series 5 · Happy Meal 2017" },
+    fr: { name: "Monsieur Rapide", desc: "Référence : MM17-057\nPersonnage : Monsieur Rapide\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 5\nDistribution : du 20 au 26 décembre 2017", tag: "Série 5 · Happy Meal 2017" }
+  },
+  {
+    id: 35,
+    slug: "madame-tete-en-l-air",
+    series: 5,
+    year: 2017,
+    en: { name: "Little Miss Scatterbrain", desc: "Reference: MM17-058\nCharacter: Little Miss Scatterbrain\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 5\nDistribution: 20 – 26 December 2017", tag: "Series 5 · Happy Meal 2017" },
+    fr: { name: "Madame Tête-en-l’air", desc: "Référence : MM17-058\nPersonnage : Madame Tête-en-l’air\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 5\nDistribution : du 20 au 26 décembre 2017", tag: "Série 5 · Happy Meal 2017" }
+  },
+  {
+    id: 60,
+    slug: "monsieur-gentil",
+    series: 6,
+    year: 2017,
+    en: { name: "Mr. Nice", desc: "Reference: MM17-059\nCharacter: Mr. Nice\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 6\nDistribution: 27 December 2017 – 2 January 2018", tag: "Series 6 · Happy Meal 2017" },
+    fr: { name: "Monsieur Gentil", desc: "Référence : MM17-059\nPersonnage : Monsieur Gentil\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 6\nDistribution : du 27 décembre 2017 au 2 janvier 2018", tag: "Série 6 · Happy Meal 2017" }
+  },
+  {
+    id: 3,
+    slug: "madame-autoritaire",
+    series: 6,
+    year: 2017,
+    en: { name: "Little Miss Bossy", desc: "Reference: MM17-060\nCharacter: Little Miss Bossy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 6\nDistribution: 27 December 2017 – 2 January 2018", tag: "Series 6 · Happy Meal 2017" },
+    fr: { name: "Madame Autoritaire", desc: "Référence : MM17-060\nPersonnage : Madame Autoritaire\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 6\nDistribution : du 27 décembre 2017 au 2 janvier 2018", tag: "Série 6 · Happy Meal 2017" }
   },
   {
     id: 90,
     slug: "monsieur-tatillon",
+    series: 6,
     year: 2017,
-    en: { name: "Mr. Fussy", desc: "Reference: MM17-090\nCharacter: Mr. Fussy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nDistribution: 22 November 2017 – 16 January 2018", tag: "Happy Meal 2017" },
-    fr: { name: "Monsieur Tatillon", desc: "Référence : MM17-090\nPersonnage : Monsieur Tatillon\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nDistribution : du 22 novembre 2017 au 16 janvier 2018", tag: "Happy Meal 2017" }
+    en: { name: "Mr. Fussy", desc: "Reference: MM17-061\nCharacter: Mr. Fussy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 6\nDistribution: 27 December 2017 – 2 January 2018", tag: "Series 6 · Happy Meal 2017" },
+    fr: { name: "Monsieur Tatillon", desc: "Référence : MM17-061\nPersonnage : Monsieur Tatillon\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 6\nDistribution : du 27 décembre 2017 au 2 janvier 2018", tag: "Série 6 · Happy Meal 2017" }
+  },
+  {
+    id: 9,
+    slug: "madame-calin",
+    series: 6,
+    year: 2017,
+    en: { name: "Little Miss Hug", desc: "Reference: MM17-062\nCharacter: Little Miss Hug\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 6\nDistribution: 27 December 2017 – 2 January 2018", tag: "Series 6 · Happy Meal 2017" },
+    fr: { name: "Madame Câlin", desc: "Référence : MM17-062\nPersonnage : Madame Câlin\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 6\nDistribution : du 27 décembre 2017 au 2 janvier 2018", tag: "Série 6 · Happy Meal 2017" }
+  },
+  {
+    id: 52,
+    slug: "monsieur-curieux",
+    series: 6,
+    year: 2017,
+    en: { name: "Mr. Curious", desc: "Reference: MM17-063\nCharacter: Mr. Curious\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 6\nDistribution: 27 December 2017 – 2 January 2018", tag: "Series 6 · Happy Meal 2017" },
+    fr: { name: "Monsieur Curieux", desc: "Référence : MM17-063\nPersonnage : Monsieur Curieux\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 6\nDistribution : du 27 décembre 2017 au 2 janvier 2018", tag: "Série 6 · Happy Meal 2017" }
+  },
+  {
+    id: 11,
+    slug: "madame-catastrophe",
+    series: 6,
+    year: 2017,
+    en: { name: "Little Miss Calamity", desc: "Reference: MM17-064\nCharacter: Little Miss Calamity\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 6\nDistribution: 27 December 2017 – 2 January 2018", tag: "Series 6 · Happy Meal 2017" },
+    fr: { name: "Madame Catastrophe", desc: "Référence : MM17-064\nPersonnage : Madame Catastrophe\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 6\nDistribution : du 27 décembre 2017 au 2 janvier 2018", tag: "Série 6 · Happy Meal 2017" }
+  },
+  {
+    id: 54,
+    slug: "monsieur-etonnant",
+    series: 6,
+    year: 2017,
+    en: { name: "Mr. Marvelous", desc: "Reference: MM17-065\nCharacter: Mr. Marvelous\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 6\nDistribution: 27 December 2017 – 2 January 2018", tag: "Series 6 · Happy Meal 2017" },
+    fr: { name: "Monsieur Étonnant", desc: "Référence : MM17-065\nPersonnage : Monsieur Étonnant\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 6\nDistribution : du 27 décembre 2017 au 2 janvier 2018", tag: "Série 6 · Happy Meal 2017" }
+  },
+  {
+    id: 81,
+    slug: "monsieur-personne",
+    series: 6,
+    year: 2017,
+    en: { name: "Mr. Nobody", desc: "Reference: MM17-066\nCharacter: Mr. Nobody\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 6\nDistribution: 27 December 2017 – 2 January 2018", tag: "Series 6 · Happy Meal 2017" },
+    fr: { name: "Monsieur Personne", desc: "Référence : MM17-066\nPersonnage : Monsieur Personne\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 6\nDistribution : du 27 décembre 2017 au 2 janvier 2018", tag: "Série 6 · Happy Meal 2017" }
+  },
+  {
+    id: 72,
+    slug: "monsieur-maladroit",
+    series: 6,
+    year: 2017,
+    en: { name: "Mr. Clumsy", desc: "Reference: MM17-067\nCharacter: Mr. Clumsy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 6\nDistribution: 27 December 2017 – 2 January 2018", tag: "Series 6 · Happy Meal 2017" },
+    fr: { name: "Monsieur Maladroit", desc: "Référence : MM17-067\nPersonnage : Monsieur Maladroit\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 6\nDistribution : du 27 décembre 2017 au 2 janvier 2018", tag: "Série 6 · Happy Meal 2017" }
+  },
+  {
+    id: 18,
+    slug: "madame-fabuleuse",
+    series: 6,
+    year: 2017,
+    en: { name: "Little Miss Fabulous", desc: "Reference: MM17-068\nCharacter: Little Miss Fabulous\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 6\nDistribution: 27 December 2017 – 2 January 2018", tag: "Series 6 · Happy Meal 2017" },
+    fr: { name: "Madame Fabuleuse", desc: "Référence : MM17-068\nPersonnage : Madame Fabuleuse\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 6\nDistribution : du 27 décembre 2017 au 2 janvier 2018", tag: "Série 6 · Happy Meal 2017" }
+  },
+  {
+    id: 76,
+    slug: "monsieur-meli-melo",
+    series: 6,
+    year: 2017,
+    en: { name: "Mr. Mix-Up", desc: "Reference: MM17-069\nCharacter: Mr. Mix-Up\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 6\nDistribution: 27 December 2017 – 2 January 2018", tag: "Series 6 · Happy Meal 2017" },
+    fr: { name: "Monsieur Méli-mélo", desc: "Référence : MM17-069\nPersonnage : Monsieur Méli-mélo\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 6\nDistribution : du 27 décembre 2017 au 2 janvier 2018", tag: "Série 6 · Happy Meal 2017" }
+  },
+  {
+    id: 24,
+    slug: "madame-magie",
+    series: 6,
+    year: 2017,
+    en: { name: "Little Miss Magic", desc: "Reference: MM17-070\nCharacter: Little Miss Magic\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 6\nDistribution: 27 December 2017 – 2 January 2018", tag: "Series 6 · Happy Meal 2017" },
+    fr: { name: "Madame Magie", desc: "Référence : MM17-070\nPersonnage : Madame Magie\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 6\nDistribution : du 27 décembre 2017 au 2 janvier 2018", tag: "Série 6 · Happy Meal 2017" }
+  },
+  {
+    id: 40,
+    slug: "monsieur-a-l-envers",
+    series: 7,
+    year: 2017,
+    en: { name: "Mr. Topsy-Turvy", desc: "Reference: MM17-071\nCharacter: Mr. Topsy-Turvy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 7\nDistribution: 3 – 9 January 2018", tag: "Series 7 · Happy Meal 2017" },
+    fr: { name: "Monsieur À l’envers", desc: "Référence : MM17-071\nPersonnage : Monsieur À l’envers\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 7\nDistribution : du 3 au 9 janvier 2018", tag: "Série 7 · Happy Meal 2017" }
+  },
+  {
+    id: 5,
+    slug: "madame-beaute",
+    series: 7,
+    year: 2017,
+    en: { name: "Little Miss Beautiful", desc: "Reference: MM17-072\nCharacter: Little Miss Beautiful\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 7\nDistribution: 3 – 9 January 2018", tag: "Series 7 · Happy Meal 2017" },
+    fr: { name: "Madame Beauté", desc: "Référence : MM17-072\nPersonnage : Madame Beauté\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 7\nDistribution : du 3 au 9 janvier 2018", tag: "Série 7 · Happy Meal 2017" }
+  },
+  {
+    id: 48,
+    slug: "monsieur-bruit",
+    series: 7,
+    year: 2017,
+    en: { name: "Mr. Noisy", desc: "Reference: MM17-073\nCharacter: Mr. Noisy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 7\nDistribution: 3 – 9 January 2018", tag: "Series 7 · Happy Meal 2017" },
+    fr: { name: "Monsieur Bruit", desc: "Référence : MM17-073\nPersonnage : Monsieur Bruit\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 7\nDistribution : du 3 au 9 janvier 2018", tag: "Série 7 · Happy Meal 2017" }
+  },
+  {
+    id: 10,
+    slug: "madame-canaille",
+    series: 7,
+    year: 2017,
+    en: { name: "Little Miss Naughty", desc: "Reference: MM17-074\nCharacter: Little Miss Naughty\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 7\nDistribution: 3 – 9 January 2018", tag: "Series 7 · Happy Meal 2017" },
+    fr: { name: "Madame Canaille", desc: "Référence : MM17-074\nPersonnage : Madame Canaille\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 7\nDistribution : du 3 au 9 janvier 2018", tag: "Série 7 · Happy Meal 2017" }
+  },
+  {
+    id: 71,
+    slug: "monsieur-mal-eleve",
+    series: 7,
+    year: 2017,
+    en: { name: "Mr. Rude", desc: "Reference: MM17-075\nCharacter: Mr. Rude\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 7\nDistribution: 3 – 9 January 2018", tag: "Series 7 · Happy Meal 2017" },
+    fr: { name: "Monsieur Mal élevé", desc: "Référence : MM17-075\nPersonnage : Monsieur Mal élevé\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 7\nDistribution : du 3 au 9 janvier 2018", tag: "Série 7 · Happy Meal 2017" }
+  },
+  {
+    id: 16,
+    slug: "madame-double",
+    series: 7,
+    year: 2017,
+    en: { name: "Little Miss Double", desc: "Reference: MM17-076\nCharacter: Little Miss Double\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 7\nDistribution: 3 – 9 January 2018", tag: "Series 7 · Happy Meal 2017" },
+    fr: { name: "Madame Double", desc: "Référence : MM17-076\nPersonnage : Madame Double\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 7\nDistribution : du 3 au 9 janvier 2018", tag: "Série 7 · Happy Meal 2017" }
+  },
+  {
+    id: 53,
+    slug: "monsieur-endormi",
+    series: 7,
+    year: 2017,
+    en: { name: "Mr. Lazy", desc: "Reference: MM17-077\nCharacter: Mr. Lazy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 7\nDistribution: 3 – 9 January 2018", tag: "Series 7 · Happy Meal 2017" },
+    fr: { name: "Monsieur Endormi", desc: "Référence : MM17-077\nPersonnage : Monsieur Endormi\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 7\nDistribution : du 3 au 9 janvier 2018", tag: "Série 7 · Happy Meal 2017" }
+  },
+  {
+    id: 31,
+    slug: "madame-range-tout",
+    series: 7,
+    year: 2017,
+    en: { name: "Little Miss Tidy", desc: "Reference: MM17-078\nCharacter: Little Miss Tidy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 7\nDistribution: 3 – 9 January 2018", tag: "Series 7 · Happy Meal 2017" },
+    fr: { name: "Madame Range-tout", desc: "Référence : MM17-078\nPersonnage : Madame Range-tout\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 7\nDistribution : du 3 au 9 janvier 2018", tag: "Série 7 · Happy Meal 2017" }
+  },
+  {
+    id: 68,
+    slug: "monsieur-joyeux",
+    series: 7,
+    year: 2017,
+    en: { name: "Mr. Cheerful", desc: "Reference: MM17-079\nCharacter: Mr. Cheerful\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 7\nDistribution: 3 – 9 January 2018", tag: "Series 7 · Happy Meal 2017" },
+    fr: { name: "Monsieur Joyeux", desc: "Référence : MM17-079\nPersonnage : Monsieur Joyeux\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 7\nDistribution : du 3 au 9 janvier 2018", tag: "Série 7 · Happy Meal 2017" }
+  },
+  {
+    id: 77,
+    slug: "monsieur-neige",
+    series: 7,
+    year: 2017,
+    en: { name: "Mr. Snow", desc: "Reference: MM17-080\nCharacter: Mr. Snow\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 7\nDistribution: 3 – 9 January 2018", tag: "Series 7 · Happy Meal 2017" },
+    fr: { name: "Monsieur Neige", desc: "Référence : MM17-080\nPersonnage : Monsieur Neige\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 7\nDistribution : du 3 au 9 janvier 2018", tag: "Série 7 · Happy Meal 2017" }
+  },
+  {
+    id: 82,
+    slug: "monsieur-petit",
+    series: 7,
+    year: 2017,
+    en: { name: "Mr. Small", desc: "Reference: MM17-081\nCharacter: Mr. Small\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 7\nDistribution: 3 – 9 January 2018", tag: "Series 7 · Happy Meal 2017" },
+    fr: { name: "Monsieur Petit", desc: "Référence : MM17-081\nPersonnage : Monsieur Petit\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 7\nDistribution : du 3 au 9 janvier 2018", tag: "Série 7 · Happy Meal 2017" }
+  },
+  {
+    id: 88,
+    slug: "monsieur-sale",
+    series: 7,
+    year: 2017,
+    en: { name: "Mr. Messy", desc: "Reference: MM17-082\nCharacter: Mr. Messy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 7\nDistribution: 3 – 9 January 2018", tag: "Series 7 · Happy Meal 2017" },
+    fr: { name: "Monsieur Sale", desc: "Référence : MM17-082\nPersonnage : Monsieur Sale\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 7\nDistribution : du 3 au 9 janvier 2018", tag: "Série 7 · Happy Meal 2017" }
+  },
+  {
+    id: 29,
+    slug: "madame-princesse",
+    series: 8,
+    year: 2017,
+    en: { name: "Little Miss Princess", desc: "Reference: MM17-083\nCharacter: Little Miss Princess\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 8\nDistribution: 10 – 16 January 2018", tag: "Series 8 · Happy Meal 2017" },
+    fr: { name: "Madame Princesse", desc: "Référence : MM17-083\nPersonnage : Madame Princesse\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 8\nDistribution : du 10 au 16 janvier 2018", tag: "Série 8 · Happy Meal 2017" }
+  },
+  {
+    id: 67,
+    slug: "monsieur-inquiet",
+    series: 8,
+    year: 2017,
+    en: { name: "Mr. Worry", desc: "Reference: MM17-084\nCharacter: Mr. Worry\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 8\nDistribution: 10 – 16 January 2018", tag: "Series 8 · Happy Meal 2017" },
+    fr: { name: "Monsieur Inquiet", desc: "Référence : MM17-084\nPersonnage : Monsieur Inquiet\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 8\nDistribution : du 10 au 16 janvier 2018", tag: "Série 8 · Happy Meal 2017" }
+  },
+  {
+    id: 58,
+    slug: "monsieur-formidable",
+    series: 8,
+    year: 2017,
+    en: { name: "Mr. Wonderful", desc: "Reference: MM17-085\nCharacter: Mr. Wonderful\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 8\nDistribution: 10 – 16 January 2018", tag: "Series 8 · Happy Meal 2017" },
+    fr: { name: "Monsieur Formidable", desc: "Référence : MM17-085\nPersonnage : Monsieur Formidable\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 8\nDistribution : du 10 au 16 janvier 2018", tag: "Série 8 · Happy Meal 2017" }
+  },
+  {
+    id: 13,
+    slug: "madame-chipie",
+    series: 8,
+    cond: "new",
+    year: 2017,
+    en: { name: "Little Miss Bad MM17-086", desc: "Reference: MM17-086\nCharacter: Little Miss Bad\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 8\nDistribution: 10 – 16 January 2018", tag: "Series 8 · Happy Meal 2017" },
+    fr: { name: "Madame Chipie MM17-086", desc: "Référence : MM17-086\nPersonnage : Madame Chipie\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 8\nDistribution : du 10 au 16 janvier 2018", tag: "Série 8 · Happy Meal 2017" }
+  },
+  {
+    id: 87,
+    slug: "monsieur-rigolo",
+    series: 8,
+    year: 2017,
+    en: { name: "Mr. Funny", desc: "Reference: MM17-087\nCharacter: Mr. Funny\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 8\nDistribution: 10 – 16 January 2018", tag: "Series 8 · Happy Meal 2017" },
+    fr: { name: "Monsieur Rigolo", desc: "Référence : MM17-087\nPersonnage : Monsieur Rigolo\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 8\nDistribution : du 10 au 16 janvier 2018", tag: "Série 8 · Happy Meal 2017" }
+  },
+  {
+    id: 25,
+    slug: "madame-malchance",
+    series: 8,
+    year: 2017,
+    en: { name: "Little Miss Trouble", desc: "Reference: MM17-088\nCharacter: Little Miss Trouble\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 8\nDistribution: 10 – 16 January 2018", tag: "Series 8 · Happy Meal 2017" },
+    fr: { name: "Madame Malchance", desc: "Référence : MM17-088\nPersonnage : Madame Malchance\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 8\nDistribution : du 10 au 16 janvier 2018", tag: "Série 8 · Happy Meal 2017" }
+  },
+  {
+    id: 63,
+    slug: "monsieur-grincheux",
+    series: 8,
+    year: 2017,
+    en: { name: "Mr. Grumpy", desc: "Reference: MM17-089\nCharacter: Mr. Grumpy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 8\nDistribution: 10 – 16 January 2018", tag: "Series 8 · Happy Meal 2017" },
+    fr: { name: "Monsieur Grincheux", desc: "Référence : MM17-089\nPersonnage : Monsieur Grincheux\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 8\nDistribution : du 10 au 16 janvier 2018", tag: "Série 8 · Happy Meal 2017" }
+  },
+  {
+    id: 27,
+    slug: "madame-petite",
+    series: 8,
+    year: 2017,
+    en: { name: "Little Miss Tiny", desc: "Reference: MM17-090\nCharacter: Little Miss Tiny\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 8\nDistribution: 10 – 16 January 2018", tag: "Series 8 · Happy Meal 2017" },
+    fr: { name: "Madame Petite", desc: "Référence : MM17-090\nPersonnage : Madame Petite\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 8\nDistribution : du 10 au 16 janvier 2018", tag: "Série 8 · Happy Meal 2017" }
   }
 ];
 
@@ -1594,6 +1690,10 @@
       ['left',  'angle-left'],
       ['back',  'angle-back']
     ];
+    // Angles réellement photographiés pour un article (champ optionnel angles: ["front","back"])
+    const anglesOf = p => (Array.isArray(p.angles) && p.angles.length ? ANGLES.filter(([k]) => p.angles.includes(k)) : ANGLES);
+    // Séries d'origine de la collection Happy Meal 2017-2018
+    const SERIES = {"1": {"fr": "Série 1", "en": "Series 1", "dFr": "du 22 au 28 novembre 2017", "dEn": "22 – 28 November 2017"}, "2": {"fr": "Série 2", "en": "Series 2", "dFr": "du 29 novembre au 5 décembre 2017", "dEn": "29 November – 5 December 2017"}, "3": {"fr": "Série 3", "en": "Series 3", "dFr": "du 6 au 12 décembre 2017", "dEn": "6 – 12 December 2017"}, "4": {"fr": "Série 4", "en": "Series 4", "dFr": "du 13 au 19 décembre 2017", "dEn": "13 – 19 December 2017"}, "5": {"fr": "Série 5", "en": "Series 5", "dFr": "du 20 au 26 décembre 2017", "dEn": "20 – 26 December 2017"}, "6": {"fr": "Série 6", "en": "Series 6", "dFr": "du 27 décembre 2017 au 2 janvier 2018", "dEn": "27 December 2017 – 2 January 2018"}, "7": {"fr": "Série 7", "en": "Series 7", "dFr": "du 3 au 9 janvier 2018", "dEn": "3 – 9 January 2018"}, "8": {"fr": "Série 8", "en": "Series 8", "dFr": "du 10 au 16 janvier 2018", "dEn": "10 – 16 January 2018"}};
 
     // ===== Cart state (localStorage) =====
     function loadCart() {
@@ -1719,17 +1819,18 @@
       const t9 = i18n[currentLang];
       const groups = new Map();
       products.forEach(p => {
-        const y = yearOf(p) || 0;
+        const y = p.series || yearOf(p) || 0;
         if (!groups.has(y)) groups.set(y, []);
         groups.get(y).push(p);
       });
-      const years = [...groups.keys()].sort((a, b) => (a === 0) - (b === 0) || b - a);
+      const bySeries = products.some(p => p.series);
+      const years = [...groups.keys()].sort(bySeries ? (a, b) => (a === 0) - (b === 0) || a - b : (a, b) => (a === 0) - (b === 0) || b - a);
       const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
       document.getElementById('drawerBody').innerHTML =
         `<a class="m-home" href="#/" onclick="closeMenu()">${t9['menu-home']}</a>` +
         years.map(y => `
           <details open>
-            <summary><span>${y ? '📅 ' + y : t9['menu-noyear']}</span><span class="cnt">${groups.get(y).length}</span></summary>
+            <summary><span>${bySeries && y && SERIES[y] ? '📦 ' + SERIES[y][currentLang] : y ? '📅 ' + y : t9['menu-noyear']}</span><span class="cnt">${groups.get(y).length}</span></summary>
             <ul>${groups.get(y).map(p => `
               <li><a href="#/product/${p.id}" class="${soldOut(p) ? 'out' : ''}" onclick="closeMenu()"><span class="n">${num(p.id)}</span><span>${esc(p[currentLang].name)}${soldOut(p) ? ' 🚫' : ''}</span></a></li>`).join('')}
             </ul>
@@ -1782,9 +1883,13 @@
     function renderProducts() {
       const t9 = i18n[currentLang];
       const grid = document.getElementById('products');
+      let lastSeries = 0;
       grid.innerHTML = products.map(p => {
         const t = p[currentLang];
-        return `
+        const head = p.series && p.series !== lastSeries && SERIES[p.series]
+          ? (lastSeries = p.series, `<h3 class="series-title" id="serie-${p.series}">${SERIES[p.series][currentLang]} <small>${currentLang === 'fr' ? SERIES[p.series].dFr : SERIES[p.series].dEn}</small></h3>`)
+          : '';
+        return head + `
           <article id="card-${p.id}" class="product-card clickable${soldOut(p) ? ' sold' : ''}" tabindex="0" role="link"
                    aria-label="${t.name}"
                    onclick="openProduct(${p.id})"
@@ -1953,7 +2058,7 @@
           <div class="product-num">${num(p.id)}</div>
         </div>
         <div class="angles-grid">
-          ${ANGLES.map(([key, label], i) => `
+          ${anglesOf(p).map(([key, label], i) => `
             <div class="angle-card">
               <div class="angle-img" role="img" onclick="openLb(${p.id},${i})" aria-label="${t.name} – ${t9[label]}" style="${angleStyle(p, key)}"></div>
               <div class="angle-label">${t9[label]}</div>
@@ -2118,7 +2223,7 @@
     const isVideo = n => /\.(mp4|webm|mov|m4v|ogv)$/i.test(n);
     const mediaUrl = n => "images/" + encodeURIComponent(n);
     const lbItems = p => [
-      ...ANGLES.map(([k, l]) => ({ style: angleStyle(p, k), cap: i18n[currentLang][l], grp: !p.slug })),
+      ...anglesOf(p).map(([k, l]) => ({ style: angleStyle(p, k), cap: i18n[currentLang][l], grp: !p.slug })),
       ...(p.media || []).filter(n => !isVideo(n)).map((n, j) => ({ style: `background-image:url('${mediaUrl(n)}');background-size:cover;background-position:center`, cap: '#' + (j + 1), grp: false }))
     ];
     function mediaBlock(p) {
@@ -2128,7 +2233,7 @@
       return `<h3 class="media-title">${i18n[currentLang]['more-media']} (${list.length})</h3>
         <div class="angles-grid media-grid">${list.map(n => isVideo(n)
           ? `<div class="angle-card"><video src="${mediaUrl(n)}" controls playsinline preload="metadata"></video></div>`
-          : `<div class="angle-card"><div class="angle-img" role="img" aria-label="${p[currentLang].name}" onclick="openLb(${p.id},${ANGLES.length + img++})" style="background-image:url('${mediaUrl(n)}');background-size:cover;background-position:center"></div></div>`).join('')}</div>`;
+          : `<div class="angle-card"><div class="angle-img" role="img" aria-label="${p[currentLang].name}" onclick="openLb(${p.id},${anglesOf(p).length + img++})" style="background-image:url('${mediaUrl(n)}');background-size:cover;background-position:center"></div></div>`).join('')}</div>`;
     }
 
     // ===== Zoom (lightbox) =====
