@@ -1,0 +1,2300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="MonsieurMadamePops – Monsieur Madame Happy Meal Figures">
+  <meta property="og:description" content="Les 90 figurines Monsieur Madame du Happy Meal McDonald's – choisis tes favoris !">
+  <meta property="og:type" content="website">
+  <meta name="author" content="Twagirumukiza">
+  <meta name="copyright" content="© 2026 Twagirumukiza – Tous droits réservés / All rights reserved">
+  <meta name="rights" content="All rights reserved – reproduction prohibited without written permission">
+  <!-- © 2026 Twagirumukiza – All rights reserved. Design, original photographs, texts and code are protected;
+       reproduction prohibited without written permission (see #/legal/licence).
+       Fan / collectors site, NOT affiliated with, endorsed or sponsored by McDonald's or the rights holders of Monsieur Madame (Mr. Men Little Miss). -->
+  <title>MonsieurMadamePops – Figurines Monsieur Madame Happy Meal 2017</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ph: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect width='200' height='200' fill='%23fff1c2'/><ellipse cx='100' cy='108' rx='62' ry='56' fill='%23ffd34d' stroke='%23182a4a' stroke-width='6'/><circle cx='80' cy='98' r='6' fill='%23182a4a'/><circle cx='120' cy='98' r='6' fill='%23182a4a'/><path d='M76 124 Q100 146 124 124' fill='none' stroke='%23182a4a' stroke-width='6' stroke-linecap='round'/><ellipse cx='60' cy='168' rx='14' ry='9' fill='%23182a4a'/><ellipse cx='140' cy='168' rx='14' ry='9' fill='%23182a4a'/></svg>");
+      --bg: #fff8e1;
+      --bg-card: #ffffff;
+      --text: #1b2a49;
+      --text-muted: #5a6785;
+      --accent: #1d6fd6;
+      --accent-hover: #1559ad;
+      --accent2: #ffc933;
+      --border: #e3d6a8;
+      --shadow: 0 8px 24px rgba(0,0,0,0.08);
+      --header-bg: #182a4a;
+      --header-text: #fff6dc;
+      --pixel: #ffc933;
+      --on-accent: #ffffff;
+    }
+    [data-theme="dark"] {
+      --bg: #0f1a2e;
+      --bg-card: #172540;
+      --text: #fff6dc;
+      --text-muted: #a9b6d3;
+      --accent: #ffc933;
+      --accent-hover: #ffd95e;
+      --accent2: #ffd95e;
+      --border: #2a3d63;
+      --shadow: 0 8px 24px rgba(0,0,0,0.4);
+      --header-bg: #0b1426;
+      --header-text: #fff6dc;
+      --pixel: #1d6fd6;
+      --on-accent: #182a4a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Nunito', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      transition: background 0.3s, color 0.3s;
+      min-height: 100vh;
+    }
+    .pixel-font { font-family: 'Fredoka', serif; }
+    header {
+      background: var(--header-bg);
+      color: var(--header-text);
+      padding: 1rem 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: inherit;
+    }
+    .logo-icon {
+      width: 42px;
+      height: 42px;
+      background: var(--accent);
+      border: 3px solid var(--accent2);
+      border-radius: 6px;
+      display: grid;
+      place-items: center;
+      font-size: 1.4rem;
+      box-shadow: 3px 3px 0 #000;
+    }
+    .logo-text {
+      font-family: 'Fredoka', serif;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+    .logo-sub {
+      font-size: 0.65rem;
+      opacity: 0.85;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 600;
+    }
+    .controls {
+      display: flex;
+      gap: 0.6rem;
+      align-items: center;
+    }
+    .btn-toggle {
+      background: rgba(255,255,255,0.12);
+      border: 2px solid rgba(255,255,255,0.25);
+      color: var(--header-text);
+      padding: 0.45rem 0.8rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 0.85rem;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .btn-toggle:hover {
+      background: rgba(255,255,255,0.22);
+      transform: translateY(-1px);
+    }
+    .lang-btn.active {
+      background: var(--accent);
+      border-color: var(--accent2);
+      color: var(--on-accent);
+    }
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+    .hero {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      padding: 2rem 1rem;
+      background: var(--bg-card);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      border: 3px solid var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 12% 25%,var(--pixel) 0 1.5px,transparent 2.5px),radial-gradient(circle at 78% 18%,var(--pixel) 0 1px,transparent 2px),radial-gradient(circle at 55% 80%,var(--pixel) 0 1.5px,transparent 2.5px),radial-gradient(circle at 90% 70%,var(--pixel) 0 1px,transparent 2px);background-size:140px 120px;opacity:.35;pointer-events:none}
+    .hero h1 {
+      font-family: 'Fredoka', serif;
+      font-size: clamp(1.1rem, 4vw, 1.6rem);
+      margin-bottom: 0.8rem;
+      color: var(--accent);
+      line-height: 1.4;
+    }
+    .hero p {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 640px;
+      margin: 0 auto 1.2rem;
+    }
+    .price-badge {
+      display: inline-block;
+      background: var(--accent2);
+      color: #1b2a49;
+      font-weight: 800;
+      padding: 0.4rem 1.1rem;
+      border-radius: 999px;
+      font-size: 1.05rem;
+      box-shadow: 3px 3px 0 var(--accent);
+      margin-top: 0.5rem;
+    }
+    .angles-section {
+      margin-bottom: 3rem;
+    }
+    .section-title {
+      font-family: 'Fredoka', serif;
+      font-size: 0.95rem;
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .section-title span {
+      background: var(--accent);
+      color: var(--on-accent);
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.7rem;
+    }
+    .angles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.2rem;
+    }
+    .angle-card {
+      background: var(--bg-card);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 2px solid var(--border);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .angle-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+    }
+    .angle-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+      background: #ddd;
+    }
+    .angle-label {
+      padding: 0.7rem 1rem;
+      font-weight: 700;
+      text-align: center;
+      background: var(--header-bg);
+      color: var(--header-text);
+      font-size: 0.9rem;
+    }
+    .series-title { grid-column: 1 / -1; margin: 1.4rem 0 .1rem; font-size: 1.3rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: .6rem; scroll-margin-top: 5rem; }
+    .series-title:first-child { margin-top: 0; }
+    .series-title small { font-size: .85rem; font-weight: 500; opacity: .7; }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .product-card {
+      background: var(--bg-card);
+      border-radius: 14px;
+      border: 2px solid var(--border);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s, border-color 0.25s;
+    }
+    .product-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--accent);
+    }
+    .product-header {
+      background: linear-gradient(135deg, var(--header-bg), #2a3d63);
+      color: var(--header-text);
+      padding: 1rem 1.1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    .product-name {
+      font-family: 'Fredoka', serif;
+      font-size: 0.72rem;
+      line-height: 1.35;
+    }
+    .product-num {
+      background: var(--accent2);
+      color: #1b2a49;
+      font-weight: 800;
+      font-size: 0.75rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+    .product-body {
+      padding: 1.1rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+    .product-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      flex: 1;
+    }
+    .product-price {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--accent);
+    }
+    .btn-cart {
+      background: var(--accent);
+      color: var(--on-accent);
+      border: none;
+      padding: 0.75rem 1rem;
+      border-radius: 10px;
+      font-weight: 800;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      box-shadow: 0 4px 0 var(--accent-hover);
+    }
+    .btn-cart:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+    }
+    .btn-cart:active {
+      transform: translateY(2px);
+      box-shadow: none;
+    }
+    .fun-tag {
+      display: inline-block;
+      background: rgba(29,111,214,0.15);
+      color: var(--accent);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      margin-top: 0.3rem;
+    }
+    footer {
+      background: var(--header-bg);
+      color: var(--header-text);
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+    }
+    footer p {
+      opacity: 0.85;
+      font-size: 0.9rem;
+    }
+    .footer-logo {
+      font-family: 'Fredoka', serif;
+      font-size: 0.8rem;
+      margin-bottom: 0.6rem;
+    }
+    /* Toast */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: var(--accent);
+      color: var(--on-accent);
+      padding: 0.9rem 1.4rem;
+      border-radius: 12px;
+      font-weight: 800;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+      opacity: 0;
+      transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+      z-index: 200;
+      pointer-events: none;
+    }
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* ===== Cart button + badge ===== */
+    .cart-btn { position: relative; }
+    .cart-badge {
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      min-width: 22px;
+      height: 22px;
+      padding: 0 5px;
+      background: var(--accent2);
+      color: #1b2a49;
+      border: 2px solid #000;
+      border-radius: 4px;
+      font-family: 'Fredoka', serif;
+      font-size: 0.55rem;
+      display: grid;
+      place-items: center;
+      box-shadow: 2px 2px 0 #000;
+    }
+    .cart-badge[hidden] { display: none; }
+
+    /* ===== Clickable product cards ===== */
+    .product-card.clickable { cursor: pointer; }
+    .product-card.clickable:focus-visible { outline: 3px solid var(--accent2); outline-offset: 2px; }
+    .card-actions { display: grid; grid-template-columns: 1fr; gap: 0.6rem; }
+    .btn-angles {
+      background: transparent;
+      color: var(--accent);
+      border: 2px solid var(--accent);
+      padding: 0.6rem 1rem;
+      border-radius: 10px;
+      font-weight: 800;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s, transform 0.15s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+    }
+    .btn-angles:hover { background: var(--accent); color: var(--on-accent); transform: translateY(-2px); }
+
+
+    /* ===== Cote (graphique façon Bourse) – fiche « Voir angles » uniquement ===== */
+    .cote{margin-top:1.5rem;background:#0e1118;color:#e6e9f0;border:2px solid var(--border);border-radius:14px;padding:1rem 1.1rem;box-shadow:var(--shadow);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+    .cote-top{display:flex;justify-content:space-between;align-items:flex-start;gap:.8rem;flex-wrap:wrap}
+    .cote-tk{font-size:.78rem;letter-spacing:.08em;color:#8b93a7;font-weight:700}
+    .cote-px{font-size:1.9rem;font-weight:800;line-height:1.1;margin-top:.15rem}
+    .cote-chg{font-size:.9rem;font-weight:700;margin-top:.15rem}
+    .cote .up{color:#2ecc71}.cote .down{color:#ff5c5c}.cote .flat{color:#8b93a7}
+    .cote-rgs{display:flex;gap:.25rem;flex-wrap:wrap}
+    .cote-rg{background:transparent;color:#8b93a7;border:1px solid #2a3142;border-radius:6px;padding:.25rem .55rem;font:inherit;font-size:.75rem;font-weight:700;cursor:pointer}
+    .cote-rg:hover{color:#fff}
+    .cote-rg.on{background:#1d2535;color:#fff;border-color:#3b4660}
+    .cote-chart{position:relative;margin-top:.6rem}
+    .cote-chart svg{display:block;width:100%;height:auto;touch-action:pan-y;cursor:crosshair}
+    .cote-tip{position:absolute;top:4px;transform:translateX(-50%);background:#1d2535;border:1px solid #3b4660;border-radius:8px;padding:.25rem .55rem;font-size:.75rem;pointer-events:none;white-space:nowrap;display:flex;flex-direction:column;align-items:center;gap:.05rem}
+    .cote-tip[hidden]{display:none}
+    .cote-stats{display:flex;gap:1.2rem;flex-wrap:wrap;margin-top:.5rem;font-size:.75rem;color:#8b93a7}
+    .cote-stats b{color:#e6e9f0;font-weight:700;margin-left:.3rem}
+    .cote-note{margin-top:.5rem;font-size:.68rem;color:#6b7387;line-height:1.4}
+    .cote-note a{color:#9db4ff}
+    .cote-empty{padding:1.2rem 0;color:#8b93a7;font-size:.85rem;text-align:center}
+
+    /* ===== Product (angles) view ===== */
+    .btn-back {
+      background: var(--bg-card);
+      color: var(--text);
+      border: 2px solid var(--border);
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      font-weight: 800;
+      cursor: pointer;
+      margin-bottom: 1.5rem;
+      transition: border-color 0.2s, transform 0.15s;
+    }
+    .btn-back:hover { border-color: var(--accent); transform: translateX(-2px); }
+    .detail-head {
+      background: linear-gradient(135deg, var(--header-bg), #2a3d63);
+      color: var(--header-text);
+      border-radius: 14px;
+      padding: 1.2rem 1.4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+    .detail-head h1 {
+      font-family: 'Fredoka', serif;
+      font-size: clamp(0.85rem, 3vw, 1.2rem);
+      line-height: 1.4;
+    }
+    .angle-img {
+      width: 100%;
+      aspect-ratio: var(--cell, 1);
+      background-color: #ddd;
+      background-repeat: no-repeat;
+      image-rendering: auto;
+    }
+    .detail-info {
+      margin-top: 1.8rem;
+      background: var(--bg-card);
+      border: 2px solid var(--border);
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 720px;
+    }
+    .detail-info .product-desc { font-size: 1.05rem; flex: none; }
+    .detail-info .product-price { font-size: 1.7rem; }
+    .detail-info .btn-cart { max-width: 360px; }
+
+    /* ===== Cart view ===== */
+    .cart-list { display: flex; flex-direction: column; gap: 0.9rem; margin-bottom: 1.5rem; }
+    .cart-row {
+      background: var(--bg-card);
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      padding: 0.9rem 1.1rem;
+      display: grid;
+      grid-template-columns: auto 1fr auto auto auto;
+      align-items: center;
+      gap: 1rem;
+    }
+    .cart-name { font-family: 'Fredoka', serif; font-size: 0.7rem; line-height: 1.4; }
+    .cart-unit { font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem; }
+    .qty { display: flex; align-items: center; gap: 0.5rem; }
+    .qty button {
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+      border: 2px solid var(--border);
+      background: var(--bg);
+      color: var(--text);
+      font-weight: 800;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .qty button:hover { border-color: var(--accent); }
+    .qty span { min-width: 1.6rem; text-align: center; font-weight: 800; }
+    .cart-line { font-weight: 800; color: var(--accent); min-width: 5.5rem; text-align: right; }
+    .btn-remove {
+      background: transparent;
+      border: 2px solid #c0392b;
+      color: #c0392b;
+      border-radius: 8px;
+      padding: 0.4rem 0.7rem;
+      font-weight: 800;
+      cursor: pointer;
+      font-size: 0.8rem;
+    }
+    .btn-remove:hover { background: #c0392b; color: #fff; }
+    .cart-summary {
+      background: var(--bg-card);
+      border: 3px solid var(--border);
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      padding: 1.3rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .cart-total { font-family: 'Fredoka', serif; font-size: 0.9rem; }
+    .cart-total b { color: var(--accent); margin-left: 0.6rem; }
+    .cart-empty {
+      text-align: center;
+      padding: 2.5rem 1rem;
+      background: var(--bg-card);
+      border: 2px dashed var(--border);
+      border-radius: 14px;
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+    .cart-empty .big { font-size: 2.5rem; display: block; margin-bottom: 0.5rem; }
+    @media (max-width: 600px) {
+      .cart-row { grid-template-columns: auto 1fr; }
+      .cart-row .qty, .cart-row .cart-line, .cart-row .btn-remove { grid-column: 2; justify-self: start; }
+      .cart-line { text-align: left; }
+    }
+
+
+    /* ===== Photo de face, cœurs, partage, état ===== */
+    .card-photo{position:relative;width:100%;aspect-ratio:var(--cell,1);background-color:#ddd;background-repeat:no-repeat;border-bottom:3px solid var(--border)}
+    .fab{position:absolute;bottom:.6rem;background:rgba(11,20,38,.85);color:#fff;border:2px solid #000;border-radius:8px;padding:.3rem .6rem;font:inherit;font-weight:800;font-size:.85rem;cursor:pointer;display:flex;gap:.3rem;align-items:center;box-shadow:2px 2px 0 #000}
+    .fab:hover{background:var(--accent);color:#0b1426}
+    .fab-heart{left:.6rem}.fab-share{right:.6rem}
+    .cond-tag{position:absolute;top:.6rem;left:.6rem;background:var(--accent2);color:#1b2a49;border:2px solid #000;border-radius:6px;font-size:.7rem;font-weight:800;padding:.15rem .5rem}
+    .cond-inline{display:inline-block;margin-left:.5rem;background:var(--accent2);color:#1b2a49;border:2px solid #000;border-radius:6px;font-size:.75rem;font-weight:800;padding:.15rem .5rem}
+    .angle-img{cursor:zoom-in}
+    .zoom-hint{color:var(--text-muted);font-size:.85rem;margin-top:.6rem}
+    .actions-row{display:flex;gap:.6rem;flex-wrap:wrap}
+    .actions-row .btn-angles{padding:.5rem 1rem}
+    .lb{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:200;display:grid;place-items:center}
+    .lb[hidden]{display:none}
+    .lb-stage{width:min(92vw,80vh);aspect-ratio:1;overflow:hidden;border:3px solid #000;border-radius:8px;cursor:zoom-in;background:#222;touch-action:none}
+    .lb-stage.grp{aspect-ratio:var(--cell,1);width:min(92vw,calc(80vh*var(--cell,1)))}
+    .lb-stage.zoomed{cursor:zoom-out}
+    .lb-img{width:100%;height:100%;background-repeat:no-repeat;transition:transform .2s}
+    .lb-x,.lb-nav{position:absolute;background:rgba(255,255,255,.15);color:#fff;border:2px solid #000;border-radius:8px;font-size:1.2rem;padding:.5rem .8rem;cursor:pointer}
+    .lb-x{top:1rem;right:1rem}.lb-prev{left:1rem;top:50%}.lb-next{right:1rem;top:50%}
+    .lb-cap{position:absolute;bottom:1rem;left:0;right:0;text-align:center;color:#fff;font-weight:800}
+    .sh-box{background:var(--bg-card);color:var(--text);border:3px solid var(--border);border-radius:14px;padding:1.3rem;width:min(92vw,420px);display:grid;gap:.6rem}
+    .sh-box h3{font-family:'Fredoka',serif;font-size:.75rem;line-height:1.5;margin-bottom:.3rem}
+    .sh-box a{text-decoration:none}
+
+    .media-grid video{width:100%;aspect-ratio:1;object-fit:cover;background:#000;display:block;cursor:auto}
+    .media-title{font-family:'Fredoka',serif;font-size:.7rem;margin:1.6rem 0 .8rem;color:var(--accent)}
+
+    .btn-cart:disabled{background:#8a8a8a;color:#eee;box-shadow:none;cursor:not-allowed;transform:none}
+    .sold-tag{position:absolute;top:.6rem;right:.6rem;z-index:2;background:#c0392b;color:#fff;border:2px solid #000;border-radius:6px;font-size:.75rem;font-weight:800;padding:.2rem .6rem;box-shadow:2px 2px 0 #000}
+    .sold-tag.low{background:#e67e22}
+    .cond-tag,.fab{z-index:2}
+    .product-card.sold .card-photo::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,.4)}
+
+    .badges{position:absolute;top:.6rem;left:.6rem;z-index:2;display:flex;flex-direction:column;gap:.35rem;align-items:flex-start}
+    .badges .cond-tag{position:static}
+    .bd{border:2px solid #000;border-radius:6px;font-size:.72rem;font-weight:800;padding:.15rem .5rem;box-shadow:2px 2px 0 #000;background:#fff;color:#1b2a49}
+    .bd.cond-tag{background:var(--accent2);color:#1b2a49}
+    .bd.prem{background:linear-gradient(135deg,#ffe082,#ffb300);color:#3a2a00}
+    .bd.acc{background:#b3e5fc;color:#01344d}
+    .bd.art{background:#d1c4e9;color:#2a1650}
+    .bd.yr{background:#fff;color:#1b2a49}
+    .qty-note{font-weight:800;font-size:.85rem;color:var(--text-muted)}
+    .card-photo{border-bottom:none}
+    .product-card .product-body{padding:.9rem 1rem 1rem}
+    .product-desc ul,.product-desc ol{margin:.4rem 0 .4rem 1.4rem}
+    .product-desc h3{font-size:1.05rem;margin:.6rem 0 .3rem}
+
+
+    /* ===== Menu burger ===== */
+    .head-left{display:flex;align-items:center;gap:.9rem;min-width:0}
+    .burger{width:44px;height:44px;flex:none;display:grid;align-content:center;justify-items:center;gap:5px;background:rgba(255,255,255,.12);border:2px solid rgba(255,255,255,.28);border-radius:8px;cursor:pointer;padding:0}
+    .burger span{display:block;width:22px;height:3px;background:var(--header-text);border-radius:2px;transition:transform .2s,opacity .2s}
+    .burger:hover{background:rgba(255,255,255,.22)}
+    .burger[aria-expanded="true"] span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+    .burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+    .burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+    .drawer-ov{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:290;opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s}
+    .drawer{position:fixed;top:0;left:0;bottom:0;width:min(88vw,360px);background:var(--bg-card);color:var(--text);border-right:3px solid var(--accent2);box-shadow:8px 0 28px rgba(0,0,0,.35);z-index:300;display:flex;flex-direction:column;transform:translateX(-102%);visibility:hidden;transition:transform .28s ease,visibility .28s}
+    body.menu-open .drawer{transform:none;visibility:visible}
+    body.menu-open .drawer-ov{opacity:1;visibility:visible}
+    body.menu-open{overflow:hidden}
+    .drawer-head{display:flex;align-items:center;justify-content:space-between;gap:.5rem;padding:1rem 1.1rem;background:var(--header-bg);color:var(--header-text)}
+    .drawer-head b{font-family:'Fredoka',serif;font-size:.85rem;letter-spacing:1px}
+    .drawer-x{background:rgba(255,255,255,.12);color:inherit;border:2px solid rgba(255,255,255,.28);border-radius:8px;font-size:1rem;padding:.3rem .6rem;cursor:pointer}
+    .drawer-body{overflow-y:auto;padding:.6rem .6rem 2rem;flex:1}
+    .drawer a.m-home{display:block;padding:.6rem .7rem;margin-bottom:.4rem;font-weight:800;color:var(--accent);text-decoration:none;border-radius:8px}
+    .drawer details{border:2px solid var(--border);border-radius:10px;margin-bottom:.55rem;background:var(--bg)}
+    .drawer summary{cursor:pointer;padding:.55rem .75rem;font-weight:800;font-size:1rem;list-style:none;display:flex;justify-content:space-between;align-items:center}
+    .drawer summary::-webkit-details-marker{display:none}
+    .drawer summary::after{content:'▾';transition:transform .2s}
+    .drawer details[open] summary::after{transform:rotate(180deg)}
+    .drawer summary .cnt{font-weight:700;font-size:.8rem;color:var(--text-muted);margin-left:.5rem}
+    .drawer ul{list-style:none;padding:0 .35rem .5rem}
+    .drawer li a{display:flex;gap:.5rem;align-items:baseline;padding:.4rem .5rem;border-radius:8px;color:var(--text);text-decoration:none;font-size:.95rem;line-height:1.3}
+    .drawer li a:hover,.drawer li a:focus-visible{background:var(--accent2);color:#1b2a49;outline:none}
+    .drawer li a .n{font-weight:800;font-size:.75rem;color:var(--text-muted);min-width:2.1rem}
+    .drawer li a:hover .n{color:#1b2a49}
+    .drawer li a.out{opacity:.6}
+    @media (max-width:600px){.head-left .logo-sub{display:none}}
+
+    /* ===== Footer & pages légales ===== */
+    .footer-sign{font-family:'Fredoka',serif;font-size:.8rem;margin:.3rem 0 .8rem;opacity:1!important}
+    .footer-sign a{color:var(--accent2);margin-left:.6rem;text-decoration:none;font-family:'Nunito',serif;font-weight:800;font-size:.95rem;border:2px solid var(--accent2);border-radius:6px;padding:.1rem .55rem}
+    .footer-sign a:hover{background:var(--accent2);color:#1b2a49}
+    .footer-links{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;justify-content:center;margin:.4rem 0 .9rem}
+    .footer-links a{color:var(--header-text);font-weight:800;font-size:.95rem;text-decoration:underline;text-underline-offset:3px}
+    .footer-links a:hover{color:var(--accent2)}
+    .footer-copy{font-size:.9rem;font-weight:700;margin-bottom:.5rem}
+    .legal-nav{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.2rem}
+    .legal-nav a{background:var(--bg-card);color:var(--text);border:2px solid var(--border);border-radius:10px;padding:.4rem .9rem;font-weight:800;font-size:.9rem;text-decoration:none}
+    .legal-nav a.on,.legal-nav a:hover{border-color:var(--accent);color:var(--accent)}
+    .legal-doc{background:var(--bg-card);border:2px solid var(--border);border-radius:14px;box-shadow:var(--shadow);padding:1.6rem;max-width:860px}
+    .legal-doc h3{font-size:1.1rem;margin:1.3rem 0 .4rem;color:var(--accent)}
+    .legal-doc p,.legal-doc li{font-size:1rem;color:var(--text);margin-bottom:.5rem}
+    .legal-doc ul{margin:.3rem 0 .6rem 1.4rem}
+    .legal-doc a{color:var(--accent);font-weight:700}
+    .legal-lead{font-size:1.05rem!important;padding-bottom:.8rem;border-bottom:2px dashed var(--border)}
+    .legal-box{background:var(--bg);border:2px dashed var(--border);border-radius:10px;padding:.8rem 1rem}
+    .legal-doc mark.todo{background:#fff3cd;color:#7a4b00;border-radius:4px;padding:0 .3rem;font-weight:800}
+    @media print{header,footer,.btn-back,.legal-nav,.drawer,.drawer-ov{display:none!important}.legal-doc{border:none;box-shadow:none}}
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .logo-text { font-size: 0.7rem; }
+      .hero h1 { font-size: 1rem; }
+      .product-name { font-size: 0.65rem; }
+    }
+  html{font-size:100%}.hero h1,.logo-text{letter-spacing:.5px}.product-name,.section-title,.cart-name{font-weight:700}</style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="head-left">
+        <button class="burger" id="burgerBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="drawer" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+        <a href="#/" class="logo" id="logoHome" title="Accueil" onclick="goHome(event)">
+          <div class="logo-icon">😊</div>
+          <div>
+            <div class="logo-text">MonsieurMadamePops</div>
+            <div class="logo-sub" data-i18n="tagline">Collection for ever</div>
+          </div>
+        </a>
+      </div>
+      <div class="controls">
+        <button class="btn-toggle lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+        <button class="btn-toggle lang-btn" data-lang="fr" onclick="setLang('fr')">FR</button>
+        <button class="btn-toggle" onclick="toggleTheme()" id="themeBtn" title="Toggle theme">🌙</button>
+        <button class="btn-toggle cart-btn" onclick="location.hash='#/cart'" id="cartBtn" aria-label="Cart" title="Cart">
+          🛒<span class="cart-badge" id="cartBadge" hidden>0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer-ov" id="drawerOv" onclick="closeMenu()"></div>
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-head"><b data-i18n="menu-title">Menu</b><button class="drawer-x" type="button" id="drawerX" onclick="closeMenu()" aria-label="Close menu">✕</button></div>
+    <nav class="drawer-body" id="drawerBody" aria-label="Menu"></nav>
+  </aside>
+
+  <main>
+    <div id="view-shop">
+    <section class="hero">
+      <h1 data-i18n="hero-title">Collect all 90<br>Monsieur Madame!</h1>
+      <p data-i18n="hero-sub">The Monsieur Madame McDonald's Happy Meal figurines (2017), hand-picked one by one — shown from every angle. Perfect for collectors, desks, pencil cases and backpacks. Limited stock!</p>
+      <div class="price-badge" data-i18n="price-all">Collectible pieces</div>
+    </section>
+
+    <section>
+      <h2 class="section-title">
+        <span data-i18n="shop-badge">SHOP</span>
+        <span data-i18n="shop-title">Pick your favorites</span>
+      </h2>
+      <div class="products-grid" id="products">
+        <!-- Products injected by JS -->
+      </div>
+    </section>
+    </div>
+    <div id="view-product" hidden></div>
+    <div id="view-cart" hidden></div>
+    <div id="view-legal" hidden></div>
+  </main>
+
+  <footer>
+    <div class="footer-logo">MonsieurMadamePops</div>
+    <p class="footer-sign">by Twagirumukiza <a id="liLink" href="https://www.linkedin.com/in/innocent-twagirumukiza" target="_blank" rel="noopener me">LinkedIn</a></p>
+    <nav class="footer-links">
+      <a href="#/legal/cgv" data-i18n="foot-cgv">CGV</a>
+      <a href="#/legal/licence" data-i18n="foot-lic">Licence d'utilisation</a>
+      <a href="#/legal/mentions" data-i18n="foot-men">Mentions légales</a>
+      <a href="#/legal/confidentialite" data-i18n="foot-rgpd">Confidentialité (RGPD)</a>
+    </nav>
+    <p class="footer-copy" data-i18n="foot-copy">© 2026 Twagirumukiza – All rights reserved. Design and original photographs: any reproduction is prohibited without written permission. Sharing links to the site is free and welcome.</p>
+    <p data-i18n="footer">Made with ✨ by fans, for collectors • Not affiliated with McDonald's or the rights holders of Monsieur Madame • Just a fan &amp; collectors site</p>
+  </footer>
+
+  <div class="lb" id="lb" hidden onclick="if(event.target===this)closeLb()">
+    <button class="lb-x" onclick="closeLb()" aria-label="Close">✕</button>
+    <button class="lb-nav lb-prev" onclick="lbStep(-1)" aria-label="Previous">◀</button>
+    <div class="lb-stage" id="lbStage"><div class="lb-img" id="lbImg"></div></div>
+    <button class="lb-nav lb-next" onclick="lbStep(1)" aria-label="Next">▶</button>
+    <div class="lb-cap" id="lbCap"></div>
+  </div>
+  <div class="lb" id="sh" hidden onclick="if(event.target===this)closeShare()"><div class="sh-box" id="shBox"></div></div>
+
+  <div class="toast" id="toast">🛒 Added to my basket!</div>
+
+  <script>
+    const products = [
+  {
+    id: 89,
+    slug: "monsieur-silence",
+    series: 1,
+    year: 2017,
+    en: { name: "Mr. Quiet", desc: "Reference: MM17-001\nCharacter: Mr. Quiet\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 1\nDistribution: 22 – 28 November 2017", tag: "Series 1 · Happy Meal 2017" },
+    fr: { name: "Monsieur Silence", desc: "Référence : MM17-001\nPersonnage : Monsieur Silence\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 1\nDistribution : du 22 au 28 novembre 2017", tag: "Série 1 · Happy Meal 2017" }
+  },
+  {
+    id: 1,
+    slug: "madame-acrobate",
+    series: 1,
+    cond: "new",
+    qty: 1,
+    rarity: 84,
+    demand: 87,
+    collIndex: 85,
+    year: 2017,
+    en: { name: "Little Miss Acrobat", desc: "Reference: MM17-002\nCharacter: Little Miss Acrobat\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 1\nDistribution: 22 – 28 November 2017", tag: "Series 1 · Happy Meal 2017" },
+    fr: { name: "Madame Acrobate", desc: "Référence : MM17-002\nPersonnage : Madame Acrobate\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 1\nDistribution : du 22 au 28 novembre 2017", tag: "Série 1 · Happy Meal 2017" }
+  },
+  {
+    id: 41,
+    slug: "monsieur-anniversaire",
+    series: 1,
+    year: 2017,
+    en: { name: "Mr. Birthday", desc: "Reference: MM17-003\nCharacter: Mr. Birthday\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 1\nDistribution: 22 – 28 November 2017", tag: "Series 1 · Happy Meal 2017" },
+    fr: { name: "Monsieur Anniversaire", desc: "Référence : MM17-003\nPersonnage : Monsieur Anniversaire\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 1\nDistribution : du 22 au 28 novembre 2017", tag: "Série 1 · Happy Meal 2017" }
+  },
+  {
+    id: 15,
+    slug: "madame-dodue",
+    series: 1,
+    year: 2017,
+    en: { name: "Little Miss Plump", desc: "Reference: MM17-004\nCharacter: Little Miss Plump\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 1\nDistribution: 22 – 28 November 2017", tag: "Series 1 · Happy Meal 2017" },
+    fr: { name: "Madame Dodue", desc: "Référence : MM17-004\nPersonnage : Madame Dodue\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 1\nDistribution : du 22 au 28 novembre 2017", tag: "Série 1 · Happy Meal 2017" }
+  },
+  {
+    id: 43,
+    slug: "monsieur-avare",
+    series: 1,
+    year: 2017,
+    en: { name: "Mr. Mean", desc: "Reference: MM17-005\nCharacter: Mr. Mean\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 1\nDistribution: 22 – 28 November 2017", tag: "Series 1 · Happy Meal 2017" },
+    fr: { name: "Monsieur Avare", desc: "Référence : MM17-005\nPersonnage : Monsieur Avare\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 1\nDistribution : du 22 au 28 novembre 2017", tag: "Série 1 · Happy Meal 2017" }
+  },
+  {
+    id: 45,
+    slug: "monsieur-bavard",
+    series: 1,
+    year: 2017,
+    en: { name: "Mr. Chatterbox", desc: "Reference: MM17-006\nCharacter: Mr. Chatterbox\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 1\nDistribution: 22 – 28 November 2017", tag: "Series 1 · Happy Meal 2017" },
+    fr: { name: "Monsieur Bavard", desc: "Référence : MM17-006\nPersonnage : Monsieur Bavard\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 1\nDistribution : du 22 au 28 novembre 2017", tag: "Série 1 · Happy Meal 2017" }
+  },
+  {
+    id: 46,
+    slug: "monsieur-bing",
+    series: 1,
+    year: 2017,
+    en: { name: "Mr. Bump", desc: "Reference: MM17-007\nCharacter: Mr. Bump\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 1\nDistribution: 22 – 28 November 2017", tag: "Series 1 · Happy Meal 2017" },
+    fr: { name: "Monsieur Bing", desc: "Référence : MM17-007\nPersonnage : Monsieur Bing\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 1\nDistribution : du 22 au 28 novembre 2017", tag: "Série 1 · Happy Meal 2017" }
+  },
+  {
+    id: 22,
+    slug: "madame-je-sais-tout",
+    series: 1,
+    year: 2017,
+    en: { name: "Little Miss Brainy", desc: "Reference: MM17-008\nCharacter: Little Miss Brainy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 1\nDistribution: 22 – 28 November 2017", tag: "Series 1 · Happy Meal 2017" },
+    fr: { name: "Madame Je-sais-tout", desc: "Référence : MM17-008\nPersonnage : Madame Je-sais-tout\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 1\nDistribution : du 22 au 28 novembre 2017", tag: "Série 1 · Happy Meal 2017" }
+  },
+  {
+    id: 50,
+    slug: "monsieur-costaud",
+    series: 1,
+    year: 2017,
+    en: { name: "Mr. Strong", desc: "Reference: MM17-009\nCharacter: Mr. Strong\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 1\nDistribution: 22 – 28 November 2017", tag: "Series 1 · Happy Meal 2017" },
+    fr: { name: "Monsieur Costaud", desc: "Référence : MM17-009\nPersonnage : Monsieur Costaud\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 1\nDistribution : du 22 au 28 novembre 2017", tag: "Série 1 · Happy Meal 2017" }
+  },
+  {
+    id: 37,
+    slug: "madame-timide",
+    series: 1,
+    year: 2017,
+    en: { name: "Little Miss Shy", desc: "Reference: MM17-010\nCharacter: Little Miss Shy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 1\nDistribution: 22 – 28 November 2017", tag: "Series 1 · Happy Meal 2017" },
+    fr: { name: "Madame Timide", desc: "Référence : MM17-010\nPersonnage : Madame Timide\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 1\nDistribution : du 22 au 28 novembre 2017", tag: "Série 1 · Happy Meal 2017" }
+  },
+  {
+    id: 66,
+    slug: "monsieur-incroyable",
+    series: 1,
+    year: 2017,
+    en: { name: "Mr. Incredible", desc: "Reference: MM17-011\nCharacter: Mr. Incredible\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 1\nDistribution: 22 – 28 November 2017", tag: "Series 1 · Happy Meal 2017" },
+    fr: { name: "Monsieur Incroyable", desc: "Référence : MM17-011\nPersonnage : Monsieur Incroyable\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 1\nDistribution : du 22 au 28 novembre 2017", tag: "Série 1 · Happy Meal 2017" }
+  },
+  {
+    id: 28,
+    slug: "madame-pourquoi",
+    series: 1,
+    year: 2017,
+    en: { name: "Little Miss Curious", desc: "Reference: MM17-012\nCharacter: Little Miss Curious\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 1\nDistribution: 22 – 28 November 2017", tag: "Series 1 · Happy Meal 2017" },
+    fr: { name: "Madame Pourquoi", desc: "Référence : MM17-012\nPersonnage : Madame Pourquoi\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 1\nDistribution : du 22 au 28 novembre 2017", tag: "Série 1 · Happy Meal 2017" }
+  },
+  {
+    id: 70,
+    slug: "monsieur-maigre",
+    series: 2,
+    year: 2017,
+    en: { name: "Mr. Skinny", desc: "Reference: MM17-013\nCharacter: Mr. Skinny\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 2\nDistribution: 29 November – 5 December 2017", tag: "Series 2 · Happy Meal 2017" },
+    fr: { name: "Monsieur Maigre", desc: "Référence : MM17-013\nPersonnage : Monsieur Maigre\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 2\nDistribution : du 29 novembre au 5 décembre 2017", tag: "Série 2 · Happy Meal 2017" }
+  },
+  {
+    id: 12,
+    slug: "madame-chance",
+    series: 2,
+    year: 2017,
+    en: { name: "Little Miss Lucky", desc: "Reference: MM17-014\nCharacter: Little Miss Lucky\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 2\nDistribution: 29 November – 5 December 2017", tag: "Series 2 · Happy Meal 2017" },
+    fr: { name: "Madame Chance", desc: "Référence : MM17-014\nPersonnage : Madame Chance\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 2\nDistribution : du 29 novembre au 5 décembre 2017", tag: "Série 2 · Happy Meal 2017" }
+  },
+  {
+    id: 84,
+    slug: "monsieur-presse",
+    series: 2,
+    year: 2017,
+    en: { name: "Mr. Rush", desc: "Reference: MM17-015\nCharacter: Mr. Rush\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 2\nDistribution: 29 November – 5 December 2017", tag: "Series 2 · Happy Meal 2017" },
+    fr: { name: "Monsieur Pressé", desc: "Référence : MM17-015\nPersonnage : Monsieur Pressé\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 2\nDistribution : du 29 novembre au 5 décembre 2017", tag: "Série 2 · Happy Meal 2017" }
+  },
+  {
+    id: 17,
+    slug: "madame-en-retard",
+    series: 2, angles: ["front", "back"],
+    year: 2017,
+    en: { name: "Little Miss Late", desc: "Reference: MM17-016\nCharacter: Little Miss Late\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 2\nDistribution: 29 November – 5 December 2017", tag: "Series 2 · Happy Meal 2017" },
+    fr: { name: "Madame En retard", desc: "Référence : MM17-016\nPersonnage : Madame En retard\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 2\nDistribution : du 29 novembre au 5 décembre 2017", tag: "Série 2 · Happy Meal 2017" }
+  },
+  {
+    id: 62,
+    slug: "monsieur-grand",
+    series: 2,
+    year: 2017,
+    en: { name: "Mr. Tall", desc: "Reference: MM17-017\nCharacter: Mr. Tall\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 2\nDistribution: 29 November – 5 December 2017", tag: "Series 2 · Happy Meal 2017" },
+    fr: { name: "Monsieur Grand", desc: "Référence : MM17-017\nPersonnage : Monsieur Grand\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 2\nDistribution : du 29 novembre au 5 décembre 2017", tag: "Série 2 · Happy Meal 2017" }
+  },
+  {
+    id: 20,
+    slug: "madame-follette",
+    series: 2, angles: ["front", "back"],
+    year: 2017,
+    en: { name: "Little Miss Scatterbrain", desc: "Reference: MM17-018\nCharacter: Little Miss Scatterbrain\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 2\nDistribution: 29 November – 5 December 2017", tag: "Series 2 · Happy Meal 2017" },
+    fr: { name: "Madame Follette", desc: "Référence : MM17-018\nPersonnage : Madame Follette\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 2\nDistribution : du 29 novembre au 5 décembre 2017", tag: "Série 2 · Happy Meal 2017" }
+  },
+  {
+    id: 69,
+    slug: "monsieur-lent",
+    series: 2, angles: ["front", "back"],
+    year: 2017,
+    en: { name: "Mr. Slow", desc: "Reference: MM17-019\nCharacter: Mr. Slow\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 2\nDistribution: 29 November – 5 December 2017", tag: "Series 2 · Happy Meal 2017" },
+    fr: { name: "Monsieur Lent", desc: "Référence : MM17-019\nPersonnage : Monsieur Lent\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 2\nDistribution : du 29 novembre au 5 décembre 2017", tag: "Série 2 · Happy Meal 2017" }
+  },
+  {
+    id: 38,
+    slug: "madame-vedette",
+    series: 2,
+    year: 2017,
+    en: { name: "Little Miss Star", desc: "Reference: MM17-020\nCharacter: Little Miss Star\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 2\nDistribution: 29 November – 5 December 2017", tag: "Series 2 · Happy Meal 2017" },
+    fr: { name: "Madame Vedette", desc: "Référence : MM17-020\nPersonnage : Madame Vedette\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 2\nDistribution : du 29 novembre au 5 décembre 2017", tag: "Série 2 · Happy Meal 2017" }
+  },
+  {
+    id: 78,
+    slug: "monsieur-nigaud",
+    series: 2,
+    year: 2017,
+    en: { name: "Mr. Silly", desc: "Reference: MM17-021\nCharacter: Mr. Silly\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 2\nDistribution: 29 November – 5 December 2017", tag: "Series 2 · Happy Meal 2017" },
+    fr: { name: "Monsieur Nigaud", desc: "Référence : MM17-021\nPersonnage : Monsieur Nigaud\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 2\nDistribution : du 29 novembre au 5 décembre 2017", tag: "Série 2 · Happy Meal 2017" }
+  },
+  {
+    id: 32,
+    slug: "madame-risette",
+    series: 2, angles: ["front", "back"],
+    year: 2017,
+    en: { name: "Little Miss Giggles", desc: "Reference: MM17-022\nCharacter: Little Miss Giggles\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 2\nDistribution: 29 November – 5 December 2017", tag: "Series 2 · Happy Meal 2017" },
+    fr: { name: "Madame Risette", desc: "Référence : MM17-022\nPersonnage : Madame Risette\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 2\nDistribution : du 29 novembre au 5 décembre 2017", tag: "Série 2 · Happy Meal 2017" }
+  },
+  {
+    id: 44,
+    slug: "monsieur-aventure",
+    series: 3,
+    year: 2017,
+    en: { name: "Mr. Adventure", desc: "Reference: MM17-023\nCharacter: Mr. Adventure\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 3\nDistribution: 6 – 12 December 2017", tag: "Series 3 · Happy Meal 2017" },
+    fr: { name: "Monsieur Aventure", desc: "Référence : MM17-023\nPersonnage : Monsieur Aventure\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 3\nDistribution : du 6 au 12 décembre 2017", tag: "Série 3 · Happy Meal 2017" }
+  },
+  {
+    id: 39,
+    slug: "madame-vite-fait",
+    series: 3,
+    year: 2017,
+    en: { name: "Little Miss Quick", desc: "Reference: MM17-024\nCharacter: Little Miss Quick\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 3\nDistribution: 6 – 12 December 2017", tag: "Series 3 · Happy Meal 2017" },
+    fr: { name: "Madame Vite-fait", desc: "Référence : MM17-024\nPersonnage : Madame Vite-fait\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 3\nDistribution : du 6 au 12 décembre 2017", tag: "Série 3 · Happy Meal 2017" }
+  },
+  {
+    id: 80,
+    slug: "monsieur-parfait",
+    series: 3,
+    year: 2017,
+    en: { name: "Mr. Perfect", desc: "Reference: MM17-025\nCharacter: Mr. Perfect\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 3\nDistribution: 6 – 12 December 2017", tag: "Series 3 · Happy Meal 2017" },
+    fr: { name: "Monsieur Parfait", desc: "Référence : MM17-025\nPersonnage : Monsieur Parfait\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 3\nDistribution : du 6 au 12 décembre 2017", tag: "Série 3 · Happy Meal 2017" }
+  },
+  {
+    id: 14,
+    slug: "madame-contraire",
+    series: 3,
+    year: 2017,
+    en: { name: "Little Miss Contrary", desc: "Reference: MM17-026\nCharacter: Little Miss Contrary\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 3\nDistribution: 6 – 12 December 2017", tag: "Series 3 · Happy Meal 2017" },
+    fr: { name: "Madame Contraire", desc: "Référence : MM17-026\nPersonnage : Madame Contraire\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 3\nDistribution : du 6 au 12 décembre 2017", tag: "Série 3 · Happy Meal 2017" }
+  },
+  {
+    id: 56,
+    slug: "monsieur-farceur",
+    series: 3,
+    year: 2017,
+    en: { name: "Mr. Mischief", desc: "Reference: MM17-027\nCharacter: Mr. Mischief\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 3\nDistribution: 6 – 12 December 2017", tag: "Series 3 · Happy Meal 2017" },
+    fr: { name: "Monsieur Farceur", desc: "Référence : MM17-027\nPersonnage : Monsieur Farceur\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 3\nDistribution : du 6 au 12 décembre 2017", tag: "Série 3 · Happy Meal 2017" }
+  },
+  {
+    id: 33,
+    slug: "madame-sage",
+    series: 3,
+    year: 2017,
+    en: { name: "Little Miss Wise", desc: "Reference: MM17-028\nCharacter: Little Miss Wise\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 3\nDistribution: 6 – 12 December 2017", tag: "Series 3 · Happy Meal 2017" },
+    fr: { name: "Madame Sage", desc: "Référence : MM17-028\nPersonnage : Madame Sage\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 3\nDistribution : du 6 au 12 décembre 2017", tag: "Série 3 · Happy Meal 2017" }
+  },
+  {
+    id: 57,
+    slug: "monsieur-farfelu",
+    series: 3,
+    year: 2017,
+    en: { name: "Mr. Silly", desc: "Reference: MM17-029\nCharacter: Mr. Silly\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 3\nDistribution: 6 – 12 December 2017", tag: "Series 3 · Happy Meal 2017" },
+    fr: { name: "Monsieur Farfelu", desc: "Référence : MM17-029\nPersonnage : Monsieur Farfelu\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 3\nDistribution : du 6 au 12 décembre 2017", tag: "Série 3 · Happy Meal 2017" }
+  },
+  {
+    id: 36,
+    slug: "madame-tetue",
+    series: 3,
+    year: 2017,
+    en: { name: "Little Miss Stubborn", desc: "Reference: MM17-030\nCharacter: Little Miss Stubborn\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 3\nDistribution: 6 – 12 December 2017", tag: "Series 3 · Happy Meal 2017" },
+    fr: { name: "Madame Têtue", desc: "Référence : MM17-030\nPersonnage : Madame Têtue\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 3\nDistribution : du 6 au 12 décembre 2017", tag: "Série 3 · Happy Meal 2017" }
+  },
+  {
+    id: 64,
+    slug: "monsieur-grognon",
+    series: 3,
+    year: 2017,
+    en: { name: "Mr. Grumble", desc: "Reference: MM17-031\nCharacter: Mr. Grumble\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 3\nDistribution: 6 – 12 December 2017", tag: "Series 3 · Happy Meal 2017" },
+    fr: { name: "Monsieur Grognon", desc: "Référence : MM17-031\nPersonnage : Monsieur Grognon\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 3\nDistribution : du 6 au 12 décembre 2017", tag: "Série 3 · Happy Meal 2017" }
+  },
+  {
+    id: 23,
+    slug: "madame-lumineuse",
+    series: 3, angles: ["front", "back"],
+    year: 2017,
+    en: { name: "Little Miss Sunshine", desc: "Reference: MM17-032\nCharacter: Little Miss Sunshine\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 3\nDistribution: 6 – 12 December 2017", tag: "Series 3 · Happy Meal 2017" },
+    fr: { name: "Madame Lumineuse", desc: "Référence : MM17-032\nPersonnage : Madame Lumineuse\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 3\nDistribution : du 6 au 12 décembre 2017", tag: "Série 3 · Happy Meal 2017" }
+  },
+  {
+    id: 65,
+    slug: "monsieur-heureux",
+    series: 3,
+    year: 2017,
+    en: { name: "Mr. Happy", desc: "Reference: MM17-033\nCharacter: Mr. Happy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 3\nDistribution: 6 – 12 December 2017", tag: "Series 3 · Happy Meal 2017" },
+    fr: { name: "Monsieur Heureux", desc: "Référence : MM17-033\nPersonnage : Monsieur Heureux\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 3\nDistribution : du 6 au 12 décembre 2017", tag: "Série 3 · Happy Meal 2017" }
+  },
+  {
+    id: 34,
+    slug: "madame-terreur",
+    series: 3,
+    year: 2017,
+    en: { name: "Little Miss Scary", desc: "Reference: MM17-034\nCharacter: Little Miss Scary\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 3\nDistribution: 6 – 12 December 2017", tag: "Series 3 · Happy Meal 2017" },
+    fr: { name: "Madame Terreur", desc: "Référence : MM17-034\nPersonnage : Madame Terreur\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 3\nDistribution : du 6 au 12 décembre 2017", tag: "Série 3 · Happy Meal 2017" }
+  },
+  {
+    id: 42,
+    slug: "monsieur-atchoum",
+    series: 4,
+    year: 2017,
+    en: { name: "Mr. Sneeze", desc: "Reference: MM17-035\nCharacter: Mr. Sneeze\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 4\nDistribution: 13 – 19 December 2017", tag: "Series 4 · Happy Meal 2017" },
+    fr: { name: "Monsieur Atchoum", desc: "Référence : MM17-035\nPersonnage : Monsieur Atchoum\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 4\nDistribution : du 13 au 19 décembre 2017", tag: "Série 4 · Happy Meal 2017" }
+  },
+  {
+    id: 2,
+    slug: "madame-anniversaire",
+    series: 4, angles: ["front", "back"],
+    year: 2017,
+    en: { name: "Little Miss Birthday", desc: "Reference: MM17-036\nCharacter: Little Miss Birthday\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 4\nDistribution: 13 – 19 December 2017", tag: "Series 4 · Happy Meal 2017" },
+    fr: { name: "Madame Anniversaire", desc: "Référence : MM17-036\nPersonnage : Madame Anniversaire\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 4\nDistribution : du 13 au 19 décembre 2017", tag: "Série 4 · Happy Meal 2017" }
+  },
+  {
+    id: 79,
+    slug: "monsieur-noel",
+    series: 4,
+    year: 2017,
+    en: { name: "Mr. Christmas", desc: "Reference: MM17-037\nCharacter: Mr. Christmas\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 4\nDistribution: 13 – 19 December 2017", tag: "Series 4 · Happy Meal 2017" },
+    fr: { name: "Monsieur Noël", desc: "Référence : MM17-037\nPersonnage : Monsieur Noël\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 4\nDistribution : du 13 au 19 décembre 2017", tag: "Série 4 · Happy Meal 2017" }
+  },
+  {
+    id: 47,
+    slug: "monsieur-bizarre",
+    series: 4,
+    year: 2017,
+    en: { name: "Mr. Funny", desc: "Reference: MM17-038\nCharacter: Mr. Funny\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 4\nDistribution: 13 – 19 December 2017", tag: "Series 4 · Happy Meal 2017" },
+    fr: { name: "Monsieur Bizarre", desc: "Référence : MM17-038\nPersonnage : Monsieur Bizarre\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 4\nDistribution : du 13 au 19 décembre 2017", tag: "Série 4 · Happy Meal 2017" }
+  },
+  {
+    id: 75,
+    slug: "monsieur-malpoli",
+    series: 4,
+    year: 2017,
+    en: { name: "Mr. Rude", desc: "Reference: MM17-039\nCharacter: Mr. Rude\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 4\nDistribution: 13 – 19 December 2017", tag: "Series 4 · Happy Meal 2017" },
+    fr: { name: "Monsieur Malpoli", desc: "Référence : MM17-039\nPersonnage : Monsieur Malpoli\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 4\nDistribution : du 13 au 19 décembre 2017", tag: "Série 4 · Happy Meal 2017" }
+  },
+  {
+    id: 6,
+    slug: "madame-bonheur",
+    series: 4, angles: ["front", "back"],
+    year: 2017,
+    en: { name: "Little Miss Happiness", desc: "Reference: MM17-040\nCharacter: Little Miss Happiness\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 4\nDistribution: 13 – 19 December 2017", tag: "Series 4 · Happy Meal 2017" },
+    fr: { name: "Madame Bonheur", desc: "Référence : MM17-040\nPersonnage : Madame Bonheur\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 4\nDistribution : du 13 au 19 décembre 2017", tag: "Série 4 · Happy Meal 2017" }
+  },
+  {
+    id: 49,
+    slug: "monsieur-chatouille",
+    series: 4,
+    year: 2017,
+    en: { name: "Mr. Tickle", desc: "Reference: MM17-041\nCharacter: Mr. Tickle\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 4\nDistribution: 13 – 19 December 2017", tag: "Series 4 · Happy Meal 2017" },
+    fr: { name: "Monsieur Chatouille", desc: "Référence : MM17-041\nPersonnage : Monsieur Chatouille\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 4\nDistribution : du 13 au 19 décembre 2017", tag: "Série 4 · Happy Meal 2017" }
+  },
+  {
+    id: 7,
+    slug: "madame-boulot",
+    series: 4, angles: ["front"],
+    year: 2017,
+    en: { name: "Little Miss Busy", desc: "Reference: MM17-042\nCharacter: Little Miss Busy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 4\nDistribution: 13 – 19 December 2017", tag: "Series 4 · Happy Meal 2017" },
+    fr: { name: "Madame Boulot", desc: "Référence : MM17-042\nPersonnage : Madame Boulot\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 4\nDistribution : du 13 au 19 décembre 2017", tag: "Série 4 · Happy Meal 2017" }
+  },
+  {
+    id: 55,
+    slug: "monsieur-etourdi",
+    series: 4,
+    year: 2017,
+    en: { name: "Mr. Forgetful", desc: "Reference: MM17-043\nCharacter: Mr. Forgetful\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 4\nDistribution: 13 – 19 December 2017", tag: "Series 4 · Happy Meal 2017" },
+    fr: { name: "Monsieur Étourdi", desc: "Référence : MM17-043\nPersonnage : Monsieur Étourdi\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 4\nDistribution : du 13 au 19 décembre 2017", tag: "Série 4 · Happy Meal 2017" }
+  },
+  {
+    id: 8,
+    slug: "madame-boute-en-train",
+    series: 4,
+    year: 2017,
+    en: { name: "Little Miss Fun", desc: "Reference: MM17-044\nCharacter: Little Miss Fun\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 4\nDistribution: 13 – 19 December 2017", tag: "Series 4 · Happy Meal 2017" },
+    fr: { name: "Madame Boute-en-train", desc: "Référence : MM17-044\nPersonnage : Madame Boute-en-train\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 4\nDistribution : du 13 au 19 décembre 2017", tag: "Série 4 · Happy Meal 2017" }
+  },
+  {
+    id: 51,
+    slug: "monsieur-courageux",
+    series: 4,
+    year: 2017,
+    en: { name: "Mr. Brave", desc: "Reference: MM17-045\nCharacter: Mr. Brave\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 4\nDistribution: 13 – 19 December 2017", tag: "Series 4 · Happy Meal 2017" },
+    fr: { name: "Monsieur Courageux", desc: "Référence : MM17-045\nPersonnage : Monsieur Courageux\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 4\nDistribution : du 13 au 19 décembre 2017", tag: "Série 4 · Happy Meal 2017" }
+  },
+  {
+    id: 61,
+    slug: "monsieur-glouton",
+    series: 4,
+    year: 2017,
+    en: { name: "Mr. Greedy", desc: "Reference: MM17-046\nCharacter: Mr. Greedy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 4\nDistribution: 13 – 19 December 2017", tag: "Series 4 · Happy Meal 2017" },
+    fr: { name: "Monsieur Glouton", desc: "Référence : MM17-046\nPersonnage : Monsieur Glouton\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 4\nDistribution : du 13 au 19 décembre 2017", tag: "Série 4 · Happy Meal 2017" }
+  },
+  {
+    id: 74,
+    slug: "monsieur-malin",
+    series: 5,
+    year: 2017,
+    en: { name: "Mr. Clever", desc: "Reference: MM17-047\nCharacter: Mr. Clever\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 5\nDistribution: 20 – 26 December 2017", tag: "Series 5 · Happy Meal 2017" },
+    fr: { name: "Monsieur Malin", desc: "Référence : MM17-047\nPersonnage : Monsieur Malin\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 5\nDistribution : du 20 au 26 décembre 2017", tag: "Série 5 · Happy Meal 2017" }
+  },
+  {
+    id: 4,
+    slug: "madame-bavarde",
+    series: 5,
+    year: 2017,
+    en: { name: "Little Miss Chatterbox", desc: "Reference: MM17-048\nCharacter: Little Miss Chatterbox\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 5\nDistribution: 20 – 26 December 2017", tag: "Series 5 · Happy Meal 2017" },
+    fr: { name: "Madame Bavarde", desc: "Référence : MM17-048\nPersonnage : Madame Bavarde\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 5\nDistribution : du 20 au 26 décembre 2017", tag: "Série 5 · Happy Meal 2017" }
+  },
+  {
+    id: 86,
+    slug: "monsieur-reve",
+    series: 5,
+    year: 2017,
+    en: { name: "Mr. Daydream", desc: "Reference: MM17-049\nCharacter: Mr. Daydream\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 5\nDistribution: 20 – 26 December 2017", tag: "Series 5 · Happy Meal 2017" },
+    fr: { name: "Monsieur Rêve", desc: "Référence : MM17-049\nPersonnage : Monsieur Rêve\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 5\nDistribution : du 20 au 26 décembre 2017", tag: "Série 5 · Happy Meal 2017" }
+  },
+  {
+    id: 19,
+    slug: "madame-farceuse",
+    series: 5,
+    year: 2017,
+    en: { name: "Little Miss Prankster", desc: "Reference: MM17-050\nCharacter: Little Miss Prankster\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 5\nDistribution: 20 – 26 December 2017", tag: "Series 5 · Happy Meal 2017" },
+    fr: { name: "Madame Farceuse", desc: "Référence : MM17-050\nPersonnage : Madame Farceuse\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 5\nDistribution : du 20 au 26 décembre 2017", tag: "Série 5 · Happy Meal 2017" }
+  },
+  {
+    id: 59,
+    slug: "monsieur-genial",
+    series: 5,
+    year: 2017,
+    en: { name: "Mr. Clever", desc: "Reference: MM17-051\nCharacter: Mr. Clever\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 5\nDistribution: 20 – 26 December 2017", tag: "Series 5 · Happy Meal 2017" },
+    fr: { name: "Monsieur Génial", desc: "Référence : MM17-051\nPersonnage : Monsieur Génial\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 5\nDistribution : du 20 au 26 décembre 2017", tag: "Série 5 · Happy Meal 2017" }
+  },
+  {
+    id: 21,
+    slug: "madame-indecise",
+    series: 5,
+    year: 2017,
+    en: { name: "Little Miss Fickle", desc: "Reference: MM17-052\nCharacter: Little Miss Fickle\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 5\nDistribution: 20 – 26 December 2017", tag: "Series 5 · Happy Meal 2017" },
+    fr: { name: "Madame Indécise", desc: "Référence : MM17-052\nPersonnage : Madame Indécise\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 5\nDistribution : du 20 au 26 décembre 2017", tag: "Série 5 · Happy Meal 2017" }
+  },
+  {
+    id: 73,
+    slug: "monsieur-malchance",
+    series: 5, angles: ["front", "back"],
+    year: 2017,
+    en: { name: "Mr. Muddle", desc: "Reference: MM17-053\nCharacter: Mr. Muddle\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 5\nDistribution: 20 – 26 December 2017", tag: "Series 5 · Happy Meal 2017" },
+    fr: { name: "Monsieur Malchance", desc: "Référence : MM17-053\nPersonnage : Monsieur Malchance\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 5\nDistribution : du 20 au 26 décembre 2017", tag: "Série 5 · Happy Meal 2017" }
+  },
+  {
+    id: 26,
+    slug: "madame-noel",
+    series: 5,
+    year: 2017,
+    en: { name: "Little Miss Christmas", desc: "Reference: MM17-054\nCharacter: Little Miss Christmas\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 5\nDistribution: 20 – 26 December 2017", tag: "Series 5 · Happy Meal 2017" },
+    fr: { name: "Madame Noël", desc: "Référence : MM17-054\nPersonnage : Madame Noël\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 5\nDistribution : du 20 au 26 décembre 2017", tag: "Série 5 · Happy Meal 2017" }
+  },
+  {
+    id: 83,
+    slug: "monsieur-peureux",
+    series: 5,
+    year: 2017,
+    en: { name: "Mr. Nervous", desc: "Reference: MM17-055\nCharacter: Mr. Nervous\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 5\nDistribution: 20 – 26 December 2017", tag: "Series 5 · Happy Meal 2017" },
+    fr: { name: "Monsieur Peureux", desc: "Référence : MM17-055\nPersonnage : Monsieur Peureux\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 5\nDistribution : du 20 au 26 décembre 2017", tag: "Série 5 · Happy Meal 2017" }
+  },
+  {
+    id: 30,
+    slug: "madame-proprette",
+    series: 5, angles: ["front", "back"],
+    year: 2017,
+    en: { name: "Little Miss Neat", desc: "Reference: MM17-056\nCharacter: Little Miss Neat\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 5\nDistribution: 20 – 26 December 2017", tag: "Series 5 · Happy Meal 2017" },
+    fr: { name: "Madame Proprette", desc: "Référence : MM17-056\nPersonnage : Madame Proprette\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 5\nDistribution : du 20 au 26 décembre 2017", tag: "Série 5 · Happy Meal 2017" }
+  },
+  {
+    id: 85,
+    slug: "monsieur-rapide",
+    series: 5,
+    year: 2017,
+    en: { name: "Mr. Fast", desc: "Reference: MM17-057\nCharacter: Mr. Fast\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 5\nDistribution: 20 – 26 December 2017", tag: "Series 5 · Happy Meal 2017" },
+    fr: { name: "Monsieur Rapide", desc: "Référence : MM17-057\nPersonnage : Monsieur Rapide\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 5\nDistribution : du 20 au 26 décembre 2017", tag: "Série 5 · Happy Meal 2017" }
+  },
+  {
+    id: 35,
+    slug: "madame-tete-en-l-air",
+    series: 5,
+    year: 2017,
+    en: { name: "Little Miss Scatterbrain", desc: "Reference: MM17-058\nCharacter: Little Miss Scatterbrain\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017)\nSeries: 5\nDistribution: 20 – 26 December 2017", tag: "Series 5 · Happy Meal 2017" },
+    fr: { name: "Madame Tête-en-l’air", desc: "Référence : MM17-058\nPersonnage : Madame Tête-en-l’air\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017)\nSérie : 5\nDistribution : du 20 au 26 décembre 2017", tag: "Série 5 · Happy Meal 2017" }
+  },
+  {
+    id: 60,
+    slug: "monsieur-gentil",
+    series: 6,
+    year: 2018,
+    en: { name: "Mr. Nice", desc: "Reference: MM17-059\nCharacter: Mr. Nice\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 6\nDistribution: 27 December 2017 – 2 January 2018", tag: "Series 6 · Happy Meal 2017" },
+    fr: { name: "Monsieur Gentil", desc: "Référence : MM17-059\nPersonnage : Monsieur Gentil\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 6\nDistribution : du 27 décembre 2017 au 2 janvier 2018", tag: "Série 6 · Happy Meal 2017" }
+  },
+  {
+    id: 3,
+    slug: "madame-autoritaire",
+    series: 6,
+    year: 2018,
+    en: { name: "Little Miss Bossy", desc: "Reference: MM17-060\nCharacter: Little Miss Bossy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 6\nDistribution: 27 December 2017 – 2 January 2018", tag: "Series 6 · Happy Meal 2017" },
+    fr: { name: "Madame Autoritaire", desc: "Référence : MM17-060\nPersonnage : Madame Autoritaire\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 6\nDistribution : du 27 décembre 2017 au 2 janvier 2018", tag: "Série 6 · Happy Meal 2017" }
+  },
+  {
+    id: 90,
+    slug: "monsieur-tatillon",
+    series: 6,
+    year: 2018,
+    en: { name: "Mr. Fussy", desc: "Reference: MM17-061\nCharacter: Mr. Fussy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 6\nDistribution: 27 December 2017 – 2 January 2018", tag: "Series 6 · Happy Meal 2017" },
+    fr: { name: "Monsieur Tatillon", desc: "Référence : MM17-061\nPersonnage : Monsieur Tatillon\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 6\nDistribution : du 27 décembre 2017 au 2 janvier 2018", tag: "Série 6 · Happy Meal 2017" }
+  },
+  {
+    id: 9,
+    slug: "madame-calin",
+    series: 6,
+    year: 2018,
+    en: { name: "Little Miss Hug", desc: "Reference: MM17-062\nCharacter: Little Miss Hug\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 6\nDistribution: 27 December 2017 – 2 January 2018", tag: "Series 6 · Happy Meal 2017" },
+    fr: { name: "Madame Câlin", desc: "Référence : MM17-062\nPersonnage : Madame Câlin\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 6\nDistribution : du 27 décembre 2017 au 2 janvier 2018", tag: "Série 6 · Happy Meal 2017" }
+  },
+  {
+    id: 52,
+    slug: "monsieur-curieux",
+    series: 6,
+    year: 2018,
+    en: { name: "Mr. Curious", desc: "Reference: MM17-063\nCharacter: Mr. Curious\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 6\nDistribution: 27 December 2017 – 2 January 2018", tag: "Series 6 · Happy Meal 2017" },
+    fr: { name: "Monsieur Curieux", desc: "Référence : MM17-063\nPersonnage : Monsieur Curieux\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 6\nDistribution : du 27 décembre 2017 au 2 janvier 2018", tag: "Série 6 · Happy Meal 2017" }
+  },
+  {
+    id: 11,
+    slug: "madame-catastrophe",
+    series: 6,
+    year: 2018,
+    en: { name: "Little Miss Calamity", desc: "Reference: MM17-064\nCharacter: Little Miss Calamity\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 6\nDistribution: 27 December 2017 – 2 January 2018", tag: "Series 6 · Happy Meal 2017" },
+    fr: { name: "Madame Catastrophe", desc: "Référence : MM17-064\nPersonnage : Madame Catastrophe\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 6\nDistribution : du 27 décembre 2017 au 2 janvier 2018", tag: "Série 6 · Happy Meal 2017" }
+  },
+  {
+    id: 54,
+    slug: "monsieur-etonnant",
+    series: 6,
+    year: 2018,
+    en: { name: "Mr. Marvelous", desc: "Reference: MM17-065\nCharacter: Mr. Marvelous\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 6\nDistribution: 27 December 2017 – 2 January 2018", tag: "Series 6 · Happy Meal 2017" },
+    fr: { name: "Monsieur Étonnant", desc: "Référence : MM17-065\nPersonnage : Monsieur Étonnant\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 6\nDistribution : du 27 décembre 2017 au 2 janvier 2018", tag: "Série 6 · Happy Meal 2017" }
+  },
+  {
+    id: 81,
+    slug: "monsieur-personne",
+    series: 6,
+    year: 2018,
+    en: { name: "Mr. Nobody", desc: "Reference: MM17-066\nCharacter: Mr. Nobody\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 6\nDistribution: 27 December 2017 – 2 January 2018", tag: "Series 6 · Happy Meal 2017" },
+    fr: { name: "Monsieur Personne", desc: "Référence : MM17-066\nPersonnage : Monsieur Personne\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 6\nDistribution : du 27 décembre 2017 au 2 janvier 2018", tag: "Série 6 · Happy Meal 2017" }
+  },
+  {
+    id: 72,
+    slug: "monsieur-maladroit",
+    series: 6,
+    year: 2018,
+    en: { name: "Mr. Clumsy", desc: "Reference: MM17-067\nCharacter: Mr. Clumsy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 6\nDistribution: 27 December 2017 – 2 January 2018", tag: "Series 6 · Happy Meal 2017" },
+    fr: { name: "Monsieur Maladroit", desc: "Référence : MM17-067\nPersonnage : Monsieur Maladroit\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 6\nDistribution : du 27 décembre 2017 au 2 janvier 2018", tag: "Série 6 · Happy Meal 2017" }
+  },
+  {
+    id: 18,
+    slug: "madame-fabuleuse",
+    series: 6,
+    year: 2018,
+    en: { name: "Little Miss Fabulous", desc: "Reference: MM17-068\nCharacter: Little Miss Fabulous\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 6\nDistribution: 27 December 2017 – 2 January 2018", tag: "Series 6 · Happy Meal 2017" },
+    fr: { name: "Madame Fabuleuse", desc: "Référence : MM17-068\nPersonnage : Madame Fabuleuse\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 6\nDistribution : du 27 décembre 2017 au 2 janvier 2018", tag: "Série 6 · Happy Meal 2017" }
+  },
+  {
+    id: 76,
+    slug: "monsieur-meli-melo",
+    series: 6,
+    year: 2018,
+    en: { name: "Mr. Mix-Up", desc: "Reference: MM17-069\nCharacter: Mr. Mix-Up\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 6\nDistribution: 27 December 2017 – 2 January 2018", tag: "Series 6 · Happy Meal 2017" },
+    fr: { name: "Monsieur Méli-mélo", desc: "Référence : MM17-069\nPersonnage : Monsieur Méli-mélo\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 6\nDistribution : du 27 décembre 2017 au 2 janvier 2018", tag: "Série 6 · Happy Meal 2017" }
+  },
+  {
+    id: 24,
+    slug: "madame-magie",
+    series: 6,
+    year: 2018,
+    en: { name: "Little Miss Magic", desc: "Reference: MM17-070\nCharacter: Little Miss Magic\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 6\nDistribution: 27 December 2017 – 2 January 2018", tag: "Series 6 · Happy Meal 2017" },
+    fr: { name: "Madame Magie", desc: "Référence : MM17-070\nPersonnage : Madame Magie\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 6\nDistribution : du 27 décembre 2017 au 2 janvier 2018", tag: "Série 6 · Happy Meal 2017" }
+  },
+  {
+    id: 40,
+    slug: "monsieur-a-l-envers",
+    series: 7,
+    year: 2018,
+    en: { name: "Mr. Topsy-Turvy", desc: "Reference: MM17-071\nCharacter: Mr. Topsy-Turvy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 7\nDistribution: 3 – 9 January 2018", tag: "Series 7 · Happy Meal 2017" },
+    fr: { name: "Monsieur À l’envers", desc: "Référence : MM17-071\nPersonnage : Monsieur À l’envers\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 7\nDistribution : du 3 au 9 janvier 2018", tag: "Série 7 · Happy Meal 2017" }
+  },
+  {
+    id: 5,
+    slug: "madame-beaute",
+    series: 7,
+    year: 2018,
+    en: { name: "Little Miss Beautiful", desc: "Reference: MM17-072\nCharacter: Little Miss Beautiful\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 7\nDistribution: 3 – 9 January 2018", tag: "Series 7 · Happy Meal 2017" },
+    fr: { name: "Madame Beauté", desc: "Référence : MM17-072\nPersonnage : Madame Beauté\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 7\nDistribution : du 3 au 9 janvier 2018", tag: "Série 7 · Happy Meal 2017" }
+  },
+  {
+    id: 48,
+    slug: "monsieur-bruit",
+    series: 7,
+    year: 2018,
+    en: { name: "Mr. Noisy", desc: "Reference: MM17-073\nCharacter: Mr. Noisy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 7\nDistribution: 3 – 9 January 2018", tag: "Series 7 · Happy Meal 2017" },
+    fr: { name: "Monsieur Bruit", desc: "Référence : MM17-073\nPersonnage : Monsieur Bruit\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 7\nDistribution : du 3 au 9 janvier 2018", tag: "Série 7 · Happy Meal 2017" }
+  },
+  {
+    id: 10,
+    slug: "madame-canaille",
+    series: 7,
+    year: 2018,
+    en: { name: "Little Miss Naughty", desc: "Reference: MM17-074\nCharacter: Little Miss Naughty\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 7\nDistribution: 3 – 9 January 2018", tag: "Series 7 · Happy Meal 2017" },
+    fr: { name: "Madame Canaille", desc: "Référence : MM17-074\nPersonnage : Madame Canaille\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 7\nDistribution : du 3 au 9 janvier 2018", tag: "Série 7 · Happy Meal 2017" }
+  },
+  {
+    id: 71,
+    slug: "monsieur-mal-eleve",
+    series: 7,
+    year: 2018,
+    en: { name: "Mr. Rude", desc: "Reference: MM17-075\nCharacter: Mr. Rude\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 7\nDistribution: 3 – 9 January 2018", tag: "Series 7 · Happy Meal 2017" },
+    fr: { name: "Monsieur Mal élevé", desc: "Référence : MM17-075\nPersonnage : Monsieur Mal élevé\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 7\nDistribution : du 3 au 9 janvier 2018", tag: "Série 7 · Happy Meal 2017" }
+  },
+  {
+    id: 16,
+    slug: "madame-double",
+    series: 7,
+    year: 2018,
+    en: { name: "Little Miss Double", desc: "Reference: MM17-076\nCharacter: Little Miss Double\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 7\nDistribution: 3 – 9 January 2018", tag: "Series 7 · Happy Meal 2017" },
+    fr: { name: "Madame Double", desc: "Référence : MM17-076\nPersonnage : Madame Double\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 7\nDistribution : du 3 au 9 janvier 2018", tag: "Série 7 · Happy Meal 2017" }
+  },
+  {
+    id: 53,
+    slug: "monsieur-endormi",
+    series: 7,
+    year: 2018,
+    en: { name: "Mr. Lazy", desc: "Reference: MM17-077\nCharacter: Mr. Lazy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 7\nDistribution: 3 – 9 January 2018", tag: "Series 7 · Happy Meal 2017" },
+    fr: { name: "Monsieur Endormi", desc: "Référence : MM17-077\nPersonnage : Monsieur Endormi\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 7\nDistribution : du 3 au 9 janvier 2018", tag: "Série 7 · Happy Meal 2017" }
+  },
+  {
+    id: 31,
+    slug: "madame-range-tout",
+    series: 7,
+    year: 2018,
+    en: { name: "Little Miss Tidy", desc: "Reference: MM17-078\nCharacter: Little Miss Tidy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 7\nDistribution: 3 – 9 January 2018", tag: "Series 7 · Happy Meal 2017" },
+    fr: { name: "Madame Range-tout", desc: "Référence : MM17-078\nPersonnage : Madame Range-tout\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 7\nDistribution : du 3 au 9 janvier 2018", tag: "Série 7 · Happy Meal 2017" }
+  },
+  {
+    id: 68,
+    slug: "monsieur-joyeux",
+    series: 7,
+    year: 2018,
+    en: { name: "Mr. Cheerful", desc: "Reference: MM17-079\nCharacter: Mr. Cheerful\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 7\nDistribution: 3 – 9 January 2018", tag: "Series 7 · Happy Meal 2017" },
+    fr: { name: "Monsieur Joyeux", desc: "Référence : MM17-079\nPersonnage : Monsieur Joyeux\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 7\nDistribution : du 3 au 9 janvier 2018", tag: "Série 7 · Happy Meal 2017" }
+  },
+  {
+    id: 77,
+    slug: "monsieur-neige",
+    series: 7,
+    year: 2018,
+    en: { name: "Mr. Snow", desc: "Reference: MM17-080\nCharacter: Mr. Snow\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 7\nDistribution: 3 – 9 January 2018", tag: "Series 7 · Happy Meal 2017" },
+    fr: { name: "Monsieur Neige", desc: "Référence : MM17-080\nPersonnage : Monsieur Neige\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 7\nDistribution : du 3 au 9 janvier 2018", tag: "Série 7 · Happy Meal 2017" }
+  },
+  {
+    id: 82,
+    slug: "monsieur-petit",
+    series: 7,
+    year: 2018,
+    en: { name: "Mr. Small", desc: "Reference: MM17-081\nCharacter: Mr. Small\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 7\nDistribution: 3 – 9 January 2018", tag: "Series 7 · Happy Meal 2017" },
+    fr: { name: "Monsieur Petit", desc: "Référence : MM17-081\nPersonnage : Monsieur Petit\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 7\nDistribution : du 3 au 9 janvier 2018", tag: "Série 7 · Happy Meal 2017" }
+  },
+  {
+    id: 88,
+    slug: "monsieur-sale",
+    series: 7,
+    year: 2018,
+    en: { name: "Mr. Messy", desc: "Reference: MM17-082\nCharacter: Mr. Messy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 7\nDistribution: 3 – 9 January 2018", tag: "Series 7 · Happy Meal 2017" },
+    fr: { name: "Monsieur Sale", desc: "Référence : MM17-082\nPersonnage : Monsieur Sale\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 7\nDistribution : du 3 au 9 janvier 2018", tag: "Série 7 · Happy Meal 2017" }
+  },
+  {
+    id: 29,
+    slug: "madame-princesse",
+    series: 8,
+    year: 2018,
+    en: { name: "Little Miss Princess", desc: "Reference: MM17-083\nCharacter: Little Miss Princess\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 8\nDistribution: 10 – 16 January 2018", tag: "Series 8 · Happy Meal 2017" },
+    fr: { name: "Madame Princesse", desc: "Référence : MM17-083\nPersonnage : Madame Princesse\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 8\nDistribution : du 10 au 16 janvier 2018", tag: "Série 8 · Happy Meal 2017" }
+  },
+  {
+    id: 67,
+    slug: "monsieur-inquiet",
+    series: 8,
+    year: 2018,
+    en: { name: "Mr. Worry", desc: "Reference: MM17-084\nCharacter: Mr. Worry\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 8\nDistribution: 10 – 16 January 2018", tag: "Series 8 · Happy Meal 2017" },
+    fr: { name: "Monsieur Inquiet", desc: "Référence : MM17-084\nPersonnage : Monsieur Inquiet\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 8\nDistribution : du 10 au 16 janvier 2018", tag: "Série 8 · Happy Meal 2017" }
+  },
+  {
+    id: 58,
+    slug: "monsieur-formidable",
+    series: 8, angles: ["front", "back"],
+    year: 2018,
+    en: { name: "Mr. Wonderful", desc: "Reference: MM17-085\nCharacter: Mr. Wonderful\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 8\nDistribution: 10 – 16 January 2018", tag: "Series 8 · Happy Meal 2017" },
+    fr: { name: "Monsieur Formidable", desc: "Référence : MM17-085\nPersonnage : Monsieur Formidable\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 8\nDistribution : du 10 au 16 janvier 2018", tag: "Série 8 · Happy Meal 2017" }
+  },
+  {
+    id: 13,
+    slug: "madame-chipie",
+    series: 8,
+    cond: "new",
+    year: 2018,
+    en: { name: "Little Miss Bad", desc: "Reference: MM17-086\nCharacter: Little Miss Bad\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 8\nDistribution: 10 – 16 January 2018", tag: "Series 8 · Happy Meal 2017" },
+    fr: { name: "Madame Chipie", desc: "Référence : MM17-086\nPersonnage : Madame Chipie\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 8\nDistribution : du 10 au 16 janvier 2018", tag: "Série 8 · Happy Meal 2017" }
+  },
+  {
+    id: 87,
+    slug: "monsieur-rigolo",
+    series: 8,
+    year: 2018,
+    en: { name: "Mr. Funny", desc: "Reference: MM17-087\nCharacter: Mr. Funny\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 8\nDistribution: 10 – 16 January 2018", tag: "Series 8 · Happy Meal 2017" },
+    fr: { name: "Monsieur Rigolo", desc: "Référence : MM17-087\nPersonnage : Monsieur Rigolo\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 8\nDistribution : du 10 au 16 janvier 2018", tag: "Série 8 · Happy Meal 2017" }
+  },
+  {
+    id: 25,
+    slug: "madame-malchance",
+    series: 8,
+    year: 2018,
+    en: { name: "Little Miss Trouble", desc: "Reference: MM17-088\nCharacter: Little Miss Trouble\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 8\nDistribution: 10 – 16 January 2018", tag: "Series 8 · Happy Meal 2017" },
+    fr: { name: "Madame Malchance", desc: "Référence : MM17-088\nPersonnage : Madame Malchance\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 8\nDistribution : du 10 au 16 janvier 2018", tag: "Série 8 · Happy Meal 2017" }
+  },
+  {
+    id: 63,
+    slug: "monsieur-grincheux",
+    series: 8,
+    year: 2018,
+    en: { name: "Mr. Grumpy", desc: "Reference: MM17-089\nCharacter: Mr. Grumpy\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 8\nDistribution: 10 – 16 January 2018", tag: "Series 8 · Happy Meal 2017" },
+    fr: { name: "Monsieur Grincheux", desc: "Référence : MM17-089\nPersonnage : Monsieur Grincheux\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 8\nDistribution : du 10 au 16 janvier 2018", tag: "Série 8 · Happy Meal 2017" }
+  },
+  {
+    id: 27,
+    slug: "madame-petite",
+    series: 8,
+    year: 2018,
+    en: { name: "Little Miss Tiny", desc: "Reference: MM17-090\nCharacter: Little Miss Tiny\nCollection: McDonald's France Happy Meal – Monsieur Madame (2017–2018)\nSeries: 8\nDistribution: 10 – 16 January 2018", tag: "Series 8 · Happy Meal 2017" },
+    fr: { name: "Madame Petite", desc: "Référence : MM17-090\nPersonnage : Madame Petite\nCollection : Happy Meal McDonald's France – Monsieur Madame (2017–2018)\nSérie : 8\nDistribution : du 10 au 16 janvier 2018", tag: "Série 8 · Happy Meal 2017" }
+  }
+];
+
+    const PAGE_TITLE = document.title;
+    // ===== Informations légales (à compléter avant la mise en production) =====
+    // Les champs vides s'affichent en jaune « [à compléter] » dans les pages légales.
+    const SITE_INFO = {
+      name: 'Innocent Twagirumukiza',
+      brand: 'Twagirumukiza',
+      year: 2026,
+      linkedin: 'https://www.linkedin.com/in/innocent-twagirumukiza',
+      status: '',    // ex. 'Entrepreneur individuel (micro-entrepreneur)'
+      siret: '',     // numéro SIRET
+      address: '',   // adresse postale du vendeur
+      email: '',     // courriel de contact
+      phone: '',     // téléphone (facultatif)
+      payment: '',   // ex. 'Stripe' / 'PayPal'
+      mediator: '',  // nom et coordonnées du médiateur de la consommation
+      host: 'GitHub, Inc. (GitHub Pages), 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA',
+      dateFr: '10 octobre 2026', dateEn: 'October 10, 2026'
+    };
+    const LEGAL = {"cgv": {"fr": "\n<p class=\"legal-lead\">Conditions Générales de Vente applicables aux ventes à distance de la boutique <b>MonsieurMadamePops</b> entre {brand} et ses clients consommateurs. Dernière mise à jour : {date}.</p>\n\n<h3>Article 1 – Objet et champ d'application</h3>\n<p>Les présentes conditions générales de vente (« CGV ») régissent toute commande passée sur le site MonsieurMadamePops (« le Site ») par un client agissant en tant que consommateur au sens du Code de la consommation. Passer commande implique l'acceptation pleine et entière des CGV, dont le client reconnaît avoir pris connaissance avant de valider sa commande. Le vendeur peut modifier les CGV à tout moment ; la version applicable est celle en vigueur à la date de la commande.</p>\n\n<h3>Article 2 – Identification du vendeur</h3>\n<p>Le Site est exploité par <b>{name}</b>, agissant sous la marque <b>{brand}</b> — {status}.<br>\nSIRET : {siret}<br>Adresse : {address}<br>Courriel : {email}<br>Téléphone : {phone}</p>\n\n<h3>Article 3 – Produits</h3>\n<ul>\n<li>La boutique propose des figurines, accessoires et objets de collection issus de la collection Happy Meal Monsieur Madame de McDonald's (2017), sélectionnés par un passionné. Il s'agit d'objets de collection, <b>non</b> de produits officiels vendus par les titulaires des marques.</li>\n<li>Chaque article est présenté en photographies réelles et dans l'état indiqué sur sa fiche (<i>Neuf</i>, <i>Très bon état</i> ou <i>Bon état</i>). De légères différences de teinte peuvent exister selon l'écran. Les articles « Bon état » ou « Très bon état » sont d'occasion et peuvent présenter des signes d'usage visibles sur les photos.</li>\n<li>Les articles sont des pièces uniques ou en quantité limitée. La mention « Stock limité » ou « En stock : N » indique la quantité disponible ; la mention « Épuisé » signale que l'article ne peut plus être commandé.</li>\n<li><b>Sécurité :</b> les articles sont destinés aux collectionneurs et peuvent contenir de petites pièces ; ils ne conviennent pas aux enfants de moins de 36 mois sans surveillance d'un adulte.</li>\n</ul>\n\n<h3>Article 4 – Prix</h3>\n<p>Les prix sont indiqués en euros, toutes taxes comprises (TTC), hors frais de livraison. Le cas échéant, la mention « TVA non applicable, art. 293 B du CGI » figure sur la facture. Les frais de livraison sont indiqués avant la validation finale de la commande. Le prix applicable est celui affiché au moment de la commande. Le vendeur peut modifier ses prix à tout moment, sans effet sur les commandes déjà validées.</p>\n\n<h3>Article 5 – Commande</h3>\n<p>Le client sélectionne ses articles, les ajoute au panier, vérifie le contenu et le prix total du panier (avec possibilité de corriger d'éventuelles erreurs), renseigne ses coordonnées de livraison puis valide sa commande par le bouton comportant la mention « Commande avec obligation de paiement ». La commande est ferme après validation du paiement et envoi d'un courriel de confirmation. Le vendeur peut refuser ou annuler toute commande en cas de litige existant avec le client, de demande anormale, de défaut de paiement ou d'indisponibilité de l'article (erreur de stock) ; le client en est alors informé sans délai et intégralement remboursé s'il a déjà payé.</p>\n\n<h3>Article 6 – Paiement</h3>\n<p>Le paiement est exigible immédiatement à la commande, par les moyens proposés au moment du paiement (prestataire de paiement sécurisé : {payment}). Les données bancaires sont traitées exclusivement par le prestataire de paiement et ne sont ni vues ni conservées par le vendeur. Le vendeur reste propriétaire des articles jusqu'au paiement complet du prix.</p>\n\n<h3>Article 7 – Livraison</h3>\n<p>Les articles sont expédiés à l'adresse indiquée par le client, dans les zones de livraison proposées lors de la commande. Sauf indication contraire, la livraison intervient au plus tard <b>30 jours</b> après la conclusion du contrat (art. L216-1 du Code de la consommation). En cas de retard, le client peut enjoindre au vendeur de livrer dans un délai supplémentaire raisonnable et, à défaut, résoudre le contrat dans les conditions des articles L216-2 et suivants. Le transfert des risques intervient à la remise de l'article au client. En cas de colis endommagé ou non conforme, le client formule des réserves auprès du transporteur et en informe le vendeur sans délai.</p>\n\n<h3>Article 8 – Droit de rétractation</h3>\n<p>Conformément aux articles L221-18 et suivants du Code de la consommation, le client dispose de <b>14 jours</b> à compter de la réception de l'article pour exercer son droit de rétractation, sans avoir à justifier de motif ni à payer de pénalités. Pour l'exercer, il notifie sa décision au vendeur par courriel ({email}) ou par courrier, de manière dénuée d'ambiguïté (le formulaire ci-dessous peut être utilisé mais n'est pas obligatoire). Il renvoie l'article <b>sans retard excessif et au plus tard 14 jours</b> après la communication de sa décision, à ses frais, dans un emballage protégé et dans un état permettant sa revente. La responsabilité du client est engagée en cas de dépréciation résultant de manipulations autres que celles nécessaires pour établir la nature, les caractéristiques et le bon fonctionnement du bien. Le vendeur rembourse le client de tous les paiements reçus (y compris les frais de livraison standard) au plus tard 14 jours après la réception de la décision de rétractation, mais peut différer le remboursement jusqu'à la récupération de l'article ou la preuve de son expédition.</p>\n<p class=\"legal-box\"><b>Modèle de formulaire de rétractation</b> – À l'attention de {name}, {address}, {email} : « Je vous notifie par la présente ma rétractation du contrat portant sur la vente de l'article ci-dessous : [désignation et référence de l'article] – Commandé le [date] / reçu le [date] – Nom du client – Adresse du client – Date – Signature (uniquement en cas de notification papier). »</p>\n\n<h3>Article 9 – Garanties légales</h3>\n<p>Le vendeur est tenu des garanties légales dans les conditions suivantes, <b>sans frais pour le client</b> :</p>\n<ul>\n<li><b>Garantie légale de conformité</b> (articles L217-3 et suivants du Code de la consommation) : le client bénéficie d'un délai de 2 ans à compter de la délivrance pour les biens neufs (délai pouvant être ramené à 1 an pour les biens d'occasion, conformément à la loi), pendant lequel il peut exiger la mise en conformité du bien par réparation ou remplacement, ou à défaut une réduction du prix ou la résolution de la vente. Le client n'a pas à prouver l'existence du défaut durant les premiers mois suivant la délivrance dans les conditions prévues par la loi.</li>\n<li><b>Garantie légale des vices cachés</b> (articles 1641 à 1649 du Code civil) : le client peut choisir entre la résolution de la vente et une réduction du prix, dans un délai de 2 ans à compter de la découverte du vice.</li>\n</ul>\n<p>Les défauts apparents ou signalés sur la fiche de l'article (état « Bon état », « Très bon état ») ne sont pas couverts au titre de la conformité.</p>\n\n<h3>Article 10 – Responsabilité</h3>\n<p>Le vendeur est responsable de plein droit de la bonne exécution du contrat, sous réserve de son recours contre le transporteur. Sa responsabilité ne saurait être engagée en cas d'inexécution due au client, à un tiers étranger à la fourniture, ou à un cas de force majeure. La responsabilité du vendeur ne peut être limitée ni exclue pour les dommages corporels ou en cas de faute lourde ou dolosive. Le Site peut contenir des liens vers des sites tiers dont le vendeur n'est pas responsable.</p>\n\n<h3>Article 11 – Propriété intellectuelle et marques tierces</h3>\n<p>Le design du Site, ses photographies originales, ses textes, son code et sa structure sont la propriété exclusive de {brand} et sont protégés (voir la <a href=\"#/legal/licence\">Licence d'utilisation</a>). Les noms, personnages et marques « Monsieur Madame », « Mr. Men Little Miss », « McDonald's », « Happy Meal » et autres appartiennent à leurs titulaires respectifs. MonsieurMadamePops est un site indépendant de passionnés et de collectionneurs, <b>non affilié, non approuvé et non sponsorisé</b> par McDonald's ni par les ayants droit de Monsieur Madame. Les articles vendus sont des objets authentiques de collection revendus par le Site ; leur vente ne confère aucun droit sur les marques.</p>\n\n<h3>Article 12 – Données personnelles</h3>\n<p>Les données collectées pour traiter les commandes sont utilisées uniquement pour cela et pour les obligations légales, conformément à la <a href=\"#/legal/confidentialite\">politique de confidentialité</a> (RGPD).</p>\n\n<h3>Article 13 – Médiation de la consommation</h3>\n<p>En cas de litige, le client s'adresse d'abord au vendeur ({email}) pour rechercher une solution amiable. À défaut, il peut recourir gratuitement à un médiateur de la consommation (articles L611-1 et suivants du Code de la consommation) : {mediator}.</p>\n\n<h3>Article 14 – Droit applicable et juridiction</h3>\n<p>Les CGV sont soumises au droit français. En cas de litige non résolu à l'amiable, les tribunaux français seront compétents, sans préjudice des règles protectrices du consommateur applicables à sa résidence.</p>\n", "en": "\n<p class=\"legal-lead\">General Terms of Sale for distance sales made through the <b>MonsieurMadamePops</b> shop between {brand} and consumer customers. Last updated: {date}. The French version prevails in case of discrepancy.</p>\n\n<h3>Article 1 – Purpose</h3>\n<p>These terms (“T&amp;Cs”) apply to every order placed on the MonsieurMadamePops website (“the Site”) by a customer acting as a consumer. Placing an order means full acceptance of these T&amp;Cs. The seller may amend them at any time; the version in force on the order date applies.</p>\n\n<h3>Article 2 – Seller</h3>\n<p>The Site is operated by <b>{name}</b>, trading as <b>{brand}</b> — {status}.<br>Company no. (SIRET): {siret}<br>Address: {address}<br>Email: {email}<br>Phone: {phone}</p>\n\n<h3>Article 3 – Products</h3>\n<ul>\n<li>The shop offers collectible figurines and accessories from the McDonald's Happy Meal Monsieur Madame (2017) range, picked by a collector. These are collectibles, <b>not</b> products sold by the trademark owners.</li>\n<li>Each item is shown with real photographs and in the condition stated on its page (<i>New</i>, <i>Very good condition</i> or <i>Good condition</i>). Colours may vary slightly depending on your screen. “Good” and “Very good” condition items are second-hand and may show signs of use visible in the photos.</li>\n<li>Items are one-offs or in limited quantity. “Limited stock” or “In stock: N” indicates availability; “Sold out” means the item can no longer be ordered.</li>\n<li><b>Safety:</b> items are meant for collectors and may contain small parts; not suitable for children under 36 months without adult supervision.</li>\n</ul>\n\n<h3>Article 4 – Prices</h3>\n<p>Prices are in euros, including taxes, excluding delivery costs. Where applicable, the invoice states “VAT not applicable, art. 293 B CGI”. Delivery costs are shown before final order validation. The price shown at the time of the order applies.</p>\n\n<h3>Article 5 – Ordering</h3>\n<p>The customer adds items to the cart, checks the contents and total price (and can correct any mistake), enters delivery details and validates the order with a button marked “Order with obligation to pay”. The order is binding once payment is confirmed and a confirmation email is sent. The seller may refuse or cancel an order in case of an existing dispute, abnormal request, non-payment or unavailability of the item (stock error); the customer is informed without delay and fully refunded if already charged.</p>\n\n<h3>Article 6 – Payment</h3>\n<p>Payment is due in full at the time of order through a secure payment provider ({payment}). Card data is handled exclusively by the provider and never seen or stored by the seller. The seller remains the owner of the items until full payment.</p>\n\n<h3>Article 7 – Delivery</h3>\n<p>Items are shipped to the address given by the customer within the delivery areas offered at checkout. Unless otherwise stated, delivery takes place within <b>30 days</b> of the contract being concluded. In case of delay, the customer may give the seller an additional reasonable period and then terminate the contract as provided by law. Risk passes to the customer on delivery. For damaged parcels, the customer should make reservations with the carrier and notify the seller without delay.</p>\n\n<h3>Article 8 – Right of withdrawal</h3>\n<p>The customer has <b>14 days</b> from receipt of the item to withdraw from the contract without giving any reason or paying penalties, by sending an unambiguous statement to {email} or by post (the model form below may be used). The item must be returned <b>without undue delay and within 14 days</b> of notifying the decision, at the customer's cost, well protected and in a resalable condition. The customer is liable for any loss in value resulting from handling beyond what is necessary to establish the nature, characteristics and functioning of the item. The seller refunds all payments received (including standard delivery costs) within 14 days of receiving the withdrawal decision, and may withhold the refund until the item is received back or proof of shipment is provided.</p>\n<p class=\"legal-box\"><b>Model withdrawal form</b> – To {name}, {address}, {email}: “I hereby give notice that I withdraw from my contract of sale of the following item: [item and reference] – ordered on [date] / received on [date] – Customer name – Customer address – Date – Signature (paper notification only).”</p>\n\n<h3>Article 9 – Legal guarantees</h3>\n<ul>\n<li><b>Legal guarantee of conformity</b> (French Consumer Code, art. L217-3 et seq.): 2 years from delivery for new goods (which may be reduced to 1 year for second-hand goods, as permitted by law); repair or replacement, otherwise price reduction or refund.</li>\n<li><b>Legal guarantee against hidden defects</b> (French Civil Code, art. 1641 to 1649): refund or price reduction within 2 years of discovering the defect.</li>\n</ul>\n<p>Visible defects stated on the item page are not covered under conformity.</p>\n\n<h3>Article 10 – Liability</h3>\n<p>The seller is liable for the proper performance of the contract, subject to recourse against the carrier. Liability cannot be limited for personal injury or in case of gross negligence or wilful misconduct. The seller is not liable for non-performance caused by the customer, an unrelated third party or force majeure.</p>\n\n<h3>Article 11 – Intellectual property and third-party trademarks</h3>\n<p>The design, original photographs, texts, code and structure of the Site are the exclusive property of {brand} and are protected (see the <a href=\"#/legal/licence\">Licence of use</a>). “Monsieur Madame”, “Mr. Men Little Miss”, “McDonald’s”, “Happy Meal” and related names and characters belong to their respective owners. MonsieurMadamePops is an independent fan and collectors' site, <b>not affiliated with, endorsed or sponsored by</b> McDonald's or the rights holders of Monsieur Madame (Mr. Men Little Miss). Items sold are genuine collectibles; their sale grants no right over the trademarks.</p>\n\n<h3>Article 12 – Personal data</h3>\n<p>Data collected to process orders is used only for that purpose and for legal obligations, as described in the <a href=\"#/legal/confidentialite\">privacy policy</a> (GDPR).</p>\n\n<h3>Article 13 – Consumer mediation</h3>\n<p>In case of dispute, the customer should first contact the seller ({email}). Failing that, the customer may use a consumer mediator free of charge: {mediator}.</p>\n\n<h3>Article 14 – Governing law</h3>\n<p>These T&amp;Cs are governed by French law. Unresolved disputes fall under the French courts, without prejudice to the mandatory consumer-protection rules of the customer's country of residence.</p>\n"}, "licence": {"fr": "\n<p class=\"legal-lead\">Licence d'utilisation et protection de la propriété intellectuelle du site <b>MonsieurMadamePops</b>. © {year} {brand} — <b>Tous droits réservés.</b> Dernière mise à jour : {date}.</p>\n\n<h3>1. Titulaire des droits</h3>\n<p>L'ensemble du Site, à l'exception des éléments appartenant à des tiers (voir article 8), est la propriété exclusive de <b>{brand}</b> ({name}). Toute utilisation non expressément autorisée par la présente licence ou par écrit est interdite.</p>\n\n<h3>2. Éléments protégés</h3>\n<ul>\n<li><b>Le design</b> : maquette, charte graphique, mise en page, interface, composants visuels, animations, logo et nom « MonsieurMadamePops » — le design est la propriété de {brand}.</li>\n<li><b>Les photographies et vidéos</b> : toutes les photographies et vidéos des articles sont des <b>œuvres originales</b> réalisées par {brand}, protégées par le droit d'auteur (art. L111-1 du Code de la propriété intellectuelle).</li>\n<li><b>Les textes</b> : descriptions, traductions FR/EN, intitulés, conditions et mentions.</li>\n<li><b>Le code source</b> (HTML, CSS, JavaScript), l'architecture du Site et ses outils.</li>\n<li><b>La base de données</b> du catalogue, sa structure et sa sélection (droit du producteur de base de données, art. L341-1 et suivants du CPI).</li>\n</ul>\n\n<h3>3. Usage autorisé</h3>\n<p>Sont autorisés : la consultation du Site à titre privé ; la commande d'articles ; le <b>partage des liens</b> du Site, par quelque moyen que ce soit (voir article 3 bis) ; une courte citation à titre d'illustration ou de critique, avec mention claire de la source (« MonsieurMadamePops – {brand} ») et lien vers le Site, dans les limites de l'article L122-5 du CPI.</p>\n\n<h3>3 bis. Partage de liens : autorisé et encouragé</h3>\n<p>Vous pouvez — et nous vous y encourageons — <b>partager librement les liens</b> du Site et de ses fiches articles (adresse de la page d'accueil ou d'un article) pour faire connaître MonsieurMadamePops : avec les boutons « Partager » (partage natif, WhatsApp, Facebook, X, Telegram, Pinterest, e-mail, copie du lien) ou en copiant-collant l'adresse, sur les réseaux sociaux (Instagram, TikTok, Facebook, X, Pinterest…), les messageries, forums, blogs et vidéos, ainsi que dans vos annonces, descriptions ou profils sur les sites de vente et places de marché (dans la mesure où leurs propres règles l'autorisent).</p>\n<p>Cette autorisation couvre l'<b>aperçu automatique</b> (titre, description et, le cas échéant, image) que la plateforme génère elle-même à partir du lien, ainsi que l'épingle <b>Pinterest</b> créée via le bouton de partage, qui reprend la photo de face de l'article <b>sans modification</b> et reliée à la page de l'article.</p>\n<p>Conditions : (a) le lien doit mener au Site, sans être modifié ni détourné (pas de redirection, de cadre ou de proxy) ; (b) aucune présentation trompeuse : ne pas se présenter comme l'auteur du Site ou des photographies, ni suggérer un partenariat ou une approbation de {brand} ou des titulaires de marques ; (c) pas de spam ni de partage abusif ou illicite ; (d) <b>seul le lien est libre</b> : télécharger, copier ou republier les photographies elles-mêmes (en dehors de l'aperçu automatique et de l'épingle Pinterest ci-dessus) reste interdit — pour illustrer vos propres annonces, utilisez vos propres photos. {brand} peut retirer cette autorisation à toute personne qui en abuserait.</p>\n\n<h3>4. Interdictions</h3>\n<p><b>Toute reproduction, représentation, adaptation, traduction, modification ou exploitation, totale ou partielle, des éléments protégés est interdite sans l'autorisation écrite préalable de {brand}</b>, sur tout support et par tout procédé. Sont notamment interdits (sous réserve de l'article 3 bis, qui autorise le partage de liens) :</p>\n<ul>\n<li>copier, télécharger, capturer, recadrer, retoucher ou republier les photographies et vidéos (y compris sur réseaux sociaux, sites de vente ou places de marché : eBay, Vinted, Leboncoin, Amazon, AliExpress, etc.) ;</li>\n<li>utiliser les photographies pour vendre, promouvoir ou illustrer des articles autres que ceux achetés auprès de MonsieurMadamePops, ou pour usurper l'identité du Site ;</li>\n<li>copier, cloner, mettre en miroir ou imiter le design, la mise en page ou le code du Site ; créer un site ou une application reprenant son aspect ;</li>\n<li>l'extraction ou la réutilisation substantielle du contenu du catalogue ; l'aspiration automatisée (scraping, robots, crawlers non autorisés) ;</li>\n<li>le « hotlinking » (affichage de nos fichiers depuis un autre site), l'insertion du Site dans un cadre (framing) à l'insu de l'éditeur ;</li>\n<li>supprimer ou altérer toute mention de propriété, signature ou marquage ;</li>\n<li>utiliser le contenu pour <b>l'entraînement, le perfectionnement ou l'alimentation de systèmes d'intelligence artificielle</b> et plus généralement toute fouille de textes et de données : {brand} exerce expressément son <b>droit d'opposition</b> (art. L122-5-3 du CPI et article 4 de la directive (UE) 2019/790).</li>\n</ul>\n\n<h3>4 bis. Aucune cession, aucune licence implicite</h3>\n<p>L'accès au Site, l'achat d'un article ou le simple affichage technique d'un fichier dans votre navigateur ne confèrent <b>aucun droit</b> sur les photographies, vidéos, textes, design ou code. L'acheteur d'un article acquiert l'objet physique, <b>pas</b> les droits d'auteur sur les photographies qui le représentent. Aucun usage n'est toléré par défaut — même non commercial, même gratuit, même avec mention de la source — en dehors de ce qui est prévu à l'article 3. L'absence de réaction à une utilisation ne vaut jamais autorisation.</p>\n<p>Les droits moraux de l'auteur, <b>Innocent Twagirumukiza</b>, (paternité, respect de l'œuvre, divulgation) sont inaliénables et restent attachés à chaque photographie.</p>\n\n<h3>4 ter. Constat des atteintes</h3>\n<p>{brand} pourra faire constater toute utilisation non autorisée par tout moyen (captures d'écran horodatées, constat d'un commissaire de justice, signalements aux plateformes) et exiger le <b>retrait immédiat</b> des contenus, la <b>cessation</b> de l'usage et la <b>réparation intégrale</b> du préjudice subi.</p>\n\n<h3>5. Sanctions</h3>\n<p>Toute reproduction ou exploitation non autorisée constitue une <b>contrefaçon</b> (art. L335-2 et L335-3 du CPI), punie de <b>trois ans d'emprisonnement et de 300 000 € d'amende</b>, sans préjudice de dommages-intérêts, de la saisie ou du retrait des contenus et de la publication de la décision. {brand} se réserve le droit d'engager toute action civile, pénale ou de notification de retrait auprès des plateformes et hébergeurs, après constat de l'utilisation litigieuse.</p>\n\n<h3>6. Demande d'autorisation</h3>\n<p>Toute demande d'utilisation (presse, partenariat, revente, illustration…) doit être adressée par écrit à {email}, en précisant l'usage, la durée et le support. Toute autorisation accordée est <b>personnelle, non exclusive, non cessible, révocable</b> et limitée à l'usage précisé par écrit ; elle ne transfère aucun droit de propriété.</p>\n\n<h3>7. Utilisation du Site</h3>\n<p>L'utilisateur s'engage à utiliser le Site de manière loyale, à ne pas en perturber le fonctionnement, ni tenter d'accéder sans autorisation à des parties non publiques, ni de contourner ses mesures techniques. Le Site est fourni « en l'état » ; {brand} peut le modifier, le suspendre ou en restreindre l'accès à tout moment.</p>\n\n<h3>8. Marques et personnages de tiers</h3>\n<p>La présente licence <b>ne couvre pas</b> les personnages, noms, logos et marques de tiers (« Monsieur Madame », « Mr. Men Little Miss », « McDonald's », « Happy Meal », etc.), qui demeurent la propriété de leurs titulaires respectifs et ne sont cités que pour identifier les articles de collection vendus. MonsieurMadamePops est un site indépendant de passionnés, <b>non affilié, non approuvé et non sponsorisé</b> par ces sociétés. Les droits revendiqués par {brand} portent sur ses propres créations : design, photographies en tant que prises de vue, textes, code et base de données.</p>\n\n<h3>9. Signalement</h3>\n<p>Vous constatez une utilisation non autorisée de nos contenus ? Écrivez-nous à {email} avec l'adresse (URL) concernée.</p>\n\n<h3>10. Droit applicable</h3>\n<p>La présente licence est soumise au droit français. Les tribunaux français sont seuls compétents, sous réserve des dispositions impératives contraires.</p>\n", "en": "\n<p class=\"legal-lead\">Licence of use and intellectual property protection for the <b>MonsieurMadamePops</b> website. © {year} {brand} — <b>All rights reserved.</b> Last updated: {date}. The French version prevails in case of discrepancy.</p>\n\n<h3>1. Rights holder</h3>\n<p>The whole Site, except for third-party elements (see section 8), is the exclusive property of <b>{brand}</b> ({name}). Any use not expressly allowed by this licence or in writing is prohibited.</p>\n\n<h3>2. Protected elements</h3>\n<ul>\n<li><b>The design</b>: layout, visual identity, interface, visual components, animations, the “MonsieurMadamePops” logo and name — the design is the property of {brand}.</li>\n<li><b>Photographs and videos</b>: all item photographs and videos are <b>original works</b> created by {brand} and protected by copyright.</li>\n<li><b>Texts</b>: descriptions, FR/EN translations, titles, terms and notices.</li>\n<li><b>Source code</b> (HTML, CSS, JavaScript), site architecture and tools.</li>\n<li><b>The catalogue database</b>, its structure and selection (database right).</li>\n</ul>\n\n<h3>3. Permitted use</h3>\n<p>Permitted: private browsing; ordering items; <b>sharing links</b> to the Site by any means (see section 3 bis); a short quotation for illustration or review, with a clear credit (“MonsieurMadamePops – {brand}”) and a link to the Site, within the limits of applicable law.</p>\n\n<h3>3 bis. Sharing links: allowed and encouraged</h3>\n<p>You may — and we encourage you to — <b>freely share the links</b> to the Site and its item pages (the home page or an item address) to promote MonsieurMadamePops: with the “Share” buttons (native share, WhatsApp, Facebook, X, Telegram, Pinterest, email, copy link) or by copying and pasting the address, on social networks (Instagram, TikTok, Facebook, X, Pinterest…), messaging apps, forums, blogs and videos, as well as in your listings, descriptions or profiles on sales sites and marketplaces (where their own rules allow it).</p>\n<p>This permission covers the <b>automatic preview</b> (title, description and, where applicable, image) that the platform itself generates from the link, and the <b>Pinterest pin</b> created through the share button, which uses the item's front photo <b>unmodified</b> and linked back to the item page.</p>\n<p>Conditions: (a) the link must lead to the Site, unmodified and not diverted (no redirect, frame or proxy); (b) no misleading presentation: do not present yourself as the author of the Site or photographs, nor suggest a partnership or endorsement by {brand} or trademark owners; (c) no spam or abusive or unlawful sharing; (d) <b>only the link is free</b>: downloading, copying or republishing the photographs themselves (other than the automatic preview and Pinterest pin above) remains prohibited — use your own photos to illustrate your own listings. {brand} may withdraw this permission from anyone who abuses it.</p>\n\n<h3>4. Prohibited use</h3>\n<p><b>Any reproduction, display, adaptation, translation, modification or exploitation, in whole or in part, of the protected elements is prohibited without the prior written permission of {brand}</b>, on any medium and by any means. In particular, it is forbidden to (subject to section 3 bis, which allows link sharing):</p>\n<ul>\n<li>copy, download, screenshot, crop, edit or republish photographs and videos (including on social media, sales sites or marketplaces such as eBay, Vinted, Leboncoin, Amazon, AliExpress);</li>\n<li>use the photographs to sell, promote or illustrate items other than those bought from MonsieurMadamePops, or to impersonate the Site;</li>\n<li>copy, clone, mirror or imitate the design, layout or code of the Site, or build a site or app reproducing its look;</li>\n<li>extract or substantially reuse the catalogue content; scrape or crawl the Site by unauthorised automated means;</li>\n<li>hotlink our files from another site or frame the Site without permission;</li>\n<li>remove or alter any ownership notice, signature or mark;</li>\n<li>use the content to <b>train, fine-tune or feed artificial intelligence systems</b> or for any text and data mining: {brand} expressly <b>reserves its opt-out right</b> (Article 4 of Directive (EU) 2019/790).</li>\n</ul>\n\n<h3>4 bis. No assignment, no implied licence</h3>\n<p>Access to the Site, buying an item or the mere technical display of a file in your browser grants <b>no right</b> over the photographs, videos, texts, design or code. A buyer acquires the physical item, <b>not</b> the copyright in the photographs depicting it. No use is tolerated by default — even non-commercial, even free, even with credit — except as provided in section 3. Failure to react to a use never amounts to permission.</p>\n<p>The moral rights of the author, <b>Innocent Twagirumukiza</b> (attribution, integrity, disclosure), are inalienable and remain attached to every photograph.</p>\n\n<h3>4 ter. Evidence of infringement</h3>\n<p>{brand} may document any unauthorised use by any means (time-stamped screenshots, bailiff's report, reports to platforms) and demand <b>immediate removal</b> of the content, <b>cessation</b> of the use and <b>full compensation</b> for the harm suffered.</p>\n\n<h3>5. Penalties</h3>\n<p>Unauthorised reproduction or use constitutes <b>infringement</b>, punishable under French law by up to <b>three years' imprisonment and a €300,000 fine</b>, without prejudice to damages, seizure or removal of the content and publication of the decision. {brand} reserves the right to take civil or criminal action and to send takedown notices to platforms and hosts.</p>\n\n<h3>6. Permission requests</h3>\n<p>Requests (press, partnership, resale, illustration…) must be sent in writing to {email}, stating the use, duration and medium. Any permission granted is <b>personal, non-exclusive, non-transferable, revocable</b> and limited to the use stated in writing; it transfers no ownership.</p>\n\n<h3>7. Use of the Site</h3>\n<p>Users must use the Site fairly, must not disrupt it, attempt unauthorised access to non-public areas or bypass its technical measures. The Site is provided “as is” and may be modified, suspended or restricted at any time.</p>\n\n<h3>8. Third-party trademarks and characters</h3>\n<p>This licence <b>does not cover</b> third-party characters, names, logos and trademarks (“Monsieur Madame”, “Mr. Men Little Miss”, “McDonald’s”, “Happy Meal”, etc.), which remain the property of their respective owners and are cited only to identify the collectibles sold. MonsieurMadamePops is an independent fan site, <b>not affiliated with, endorsed or sponsored by</b> these companies. The rights claimed by {brand} concern its own creations: design, photographs as photographic works, texts, code and database.</p>\n\n<h3>9. Report a misuse</h3>\n<p>If you find unauthorised use of our content, write to {email} with the URL concerned.</p>\n\n<h3>10. Governing law</h3>\n<p>This licence is governed by French law; French courts have exclusive jurisdiction, subject to mandatory provisions to the contrary.</p>\n"}, "mentions": {"fr": "\n<p class=\"legal-lead\">Mentions légales du site <b>MonsieurMadamePops</b>. Dernière mise à jour : {date}.</p>\n\n<h3>Éditeur du site</h3>\n<p><b>{name}</b>, sous la marque <b>{brand}</b> — {status}<br>SIRET : {siret}<br>Adresse : {address}<br>Courriel : {email} · Téléphone : {phone}<br>Directeur de la publication : {name}</p>\n\n<h3>Hébergement</h3>\n<p>Le Site est hébergé par {host}.</p>\n\n<h3>Propriété intellectuelle</h3>\n<p>Le design, les photographies originales, les textes, le code et la base de données du Site sont protégés et réservés : voir la <a href=\"#/legal/licence\">Licence d'utilisation</a>. Toute reproduction sans autorisation écrite est interdite.</p>\n\n<h3>Données personnelles</h3>\n<p>Le traitement des données personnelles est décrit dans la <a href=\"#/legal/confidentialite\">politique de confidentialité (RGPD)</a>.</p>\n\n<h3>Marques et non-affiliation</h3>\n<p>« Monsieur Madame », « Mr. Men Little Miss », « McDonald's » et « Happy Meal » sont des marques de leurs titulaires respectifs. MonsieurMadamePops est un site indépendant de passionnés et de collectionneurs, non affilié, non approuvé et non sponsorisé par ces sociétés.</p>\n\n<h3>Liens externes et responsabilité</h3>\n<p>Le Site peut renvoyer vers des sites tiers (par exemple LinkedIn, réseaux sociaux) dont le contenu n'engage pas {brand}. Malgré le soin apporté, des erreurs ou indisponibilités ponctuelles peuvent survenir ; les informations et stocks affichés peuvent évoluer à tout moment.</p>\n\n<h3>Droit applicable</h3>\n<p>Le Site est soumis au droit français.</p>\n", "en": "\n<p class=\"legal-lead\">Legal notice of the <b>MonsieurMadamePops</b> website. Last updated: {date}. The French version prevails in case of discrepancy.</p>\n\n<h3>Publisher</h3>\n<p><b>{name}</b>, trading as <b>{brand}</b> — {status}<br>Company no. (SIRET): {siret}<br>Address: {address}<br>Email: {email} · Phone: {phone}<br>Publication director: {name}</p>\n\n<h3>Hosting</h3>\n<p>The Site is hosted by {host}.</p>\n\n<h3>Intellectual property</h3>\n<p>The design, original photographs, texts, code and database of the Site are protected and reserved: see the <a href=\"#/legal/licence\">Licence of use</a>. Any reproduction without written permission is prohibited.</p>\n\n<h3>Personal data</h3>\n<p>Personal data processing is described in the <a href=\"#/legal/confidentialite\">privacy policy (GDPR)</a>.</p>\n\n<h3>Trademarks and non-affiliation</h3>\n<p>“Monsieur Madame”, “Mr. Men Little Miss”, “McDonald’s” and “Happy Meal” are trademarks of their respective owners. MonsieurMadamePops is an independent site run by fans and collectors, not affiliated with, endorsed or sponsored by these companies.</p>\n\n<h3>External links and liability</h3>\n<p>The Site may link to third-party sites (e.g. LinkedIn, social networks) whose content is not under the control of {brand}. Despite our care, errors or temporary unavailability may occur; information and stock shown may change at any time.</p>\n\n<h3>Governing law</h3>\n<p>The Site is governed by French law.</p>\n"}, "confidentialite": {"fr": "<p class=\"legal-lead\">Politique de confidentialité et mentions RGPD du site <b>MonsieurMadamePops</b>. Dernière mise à jour : {date}.</p>\n<h3>Protection des données personnelles (RGPD)</h3>\n<ul>\n<li><b>Responsable du traitement :</b> {name} ({email}).</li>\n<li><b>Navigation :</b> le Site ne crée pas de compte et n'utilise ni cookies publicitaires, ni outils de suivi ou de mesure d'audience. Il enregistre dans votre navigateur (stockage local, strictement fonctionnel) votre panier, votre langue, votre thème clair/sombre et vos « J'aime » ; ces informations restent sur votre appareil et peuvent être effacées depuis les réglages de votre navigateur.</li>\n<li><b>Compteur de « J'aime » :</b> si le compteur partagé est activé, seul un total anonyme par article est enregistré, sans donnée permettant de vous identifier.</li>\n<li><b>Polices :</b> le Site charge des polices depuis Google Fonts, ce qui transmet votre adresse IP à Google lors de l'affichage.</li>\n<li><b>Commandes :</b> pour traiter une commande, les données suivantes sont collectées : nom, adresse de livraison et de facturation, courriel, téléphone (facultatif) et détails de la commande. Finalités : exécution du contrat, livraison, facturation, service après-vente et obligations légales. Base légale : exécution du contrat et obligation légale. Destinataires : le vendeur, le transporteur et le prestataire de paiement, uniquement pour ces finalités. Conservation : durée de la relation contractuelle, puis jusqu'à 10 ans pour les pièces comptables.</li>\n<li><b>Vos droits :</b> accès, rectification, effacement, limitation, opposition, portabilité et directives post-mortem, en écrivant à {email}. Vous pouvez introduire une réclamation auprès de la CNIL (www.cnil.fr).</li>\n</ul>\n\n", "en": "<p class=\"legal-lead\">Privacy policy and GDPR notice of the <b>MonsieurMadamePops</b> website. Last updated: {date}. The French version prevails in case of discrepancy.</p>\n<h3>Personal data protection (GDPR)</h3>\n<ul>\n<li><b>Controller:</b> {name} ({email}).</li>\n<li><b>Browsing:</b> the Site creates no account and uses no advertising cookies, tracking or analytics tools. It stores in your browser (strictly functional local storage) your cart, language, light/dark theme and “likes”; this stays on your device and can be erased from your browser settings.</li>\n<li><b>Likes counter:</b> if the shared counter is enabled, only an anonymous total per item is stored, with no data identifying you.</li>\n<li><b>Fonts:</b> the Site loads fonts from Google Fonts, which sends your IP address to Google when the page is displayed.</li>\n<li><b>Orders:</b> to process an order we collect your name, delivery and billing address, email, phone (optional) and order details, for contract performance, delivery, invoicing, after-sales service and legal obligations. Recipients: the seller, the carrier and the payment provider, only for these purposes. Retention: for the duration of the contractual relationship, then up to 10 years for accounting records.</li>\n<li><b>Your rights:</b> access, rectification, erasure, restriction, objection and portability, by writing to {email}. You may lodge a complaint with the French data protection authority, the CNIL (www.cnil.fr), or your local authority.</li>\n</ul>\n\n"}};
+    const LEGAL_KEYS = ['cgv', 'licence', 'mentions', 'confidentialite'];
+
+    let currentLang = 'en';
+
+    const i18n = {
+      en: {
+        tagline: "Collection for ever",
+        "hero-title": "Collect all 90<br>Monsieur Madame!",
+        "hero-sub": "The Monsieur Madame McDonald's Happy Meal figurines (2017), hand-picked one by one — shown from every angle. Perfect for collectors, desks, pencil cases and backpacks. Limited stock!",
+        "price-all": "Collectible pieces",
+        "angles-badge": "4 ANGLES",
+        "angles-title": "The full collection from every side",
+        "angle-front": "👀 Front",
+        "angle-right": "➡️ Right side",
+        "angle-left": "⬅️ Left side",
+        "angle-back": "🔄 Back",
+        "shop-badge": "SHOP",
+        "shop-title": "Pick your favorites",
+        footer: "Made with ✨ by fans, for collectors • Not affiliated with McDonald's or the rights holders of Monsieur Madame • Just a fan & collectors site",
+        add: "Add to my basket",
+        toast: "🛒 Added to my basket!",
+        "view-angles": "View angles",
+        "cote-title": "Market value", "cote-none": "Market value not available yet.", "cote-1m": "1M", "cote-3m": "3M", "cote-6m": "6M", "cote-1y": "1Y", "cote-max": "MAX", "cote-low": "Low", "cote-high": "High", "cote-upd": "Updated", "cote-one": "Only one reading so far – the chart will appear with the next update.", "cote-note": "Indicative estimate of the secondary market, not an offer. Source:",
+        "menu-title": "Menu", "menu-home": "🏠 Home", "menu-noyear": "Year not specified", "menu-close": "Close menu", "menu-open": "Menu", "foot-cgv": "Terms of Sale", "foot-lic": "Licence of use", "foot-men": "Legal notice", "foot-rgpd": "Privacy (GDPR)", "foot-copy": "© 2026 Twagirumukiza – All rights reserved. Design and original photographs: any reproduction is prohibited without written permission. Sharing links to the site is free and welcome.", "legal-title-cgv": "Terms of Sale (T&Cs)", "legal-title-licence": "Licence of use & copyright", "legal-title-mentions": "Legal notice", "legal-title-confidentialite": "Privacy policy (GDPR)",
+        back: "← Shop",
+        "cart-title": "Your cart",
+        "cart-badge": "CART",
+        "cart-empty": "Your cart is empty. Go find some Monsieur Madame!",
+        total: "Total",
+        pay: "Pay (demo)",
+        remove: "Remove",
+        paid: "✅ Demo payment done — cart emptied!",
+        items: "items",
+        premium: "⭐ Premium", accessory: "🔗 Accessory", articulated: "🦾 Articulated", limited: "Limited stock", instock: "In stock: {n}", "max-qty": "Maximum quantity in stock reached", edition: "Edition {y}", soldout: "Sold out", "soldout-toast": "😢 Sold out – not available",
+        printrun: "Print run: {n}", "price-cote": "Market-indexed price",
+        "rarity-title": "Rarity index", "rarity-note": "Collector scores (not McDonald's distribution rates).",
+        "scores-title": "Collector scores", "score-rarity": "Rarity", "score-demand": "Demand", "score-coll": "Collection index", "score-level": "Level",
+        "r-common0": "Very common", "r-common": "Common", "r-uncommon": "Uncommon", "r-scarce": "Scarce", "r-rare": "Rare", "r-ultrarare": "Ultra rare",
+        "more-media": "More photos & videos",
+        like: "Like", share: "Share", "share-title": "Share this item",
+        "copy-link": "📋 Copy link (Instagram, TikTok…)",
+        "link-copied": "🔗 Link copied — paste it in Instagram or TikTok!",
+        "zoom-hint": "🔍 Tap a photo to zoom", close: "Close",
+        "cond-new": "New", "cond-vgood": "Very good condition", "cond-good": "Good condition"
+      },
+      fr: {
+        tagline: "Collection for ever",
+        "hero-title": "Rassemble les 90<br>Monsieur Madame !",
+        "hero-sub": "Les figurines Monsieur Madame du Happy Meal McDonald's (2017), sélectionnées une à une — présentées sous tous les angles. Parfaites pour les collectionneurs, bureaux, trousses et sacs à dos. Stock limité !",
+        "price-all": "Pièces de collection",
+        "angles-badge": "4 ANGLES",
+        "angles-title": "La collection complète de tous les côtés",
+        "angle-front": "👀 Face",
+        "angle-right": "➡️ Côté droit",
+        "angle-left": "⬅️ Côté gauche",
+        "angle-back": "🔄 Dos",
+        "shop-badge": "BOUTIQUE",
+        "shop-title": "Choisis tes favoris",
+        footer: "Fait avec ✨ par des passionnés, pour les collectionneurs • Non affilié à McDonald's ni aux ayants droit de Monsieur Madame • Simple site de fans et de collectionneurs",
+        add: "Ajouter à mon panier",
+        toast: "🛒 Ajouté au panier !",
+        "view-angles": "Voir angles",
+        "cote-title": "Cote", "cote-none": "Cote pas encore disponible.", "cote-1m": "1M", "cote-3m": "3M", "cote-6m": "6M", "cote-1y": "1A", "cote-max": "MAX", "cote-low": "Plus bas", "cote-high": "Plus haut", "cote-upd": "MAJ", "cote-one": "Un seul relevé pour l'instant – le graphique apparaîtra à la prochaine mise à jour.", "cote-note": "Estimation indicative du marché secondaire, ce n'est pas une offre. Source :",
+        "menu-title": "Menu", "menu-home": "🏠 Accueil", "menu-noyear": "Année non précisée", "menu-close": "Fermer le menu", "menu-open": "Menu", "foot-cgv": "CGV", "foot-lic": "Licence d'utilisation", "foot-men": "Mentions légales", "foot-rgpd": "Confidentialité (RGPD)", "foot-copy": "© 2026 Twagirumukiza – Tous droits réservés. Design et photographies originales : toute reproduction est interdite sans autorisation écrite. Le partage des liens du site est libre et bienvenu.", "legal-title-cgv": "Conditions Générales de Vente (CGV)", "legal-title-licence": "Licence d'utilisation & propriété intellectuelle", "legal-title-mentions": "Mentions légales", "legal-title-confidentialite": "Politique de confidentialité (RGPD)",
+        back: "← Boutique",
+        "cart-title": "Ton panier",
+        "cart-badge": "PANIER",
+        "cart-empty": "Ton panier est vide. Va dénicher des Monsieur Madame !",
+        total: "Total",
+        pay: "Payer (démo)",
+        remove: "Retirer",
+        paid: "✅ Paiement démo effectué — panier vidé !",
+        items: "articles",
+        premium: "⭐ Premium", accessory: "🔗 Accessoire", articulated: "🦾 Articulé", limited: "Stock limité", instock: "En stock : {n}", "max-qty": "Quantité maximale en stock atteinte", edition: "Édition {y}", soldout: "Épuisé", "soldout-toast": "😢 Épuisé – indisponible",
+        printrun: "Tirage : {n}", "price-cote": "Prix indexé à la cote",
+        "rarity-title": "Indice de rareté", "rarity-note": "Scores collectionneurs (pas des probabilités de distribution McDonald's).",
+        "scores-title": "Scores collectionneur", "score-rarity": "Rareté", "score-demand": "Demande", "score-coll": "Indice collection", "score-level": "Niveau",
+        "r-common0": "Très commune", "r-common": "Commune", "r-uncommon": "Peu commune", "r-scarce": "Assez rare", "r-rare": "Rare", "r-ultrarare": "Très rare",
+        "more-media": "Plus de photos et vidéos",
+        like: "J'aime", share: "Partager", "share-title": "Partager cet item",
+        "copy-link": "📋 Copier le lien (Instagram, TikTok…)",
+        "link-copied": "🔗 Lien copié — colle-le dans Instagram ou TikTok !",
+        "zoom-hint": "🔍 Clique sur une photo pour zoomer", close: "Fermer",
+        "cond-new": "Neuf", "cond-vgood": "Très bon état", "cond-good": "Bon état"
+      }
+    };
+
+    // ===== Config =====
+    const PRICE = 9.99; // fallback si ni prix libre ni cote
+    // Prix libre si renseigné ; sinon cote marché ; sinon défaut
+    function marketPriceOf(p) {
+      if (!p) return null;
+      if (Array.isArray(p.cotes) && p.cotes.length) {
+        const last = p.cotes[p.cotes.length - 1];
+        const v = Number(last && last[1]);
+        if (isFinite(v) && v >= 0) return v;
+      }
+      const n = (p.fr && p.fr.name) || (p.en && p.en.name) || '';
+      const m = n.match(/\b([A-Z]{1,3}\d{2,4}[A-Z]?)\b/);
+      const code = m && m[1];
+      if (code && typeof MARKET_COTES !== 'undefined' && MARKET_COTES[code] && MARKET_COTES[code].price != null)
+        return Number(MARKET_COTES[code].price);
+      return null;
+    }
+    
+    const refOf = p => {
+      const d = (p.fr && p.fr.desc) || (p.en && p.en.desc) || '';
+      const m = d.match(/\b(MM17-\d{3})\b/);
+      return m ? m[1] : '';
+    };
+
+    const priceOf = p => {
+      if (p && p.price != null && p.price !== '' && !isNaN(p.price)) return Number(p.price);
+      const m = marketPriceOf(p);
+      if (m != null) return m;
+      return PRICE;
+    };
+    const printRunOf = p => {
+      const n = Math.floor(Number(p && p.printRun));
+      return (p && p.printRun != null && p.printRun !== '' && n > 0) ? n : 0;
+    };
+    // Scores 0–100 (optionnels) : rareté, demande, indice collection
+    const scoreOf = (p, key) => {
+      const n = Math.floor(Number(p && p[key]));
+      return (p && p[key] != null && p[key] !== '' && n >= 0 && n <= 100) ? n : null;
+    };
+    const rarityOf = p => scoreOf(p, 'rarity');
+    const demandOf = p => scoreOf(p, 'demand');
+    const collIndexOf = p => scoreOf(p, 'collIndex');
+    // Niveau dérivé de l'indice collection (échelle étoiles)
+    function levelInfo(n) {
+      if (n == null) return null;
+      if (n <= 20) return { stars: 1, color: '#2e7d32', key: 'r-common0', dot: '🟢' };
+      if (n <= 40) return { stars: 2, color: '#43a047', key: 'r-common', dot: '🟢' };
+      if (n <= 60) return { stars: 3, color: '#f9a825', key: 'r-uncommon', dot: '🟡' };
+      if (n <= 80) return { stars: 4, color: '#ef6c00', key: 'r-scarce', dot: '🟠' };
+      if (n <= 95) return { stars: 5, color: '#c62828', key: 'r-rare', dot: '🔴' };
+      return { stars: 6, color: '#6a1b9a', key: 'r-ultrarare', dot: '🟣' };
+    }
+    const rarityInfo = levelInfo; // alias
+    function rarityHtml(p, t9) {
+      const n = collIndexOf(p);
+      if (n == null) return '';
+      const info = levelInfo(n);
+      const stars = '★'.repeat(info.stars);
+      return `<span class="cond-inline" style="background:${info.color};color:#fff">${info.dot} ${stars} ${n}/100</span>`;
+    }
+    function scoresDescBlock(p, t9) {
+      const r = rarityOf(p), d = demandOf(p), c = collIndexOf(p);
+      if (r == null && d == null && c == null) return '';
+      const info = levelInfo(c);
+      const stars = info ? '★'.repeat(info.stars) : '';
+      const niveau = info ? `${info.dot} ${stars}` : '—';
+      const row = (label, val) => val == null ? '' : `<tr><td style="padding:.2rem .6rem .2rem 0;opacity:.85">${label}</td><td style="padding:.2rem 0;font-weight:700">${val}/100</td></tr>`;
+      return `<div class="scores-box" style="margin-top:.75rem;padding:.7rem .85rem;border-radius:10px;background:rgba(0,0,0,.06);font-size:.92rem">
+        <div style="font-weight:800;margin-bottom:.35rem">${t9['scores-title']}</div>
+        <table style="border-collapse:collapse">${row(t9['score-rarity'], r)}${row(t9['score-demand'], d)}${row(t9['score-coll'], c)}</table>
+        ${info ? `<div style="margin-top:.4rem"><strong>${t9['score-level']}</strong> : ${niveau} <span style="opacity:.8">(${c}/100 — ${t9[info.key]||''})</span></div>` : ''}
+        <div style="margin-top:.35rem;opacity:.7;font-size:.85em">${t9['rarity-note']}</div>
+      </div>`;
+    }
+    function rarityDescLine(p, t9) { return scoresDescBlock(p, t9); }
+    const CART_KEY = 'monsieurmadamepops-cart';
+    const typeOf = p => p.type || (p.premium ? 'premium' : '');
+    function badgesHtml(p, t9) {
+      const ty = typeOf(p);
+      return (p.cond ? `<span class="bd cond-tag">${t9['cond-' + p.cond] || ''}</span>` : '') +
+        (ty === 'premium' ? `<span class="bd prem">${t9.premium}</span>` : ty === 'accessory' ? `<span class="bd acc">${t9.accessory}</span>` : '') +
+        (p.articulated ? `<span class="bd art">${t9.articulated}</span>` : '') +
+        (yearOf(p) ? `<span class="bd yr">📅 ${yearOf(p)}</span>` : '') +
+        (printRunOf(p) ? `<span class="bd" style="background:#6a1b9a;color:#fff">📜 ×${printRunOf(p)}</span>` : '') +
+        (collIndexOf(p) != null ? (() => { const i = levelInfo(collIndexOf(p)); return `<span class="bd" style="background:${i.color};color:#fff">${i.dot} ${'★'.repeat(i.stars)} ${collIndexOf(p)}</span>`; })() : '');
+    }
+    // Texte enrichi : HTML autorisé limité (gras, italique, listes…) ; les anciens textes bruts restent valides
+    function richDesc(h) {
+      h = String(h || '');
+      if (!/<(b|strong|i|em|u|ul|ol|li|br|p|div|h3)\b/i.test(h)) return h.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/\n/g, '<br>');
+      const t = document.createElement('template'); t.innerHTML = h;
+      const ok = { B: 1, STRONG: 1, I: 1, EM: 1, U: 1, UL: 1, OL: 1, LI: 1, BR: 1, P: 1, H3: 1, DIV: 1 };
+      (function walk(n) {
+        [...n.childNodes].forEach(c => {
+          if (c.nodeType === 1) { walk(c); if (!ok[c.tagName]) c.replaceWith(...c.childNodes); else [...c.attributes].forEach(a => c.removeAttribute(a.name)); }
+          else if (c.nodeType !== 3) c.remove();
+        });
+      })(t.content);
+      return t.innerHTML;
+    }
+    const limitedStock = p => !!p && p.stock === 'limited';
+    // Stock par quantité (optionnel) : champ qty:N sur l'item. À 0 → « Épuisé » automatiquement.
+    const hasQty = p => !!p && p.qty != null && p.qty !== '' && !isNaN(p.qty);
+    const qtyOf = p => Math.max(0, Math.floor(Number(p.qty)));
+    const soldOut = p => !!p && (p.stock === false || p.stock === 0 || p.stock === 'false' || (hasQty(p) && qtyOf(p) <= 0));
+    const qtyLabel = p => (hasQty(p) && qtyOf(p) > 0 && !soldOut(p)) ? i18n[currentLang].instock.replace('{n}', qtyOf(p)) : '';
+    // Année d'édition (optionnelle) : champ year:2024 sur l'item.
+    const yearOf = p => { const y = Math.floor(Number(p && p.year)); return (p && p.year != null && p.year !== '' && y >= 1900 && y <= 2100) ? y : ''; };
+    function cartBtn(p, stop) {
+      const t9 = i18n[currentLang];
+      return soldOut(p)
+        ? `<button class="btn-cart" disabled>🚫 <span>${t9.soldout}</span></button>`
+        : `<button class="btn-cart" onclick="${stop ? 'event.stopPropagation();' : ''}addToCart(${p.id})">🛒 <span>${t9.add}</span></button>`;
+    }
+    // Les 4 photos de groupe contiennent les 10 figurines dans une grille.
+    // Ajuste cols/rows si la disposition de tes photos est différente (ex. {cols:10, rows:1}).
+    const GRID = { cols: 5, rows: 2 };
+    // Inutile si tes produits ont un champ slug (généré par l'outil photos). Ancien mode : images/item-01-front.jpg.
+    const PER_ITEM_IMAGES = false;
+    const ANGLES = [
+      ['front', 'angle-front'],
+      ['right', 'angle-right'],
+      ['left',  'angle-left'],
+      ['back',  'angle-back']
+    ];
+    // Angles réellement photographiés pour un article (champ optionnel angles: ["front","back"])
+    const anglesOf = p => (Array.isArray(p.angles) && p.angles.length ? ANGLES.filter(([k]) => p.angles.includes(k)) : ANGLES);
+    // Séries d'origine de la collection Happy Meal 2017-2018
+    const SERIES = {"1": {"fr": "Série 1", "en": "Series 1", "dFr": "du 22 au 28 novembre 2017", "dEn": "22 – 28 November 2017"}, "2": {"fr": "Série 2", "en": "Series 2", "dFr": "du 29 novembre au 5 décembre 2017", "dEn": "29 November – 5 December 2017"}, "3": {"fr": "Série 3", "en": "Series 3", "dFr": "du 6 au 12 décembre 2017", "dEn": "6 – 12 December 2017"}, "4": {"fr": "Série 4", "en": "Series 4", "dFr": "du 13 au 19 décembre 2017", "dEn": "13 – 19 December 2017"}, "5": {"fr": "Série 5", "en": "Series 5", "dFr": "du 20 au 26 décembre 2017", "dEn": "20 – 26 December 2017"}, "6": {"fr": "Série 6", "en": "Series 6", "dFr": "du 27 décembre 2017 au 2 janvier 2018", "dEn": "27 December 2017 – 2 January 2018"}, "7": {"fr": "Série 7", "en": "Series 7", "dFr": "du 3 au 9 janvier 2018", "dEn": "3 – 9 January 2018"}, "8": {"fr": "Série 8", "en": "Series 8", "dFr": "du 10 au 16 janvier 2018", "dEn": "10 – 16 January 2018"}};
+
+    // ===== Cart state (localStorage) =====
+    function loadCart() {
+      try {
+        const raw = JSON.parse(localStorage.getItem(CART_KEY) || '[]');
+        if (!Array.isArray(raw)) return [];
+        return raw
+          .map(i => ({ id: Number(i.id), qty: Math.floor(Number(i.qty)) }))
+          .filter(i => i.qty > 0 && products.some(p => p.id === i.id && !soldOut(p)))
+          .map(i => { const p = products.find(x => x.id === i.id); return hasQty(p) ? { id: i.id, qty: Math.min(i.qty, qtyOf(p)) } : i; });
+      } catch (e) { return []; }
+    }
+    let cart = loadCart();
+    function saveCart() {
+      try { localStorage.setItem(CART_KEY, JSON.stringify(cart)); } catch (e) {}
+      updateBadge();
+    }
+    function cartCount() { return cart.reduce((n, i) => n + i.qty, 0); }
+    function cartTotal() { return cart.reduce((n, i) => n + i.qty * priceOf(byId(i.id)), 0); }
+    function updateBadge() {
+      const b = document.getElementById('cartBadge');
+      const n = cartCount();
+      b.textContent = n;
+      b.hidden = n === 0;
+    }
+    function money(n) {
+      const t = n.toFixed(2);
+      return (currentLang === 'fr' ? t.replace('.', ',') : t) + ' €';
+    }
+    const num = id => '#' + String(products.findIndex(p => p.id === id) + 1).padStart(2, '0');
+    const byId = id => products.find(p => p.id === id);
+
+    // ===== Language / theme =====
+    function setLang(lang) {
+      currentLang = lang;
+      try { localStorage.setItem('lang', lang); } catch (e) {}
+      document.documentElement.lang = lang;
+      document.querySelectorAll('.lang-btn').forEach(b => {
+        b.classList.toggle('active', b.dataset.lang === lang);
+      });
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.dataset.i18n;
+        if (i18n[lang][key]) {
+          el.innerHTML = i18n[lang][key];
+        }
+      });
+      document.getElementById('cartBtn').setAttribute('aria-label', i18n[lang]['cart-title']);
+      document.getElementById('cartBtn').title = i18n[lang]['cart-title'];
+      renderMenu();
+      render(false);
+    }
+
+    function toggleTheme() {
+      const html = document.documentElement;
+      const isDark = html.getAttribute('data-theme') === 'dark';
+      html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('themeBtn').textContent = isDark ? '🌙' : '☀️';
+      localStorage.setItem('theme', isDark ? 'light' : 'dark');
+    }
+
+    // ===== Router (hash based: #/  #/product/N  #/cart) =====
+    function goHome(e) {
+      if (e) e.preventDefault();
+      closeMenu && closeMenu();
+      // Force retour en haut de la boutique (pas sur la dernière carte vue)
+      lastViewedId = null;
+      if (location.hash === '#/' || location.hash === '' || location.hash === '#') {
+        showView('shop');
+        curView = 'shop';
+        renderProducts();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        location.hash = '#/';
+        // scroll after hashchange render
+        setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 50);
+      }
+    }
+    function openProduct(id) { location.hash = '#/product/' + id; }
+
+    function showView(name) {
+      ['shop', 'product', 'cart', 'legal'].forEach(v => {
+        document.getElementById('view-' + v).hidden = (v !== name);
+      });
+    }
+
+    // Mémorise la dernière fiche ouverte pour y revenir depuis « Retour à la boutique »
+    let curView = 'shop', lastViewedId = null;
+
+    function render(resetScroll) {
+      const h = location.hash;
+      const prevView = curView;
+      let m;
+      if (!h.startsWith('#/legal/')) document.title = PAGE_TITLE;
+      if ((m = h.match(/^#\/product\/(\d+)$/)) && byId(Number(m[1]))) {
+        showView('product');
+        curView = 'product';
+        lastViewedId = Number(m[1]);
+        renderProduct(byId(Number(m[1])));
+      } else if ((m = h.match(/^#\/legal\/(cgv|licence|mentions|confidentialite)$/))) {
+        showView('legal');
+        curView = 'legal';
+        renderLegal(m[1]);
+      } else if (h === '#/cart') {
+        showView('cart');
+        curView = 'cart';
+        renderCart();
+      } else {
+        showView('shop');
+        curView = 'shop';
+        renderProducts();
+      }
+      if (resetScroll) {
+        // Retour de la fiche vers la boutique : on se replace sur la carte de cet item
+        const card = (curView === 'shop' && prevView === 'product' && lastViewedId != null)
+          ? document.getElementById('card-' + lastViewedId) : null;
+        if (card) card.scrollIntoView({ block: 'center' });
+        else window.scrollTo(0, 0);
+      }
+    }
+
+    // ===== Menu burger : tous les items regroupés par année =====
+    function renderMenu() {
+      const t9 = i18n[currentLang];
+      const groups = new Map();
+      products.forEach(p => {
+        const y = p.series || yearOf(p) || 0;
+        if (!groups.has(y)) groups.set(y, []);
+        groups.get(y).push(p);
+      });
+      const bySeries = products.some(p => p.series);
+      const years = [...groups.keys()].sort(bySeries ? (a, b) => (a === 0) - (b === 0) || a - b : (a, b) => (a === 0) - (b === 0) || b - a);
+      const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+      document.getElementById('drawerBody').innerHTML =
+        `<a class="m-home" href="#/" onclick="closeMenu()">${t9['menu-home']}</a>` +
+        years.map(y => `
+          <details open>
+            <summary><span>${bySeries && y && SERIES[y] ? '📦 ' + SERIES[y][currentLang] : y ? '📅 ' + y : t9['menu-noyear']}</span><span class="cnt">${groups.get(y).length}</span></summary>
+            <ul>${groups.get(y).map(p => `
+              <li><a href="#/product/${p.id}" class="${soldOut(p) ? 'out' : ''}" onclick="closeMenu()"><span class="n">${num(p.id)}</span><span>${esc(p[currentLang].name)}${soldOut(p) ? ' 🚫' : ''}</span></a></li>`).join('')}
+            </ul>
+          </details>`).join('');
+      const b = document.getElementById('burgerBtn');
+      b.setAttribute('aria-label', t9['menu-open']); b.title = t9['menu-open'];
+      document.getElementById('drawerX').setAttribute('aria-label', t9['menu-close']);
+    }
+    function openMenu() {
+      document.body.classList.add('menu-open');
+      document.getElementById('burgerBtn').setAttribute('aria-expanded', 'true');
+      document.getElementById('drawer').setAttribute('aria-hidden', 'false');
+      setTimeout(() => { const x = document.getElementById('drawerX'); if (x) x.focus(); }, 60);
+    }
+    function closeMenu() {
+      if (!document.body.classList.contains('menu-open')) return;
+      document.body.classList.remove('menu-open');
+      document.getElementById('burgerBtn').setAttribute('aria-expanded', 'false');
+      document.getElementById('drawer').setAttribute('aria-hidden', 'true');
+      document.getElementById('burgerBtn').focus();
+    }
+    function toggleMenu() { document.body.classList.contains('menu-open') ? closeMenu() : openMenu(); }
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+
+    // ===== Pages légales =====
+    function legalFill(html) {
+      const fr = currentLang === 'fr';
+      const vals = Object.assign({}, SITE_INFO, { date: fr ? SITE_INFO.dateFr : SITE_INFO.dateEn });
+      return html.replace(/\{(\w+)\}/g, (all, k) => {
+        if (!(k in vals)) return all;
+        const v = String(vals[k] == null ? '' : vals[k]).trim();
+        return v ? v.replace(/&/g, '&amp;').replace(/</g, '&lt;') : `<mark class="todo">[${fr ? 'à compléter' : 'to complete'} : ${k}]</mark>`;
+      });
+    }
+    function renderLegal(key) {
+      const t9 = i18n[currentLang];
+      const nav = LEGAL_KEYS.map(k => `<a href="#/legal/${k}" class="${k === key ? 'on' : ''}">${t9['legal-title-' + k]}</a>`).join('');
+      document.getElementById('view-legal').innerHTML = `
+        <button class="btn-back" onclick="location.hash='#/'">${t9.back}</button>
+        <nav class="legal-nav">${nav}</nav>
+        <article class="legal-doc">
+          <h2 class="section-title" style="margin-bottom:1rem"><span>${t9['legal-title-' + key]}</span></h2>
+          ${legalFill(LEGAL[key][currentLang])}
+        </article>
+        <button class="btn-back" style="margin-top:1.5rem" onclick="location.hash='#/'">${t9.back}</button>`;
+      document.title = t9['legal-title-' + key] + ' – MonsieurMadamePops';
+    }
+
+    // ===== Shop =====
+    function renderProducts() {
+      const t9 = i18n[currentLang];
+      const grid = document.getElementById('products');
+      let lastSeries = 0;
+      grid.innerHTML = products.map(p => {
+        const t = p[currentLang];
+        const head = p.series && p.series !== lastSeries && SERIES[p.series]
+          ? (lastSeries = p.series, `<h3 class="series-title" id="serie-${p.series}">${SERIES[p.series][currentLang]} <small>${currentLang === 'fr' ? SERIES[p.series].dFr : SERIES[p.series].dEn}</small></h3>`)
+          : '';
+        return head + `
+          <article id="card-${p.id}" class="product-card clickable${soldOut(p) ? ' sold' : ''}" tabindex="0" role="link"
+                   aria-label="${t.name}"
+                   onclick="openProduct(${p.id})"
+                   onkeydown="if(event.key==='Enter'&&event.target===this)openProduct(${p.id})">
+            <div class="product-header"><div class="product-name">${t.name}${refOf(p) ? ` <span style="opacity:.75;font-size:.85em">${refOf(p)}</span>` : ''}</div><div class="product-num">${num(p.id)}</div></div>
+            <div class="card-photo" style="${angleStyle(p, ['right','left','back'].includes(p.cover) ? p.cover : 'front')}">
+              <div class="badges">${badgesHtml(p, t9)}</div>
+              ${soldOut(p) ? `<span class="sold-tag">${t9.soldout}</span>` : limitedStock(p) ? `<span class="sold-tag low">${t9.limited}</span>` : ''}
+              <button class="fab fab-heart" data-heart="${p.id}" aria-label="${t9.like}" onclick="event.stopPropagation();toggleLike(${p.id})">${heartInner(p.id)}</button>
+              <button class="fab fab-share" aria-label="${t9.share}" onclick="event.stopPropagation();shareItem(${p.id})">↗ ${t9.share}</button>
+            </div>
+            <div class="product-body">
+              ${qtyLabel(p) ? `<div class="qty-note">📦 ${qtyLabel(p)}</div>` : ''}
+              <div class="card-actions">
+                <button class="btn-angles" onclick="event.stopPropagation();openProduct(${p.id})">
+                  👁️ <span>${t9['view-angles']}</span>
+                </button>
+                ${cartBtn(p, true)}
+              </div>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    // ===== Product / angles view =====
+    function angleStyle(p, key) {
+      if (p.slug) {
+        // Photos nommées d'après l'item : images/<slug>-front|right|left|back.jpg
+        return `background-image:url('images/${p.slug}-s${p.series}-${key}.jpg'),var(--ph);background-size:cover,cover;background-position:center,center`;
+      }
+      if (PER_ITEM_IMAGES) {
+        return `background-image:url('images/item-${String(p.id).padStart(2,'0')}-${key}.jpg');background-size:cover;background-position:center`;
+      }
+      const idx = p.id - 1;
+      const c = idx % GRID.cols;
+      const r = Math.floor(idx / GRID.cols);
+      const x = GRID.cols > 1 ? (c / (GRID.cols - 1)) * 100 : 0;
+      const y = GRID.rows > 1 ? (r / (GRID.rows - 1)) * 100 : 0;
+      return `background-image:url('images/${key}.jpg');background-size:${GRID.cols * 100}% ${GRID.rows * 100}%;background-position:${x}% ${y}%`;
+    }
+
+    // ===== Cote (graphique façon Bourse) =====
+    // Données manuelles : champ optionnel  cotes: [["AAAA-MM-JJ", prix], ...]  (éditeur).
+    // Sinon : cote marché automatique via MARKET_COTES (codes VT/VD).
+    const MARKET_COTES = {};
+    const COTE_RANGES = [['1m', 30], ['3m', 91], ['6m', 182], ['1y', 365], ['max', 0]];
+    let coteRange = 'max', coteState = null;
+    function extractCode(p) {
+      const n = (p.fr && p.fr.name) || (p.en && p.en.name) || '';
+      const m = n.match(/\b([A-Z]{1,3}\d{2,4}[A-Z]?)\b/);
+      return m ? m[1] : null;
+    }
+    function coteSeries(p) {
+      // 1) Historique manuel saisi via l'éditeur
+      let series = (Array.isArray(p.cotes) ? p.cotes : [])
+        .map(e => { const d = String(e[0]); return { t: Date.parse(d.length === 7 ? d + '-01' : d), v: Number(e[1]) }; })
+        .filter(x => isFinite(x.t) && isFinite(x.v) && x.v >= 0)
+        .sort((a, b) => a.t - b.t);
+      if (series.length) return series;
+      // 2) Cote marché automatique (MARKET_COTES)
+      const code = extractCode(p);
+      const mkt = code && MARKET_COTES[code];
+      if (!mkt || mkt.price == null) return [];
+      const now = Date.now();
+      const day = 864e5;
+      // 3 points pour tracer une courbe indicative (il y a 60j, 30j, aujourd'hui)
+      const p0 = Math.round(mkt.price * 0.94 * 100) / 100;
+      const p1 = Math.round(mkt.price * 0.98 * 100) / 100;
+      return [
+        { t: now - 60 * day, v: p0 },
+        { t: now - 30 * day, v: p1 },
+        { t: now, v: mkt.price }
+      ];
+    }
+    function coteDate(t, long) {
+      return new Date(t).toLocaleDateString(currentLang === 'fr' ? 'fr-FR' : 'en-GB',
+        long ? { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' } : { month: 'short', year: '2-digit', timeZone: 'UTC' });
+    }
+    function coteNum(n, d) { const t = n.toFixed(d); return currentLang === 'fr' ? t.replace('.', ',') : t; }
+    function coteBox(p) {
+      const t9 = i18n[currentLang];
+      const all = coteSeries(p);
+      const ref = (p[currentLang].name.match(/\b[A-Z]{1,3}\d{2,4}\b/) || [])[0] || num(p.id);
+      const tk = `<span class="cote-tk">📈 ${t9['cote-title']} · ${ref}</span>`;
+      if (!all.length) return `<section class="cote" id="cote-box">${tk}<div class="cote-empty">${t9['cote-none']}</div>
+        <div class="cote-note">${t9['cote-note']} <a href="https://www.coleka.com/fr/jouets-happy-meal-mcdonald-s/de-2015-a-2019/happy-meal-monsieur-madame-2017_r3218" target="_blank" rel="noopener">Coleka</a></div></section>`;
+      const days = (COTE_RANGES.find(r => r[0] === coteRange) || [])[1];
+      let s = all;
+      if (days) { const from = all[all.length - 1].t - days * 864e5; s = all.filter(x => x.t >= from); if (s.length < 2) s = all.slice(-2); }
+      const last = s[s.length - 1], first = s[0];
+      const chg = last.v - first.v, pct = first.v ? chg / first.v * 100 : 0;
+      const cls = s.length < 2 || chg === 0 ? 'flat' : chg > 0 ? 'up' : 'down';
+      const col = cls === 'down' ? '#ff5c5c' : cls === 'up' ? '#2ecc71' : '#8b93a7';
+      const arrow = cls === 'up' ? '▲' : cls === 'down' ? '▼' : '■';
+      const sign = chg > 0 ? '+' : chg < 0 ? '−' : '';
+      const head = `<div class="cote-top"><div>${tk}<div class="cote-px">${money(last.v)}</div>
+          <div class="cote-chg ${cls}">${s.length < 2 ? '' : `${arrow} ${sign}${coteNum(Math.abs(chg), 2)} € (${sign}${coteNum(Math.abs(pct), 1)} %)`}</div></div>
+          <div class="cote-rgs">${COTE_RANGES.map(r => `<button class="cote-rg${r[0] === coteRange ? ' on' : ''}" onclick="setCoteRange(${p.id},'${r[0]}')">${t9['cote-' + r[0]]}</button>`).join('')}</div></div>`;
+      const note = `<div class="cote-note">${t9['cote-note']} <a href="https://www.coleka.com/fr/jouets-happy-meal-mcdonald-s/de-2015-a-2019/happy-meal-monsieur-madame-2017_r3218" target="_blank" rel="noopener">Coleka</a></div>`;
+      if (s.length < 2) return `<section class="cote" id="cote-box">${head}<div class="cote-empty">${t9['cote-one']}</div>${note}</section>`;
+      const W = 640, H = 240, L = 10, R = 64, T = 14, B = 26, pw = W - L - R, ph = H - T - B;
+      const t0 = s[0].t, t1 = last.t;
+      let lo = Math.min(...s.map(x => x.v)), hi = Math.max(...s.map(x => x.v));
+      const sMin = lo, sMax = hi;
+      const pad = (hi - lo) * 0.14 || Math.max(hi * 0.1, 0.5);
+      lo = Math.max(0, lo - pad); hi = hi + pad;
+      const X = t => L + (t - t0) / (t1 - t0 || 1) * pw;
+      const Y = v => T + (1 - (v - lo) / (hi - lo)) * ph;
+      const pts = s.map(x => ({ x: X(x.t), y: Y(x.v), t: x.t, v: x.v }));
+      coteState = { pts, W };
+      const line = pts.map((q, i) => (i ? 'L' : 'M') + q.x.toFixed(1) + ',' + q.y.toFixed(1)).join(' ');
+      const area = line + ` L${pts[pts.length - 1].x.toFixed(1)},${H - B} L${pts[0].x.toFixed(1)},${H - B} Z`;
+      let grid = '';
+      for (let k = 0; k <= 4; k++) {
+        const v = lo + (hi - lo) * k / 4, y = Y(v);
+        grid += `<line x1="${L}" x2="${W - R}" y1="${y.toFixed(1)}" y2="${y.toFixed(1)}" stroke="#1f2636" stroke-width="1"/><text x="${W - R + 8}" y="${(y + 4).toFixed(1)}" font-size="11" fill="#8b93a7">${coteNum(v, 2)}</text>`;
+      }
+      let xl = '';
+      for (let k = 0; k < 4; k++) {
+        const t = t0 + (t1 - t0) * k / 3;
+        xl += `<text x="${X(t).toFixed(1)}" y="${H - 8}" font-size="11" fill="#8b93a7" text-anchor="${k === 0 ? 'start' : k === 3 ? 'end' : 'middle'}">${coteDate(t)}</text>`;
+      }
+      const ly = pts[pts.length - 1].y;
+      const svg = `<svg id="cote-svg" viewBox="0 0 ${W} ${H}" role="img" aria-label="${t9['cote-title']} ${ref}" onpointermove="coteMove(event)" onpointerdown="coteMove(event)" onpointerleave="coteLeave()">
+          <defs><linearGradient id="cote-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${col}" stop-opacity=".35"/><stop offset="1" stop-color="${col}" stop-opacity="0"/></linearGradient></defs>
+          ${grid}${xl}
+          <path d="${area}" fill="url(#cote-g)"/>
+          <path d="${line}" fill="none" stroke="${col}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+          <line x1="${pts[pts.length - 1].x.toFixed(1)}" x2="${W - R}" y1="${ly.toFixed(1)}" y2="${ly.toFixed(1)}" stroke="${col}" stroke-width="1" stroke-dasharray="3 3"/>
+          <rect x="${W - R + 2}" y="${(ly - 9).toFixed(1)}" width="${R - 4}" height="18" rx="3" fill="${col}"/>
+          <text x="${W - R + 2 + (R - 4) / 2}" y="${(ly + 4).toFixed(1)}" font-size="11" font-weight="700" fill="#0e1118" text-anchor="middle">${coteNum(last.v, 2)}</text>
+          <circle cx="${pts[pts.length - 1].x.toFixed(1)}" cy="${ly.toFixed(1)}" r="3.5" fill="${col}"/>
+          <line id="cote-vl" x1="0" x2="0" y1="${T}" y2="${H - B}" stroke="#8b93a7" stroke-width="1" stroke-dasharray="2 3" style="visibility:hidden"/>
+          <circle id="cote-dot" cx="0" cy="0" r="4.5" fill="#0e1118" stroke="${col}" stroke-width="2" style="visibility:hidden"/>
+        </svg><div class="cote-tip" id="cote-tip" hidden></div>`;
+      const stats = `<div class="cote-stats"><span>${t9['cote-low']}<b>${money(sMin)}</b></span><span>${t9['cote-high']}<b>${money(sMax)}</b></span><span>${t9['cote-upd']}<b>${coteDate(all[all.length - 1].t, true)}</b></span></div>`;
+      return `<section class="cote" id="cote-box">${head}<div class="cote-chart">${svg}</div>${stats}${note}</section>`;
+    }
+    function setCoteRange(id, k) { coteRange = k; const b = document.getElementById('cote-box'); if (b) b.outerHTML = coteBox(byId(id)); }
+    function coteMove(e) {
+      const svg = document.getElementById('cote-svg'); if (!svg || !coteState) return;
+      const r = svg.getBoundingClientRect(), px = (e.clientX - r.left) / r.width * coteState.W;
+      let best = 0, bd = Infinity;
+      coteState.pts.forEach((q, i) => { const d = Math.abs(q.x - px); if (d < bd) { bd = d; best = i; } });
+      const q = coteState.pts[best];
+      const vl = document.getElementById('cote-vl'), dot = document.getElementById('cote-dot'), tip = document.getElementById('cote-tip');
+      vl.setAttribute('x1', q.x); vl.setAttribute('x2', q.x); dot.setAttribute('cx', q.x); dot.setAttribute('cy', q.y);
+      vl.style.visibility = dot.style.visibility = 'visible';
+      tip.innerHTML = `<b>${money(q.v)}</b><span>${coteDate(q.t, true)}</span>`;
+      tip.hidden = false;
+      tip.style.left = Math.min(Math.max(q.x / coteState.W * r.width, 55), r.width - 55) + 'px';
+    }
+    function coteLeave() {
+      ['cote-vl', 'cote-dot'].forEach(i => { const n = document.getElementById(i); if (n) n.style.visibility = 'hidden'; });
+      const tip = document.getElementById('cote-tip'); if (tip) tip.hidden = true;
+    }
+
+    function renderProduct(p) {
+      const t = p[currentLang];
+      const t9 = i18n[currentLang];
+      document.getElementById('view-product').innerHTML = `
+        <button class="btn-back" onclick="location.hash='#/'">${t9.back}</button>
+        <div class="detail-head">
+          <h1>${t.name}${refOf(p) ? ` <span style="opacity:.8;font-size:.85em">${refOf(p)}</span>` : ''}</h1>
+          <div class="product-num">${num(p.id)}</div>
+        </div>
+        <div class="angles-grid">
+          ${anglesOf(p).map(([key, label], i) => `
+            <div class="angle-card">
+              <div class="angle-img" role="img" onclick="openLb(${p.id},${i})" aria-label="${t.name} – ${t9[label]}" style="${angleStyle(p, key)}"></div>
+              <div class="angle-label">${t9[label]}</div>
+            </div>`).join('')}
+        </div>
+        <p class="zoom-hint">${t9['zoom-hint']}</p>
+        ${coteBox(p)}
+        ${mediaBlock(p)}
+        <div class="detail-info">
+          <div><span class="fun-tag">${t.tag}</span>${p.cond ? `<span class="cond-inline">${t9['cond-' + p.cond] || ''}</span>` : ''}${typeOf(p) === 'premium' ? `<span class="cond-inline" style="background:linear-gradient(135deg,#ffe082,#ffb300);color:#3a2a00">${t9.premium}</span>` : typeOf(p) === 'accessory' ? `<span class="cond-inline" style="background:#b3e5fc;color:#01344d">${t9.accessory}</span>` : ''}${p.articulated ? `<span class="cond-inline" style="background:#d1c4e9;color:#2a1650">${t9.articulated}</span>` : ''}${yearOf(p) ? `<span class="cond-inline" style="background:#fff;color:#1b2a49">📅 ${t9.edition.replace('{y}', yearOf(p))}</span>` : ''}${printRunOf(p) ? `<span class="cond-inline" style="background:#6a1b9a;color:#fff">📜 ${t9.printrun.replace('{n}', printRunOf(p))}</span>` : ''}${rarityHtml(p, t9)}${soldOut(p) ? `<span class="cond-inline" style="background:#c0392b;color:#fff">${t9.soldout}</span>` : limitedStock(p) ? `<span class="cond-inline" style="background:#e67e22;color:#fff">${t9.limited}</span>` : ''}</div>
+          <div class="product-desc">${richDesc(t.desc)}${printRunOf(p) ? `<p style="margin-top:.6rem;opacity:.9"><strong>📜 ${t9.printrun.replace('{n}', printRunOf(p))}</strong></p>` : ''}${rarityDescLine(p, t9)}</div>
+          <div class="product-price">${money(priceOf(p))}${!(p.price != null && p.price !== '' && !isNaN(p.price)) && marketPriceOf(p) != null ? ` <span class="fun-tag">${t9['price-cote']}</span>` : ''}</div>
+          ${qtyLabel(p) ? `<div class="qty-note">📦 ${qtyLabel(p)}</div>` : ''}
+          ${cartBtn(p, false)}
+          <div class="actions-row">
+            <button class="btn-angles" data-heart="${p.id}" onclick="toggleLike(${p.id})">${heartInner(p.id)}</button>
+            <button class="btn-angles" onclick="shareItem(${p.id})">↗ ${t9.share}</button>
+          </div>
+        </div>
+        <button class="btn-back" style="margin-top:1.5rem" onclick="location.hash='#/'">${t9.back}</button>
+      `;
+    }
+
+    // ===== Cart =====
+    function addToCart(id) {
+      if (soldOut(byId(id))) { showToast(i18n[currentLang]['soldout-toast']); return; }
+      const line = cart.find(i => i.id === id), pr = byId(id);
+      if (hasQty(pr) && (line ? line.qty : 0) + 1 > qtyOf(pr)) { showToast(i18n[currentLang]['max-qty']); return; }
+      if (line) line.qty++; else cart.push({ id, qty: 1 });
+      saveCart();
+      showToast(i18n[currentLang].toast + ' ' + byId(id)[currentLang].name);
+    }
+    function changeQty(id, delta) {
+      const line = cart.find(i => i.id === id);
+      if (!line) return;
+      const pr = byId(id);
+      if (delta > 0 && hasQty(pr) && line.qty + delta > qtyOf(pr)) { showToast(i18n[currentLang]['max-qty']); return; }
+      line.qty += delta;
+      if (line.qty <= 0) cart = cart.filter(i => i.id !== id);
+      saveCart();
+      renderCart();
+    }
+    function removeFromCart(id) {
+      cart = cart.filter(i => i.id !== id);
+      saveCart();
+      renderCart();
+    }
+    function checkout() {
+      cart = [];
+      saveCart();
+      renderCart();
+      showToast(i18n[currentLang].paid);
+    }
+
+    function renderCart() {
+      const t9 = i18n[currentLang];
+      const el = document.getElementById('view-cart');
+      const head = `
+        <button class="btn-back" onclick="location.hash='#/'">${t9.back}</button>
+        <h2 class="section-title"><span>${t9['cart-badge']}</span><span>${t9['cart-title']}</span></h2>`;
+      if (cart.length === 0) {
+        el.innerHTML = head + `<div class="cart-empty"><span class="big">🛒</span>${t9['cart-empty']}</div>`;
+        return;
+      }
+      el.innerHTML = head + `
+        <div class="cart-list">
+          ${cart.map(i => {
+            const p = byId(i.id);
+            const t = p[currentLang];
+            return `
+              <div class="cart-row">
+                <div class="product-num">${num(p.id)}</div>
+                <div>
+                  <div class="cart-name">${t.name}</div>
+                  <div class="cart-unit">${money(priceOf(p))}</div>
+                </div>
+                <div class="qty">
+                  <button onclick="changeQty(${p.id},-1)" aria-label="−">−</button>
+                  <span>${i.qty}</span>
+                  <button onclick="changeQty(${p.id},1)" aria-label="+">+</button>
+                </div>
+                <div class="cart-line">${money(i.qty * priceOf(p))}</div>
+                <button class="btn-remove" onclick="removeFromCart(${p.id})">✕ ${t9.remove}</button>
+              </div>`;
+          }).join('')}
+        </div>
+        <div class="cart-summary">
+          <div class="cart-total">${t9.total} (${cartCount()} ${t9.items}) <b>${money(cartTotal())}</b></div>
+          <button class="btn-cart" onclick="checkout()">💎 ${t9.pay}</button>
+        </div>`;
+    }
+
+    // ===== Toast =====
+    let toastTimer;
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      toast.textContent = msg;
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toast.classList.remove('show'), 2200);
+    }
+
+    // ===== Cœurs (J'aime) =====
+    // Compteur partagé entre visiteurs : colle l'URL de ta base Firebase Realtime Database ci-dessous
+    // (ex. 'https://mon-projet-default-rtdb.europe-west1.firebasedatabase.app'). Vide = compteur local au navigateur.
+    const FIREBASE_URL = '';
+    const LIKES_KEY = 'monsieurmadamepops-likes';
+    let myLikes = {};
+    try { myLikes = JSON.parse(localStorage.getItem(LIKES_KEY) || '{}') || {}; } catch (e) {}
+    let likeCounts = {};
+    const likeCount = id => FIREBASE_URL ? (likeCounts[id] || 0) : (myLikes[id] ? 1 : 0);
+    const heartInner = id => `${myLikes[id] ? '❤️' : '🤍'} <span>${likeCount(id)}</span>`;
+    function refreshLikes() {
+      document.querySelectorAll('[data-heart]').forEach(b => { b.innerHTML = heartInner(Number(b.dataset.heart)); });
+    }
+    async function loadLikes() {
+      if (!FIREBASE_URL) return;
+      try { likeCounts = (await (await fetch(FIREBASE_URL + '/likes.json')).json()) || {}; refreshLikes(); } catch (e) {}
+    }
+    function toggleLike(id) {
+      const on = !myLikes[id];
+      if (on) myLikes[id] = 1; else delete myLikes[id];
+      try { localStorage.setItem(LIKES_KEY, JSON.stringify(myLikes)); } catch (e) {}
+      if (FIREBASE_URL) {
+        likeCounts[id] = Math.max(0, (likeCounts[id] || 0) + (on ? 1 : -1));
+        fetch(`${FIREBASE_URL}/likes/${id}.json`, { method: 'PUT', body: JSON.stringify(likeCounts[id]) }).catch(() => {});
+      }
+      refreshLikes();
+    }
+
+    // ===== Partage =====
+    const shareUrl = id => location.href.split('#')[0] + '#/product/' + id;
+    async function copyText(t) {
+      try { if (navigator.clipboard && window.isSecureContext) { await navigator.clipboard.writeText(t); return true; } } catch (e) {}
+      const a = document.createElement('textarea'); a.value = t; document.body.appendChild(a); a.select();
+      let ok = false; try { ok = document.execCommand('copy'); } catch (e) {} a.remove(); return ok;
+    }
+    async function shareItem(id) {
+      const p = byId(id), title = p[currentLang].name + ' – MonsieurMadamePops';
+      if (navigator.share) { try { await navigator.share({ title, text: title, url: shareUrl(id) }); } catch (e) {} return; }
+      openShare(id);
+    }
+    function openShare(id) {
+      const p = byId(id), t9 = i18n[currentLang], title = p[currentLang].name + ' – MonsieurMadamePops';
+      const u = encodeURIComponent(shareUrl(id)), tx = encodeURIComponent(title);
+      const media = p.slug ? encodeURIComponent(new URL(`images/${p.slug}-s${p.series}-front.jpg`, location.href).href) : '';
+      const links = [
+        ['WhatsApp', `https://wa.me/?text=${tx}%20${u}`], ['Facebook', `https://www.facebook.com/sharer/sharer.php?u=${u}`],
+        ['X', `https://twitter.com/intent/tweet?text=${tx}&url=${u}`], ['Telegram', `https://t.me/share/url?url=${u}&text=${tx}`],
+        ...(media ? [['Pinterest', `https://pinterest.com/pin/create/button/?url=${u}&media=${media}&description=${tx}`]] : []),
+        ['Email', `mailto:?subject=${tx}&body=${u}`]];
+      document.getElementById('shBox').innerHTML = `<h3>${t9['share-title']}</h3>` +
+        links.map(([n, h]) => `<a class="btn-angles" href="${h}" target="_blank" rel="noopener">${n}</a>`).join('') +
+        `<button class="btn-angles" onclick="copyShare(${id})">${t9['copy-link']}</button>
+         <button class="btn-back" style="margin:0" onclick="closeShare()">${t9.close}</button>`;
+      document.getElementById('sh').hidden = false;
+    }
+    async function copyShare(id) { if (await copyText(shareUrl(id))) showToast(i18n[currentLang]['link-copied']); closeShare(); }
+    function closeShare() { document.getElementById('sh').hidden = true; }
+
+    // ===== Photos / vidéos supplémentaires (champ media: [...] de l'item) =====
+    const isVideo = n => /\.(mp4|webm|mov|m4v|ogv)$/i.test(n);
+    const mediaUrl = n => "images/" + encodeURIComponent(n);
+    const lbItems = p => [
+      ...anglesOf(p).map(([k, l]) => ({ style: angleStyle(p, k), cap: i18n[currentLang][l], grp: !p.slug })),
+      ...(p.media || []).filter(n => !isVideo(n)).map((n, j) => ({ style: `background-image:url('${mediaUrl(n)}');background-size:cover;background-position:center`, cap: '#' + (j + 1), grp: false }))
+    ];
+    function mediaBlock(p) {
+      const list = p.media || [];
+      if (!list.length) return '';
+      let img = 0;
+      return `<h3 class="media-title">${i18n[currentLang]['more-media']} (${list.length})</h3>
+        <div class="angles-grid media-grid">${list.map(n => isVideo(n)
+          ? `<div class="angle-card"><video src="${mediaUrl(n)}" controls playsinline preload="metadata"></video></div>`
+          : `<div class="angle-card"><div class="angle-img" role="img" aria-label="${p[currentLang].name}" onclick="openLb(${p.id},${anglesOf(p).length + img++})" style="background-image:url('${mediaUrl(n)}');background-size:cover;background-position:center"></div></div>`).join('')}</div>`;
+    }
+
+    // ===== Zoom (lightbox) =====
+    let lb = { p: null, i: 0, zoom: false };
+    function paintLb() {
+      const it = lbItems(lb.p)[lb.i], st = document.getElementById('lbStage'), im = document.getElementById('lbImg');
+      st.classList.toggle('grp', it.grp); st.classList.remove('zoomed');
+      im.style.cssText = it.style.replace('cover', 'contain');
+      document.getElementById('lbCap').textContent = lb.p[currentLang].name + ' – ' + it.cap;
+      lb.zoom = false;
+    }
+    function openLb(id, i) { lb = { p: byId(id), i, zoom: false }; paintLb(); document.getElementById('lb').hidden = false; document.body.style.overflow = 'hidden'; }
+    function closeLb() { document.getElementById('lb').hidden = true; document.body.style.overflow = ''; }
+    function lbStep(d) { const n = lbItems(lb.p).length; lb.i = (lb.i + d + n) % n; paintLb(); }
+    function lbMove(e) {
+      const st = document.getElementById('lbStage'), r = st.getBoundingClientRect();
+      document.getElementById('lbImg').style.transformOrigin = `${((e.clientX - r.left) / r.width) * 100}% ${((e.clientY - r.top) / r.height) * 100}%`;
+    }
+    (function () {
+      const st = document.getElementById('lbStage'), im = document.getElementById('lbImg');
+      st.addEventListener('click', e => {
+        lb.zoom = !lb.zoom; lbMove(e); st.classList.toggle('zoomed', lb.zoom);
+        im.style.transform = lb.zoom ? 'scale(2.6)' : '';
+      });
+      st.addEventListener('mousemove', e => { if (lb.zoom) lbMove(e); });
+      st.addEventListener('touchmove', e => { if (lb.zoom) { lbMove(e.touches[0]); e.preventDefault(); } }, { passive: false });
+      document.addEventListener('keydown', e => {
+        if (!document.getElementById('lb').hidden) {
+          if (e.key === 'Escape') closeLb(); else if (e.key === 'ArrowLeft') lbStep(-1); else if (e.key === 'ArrowRight') lbStep(1);
+        }
+        if (e.key === 'Escape') closeShare();
+      });
+    })();
+
+    // ===== Init =====
+    const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    if (savedTheme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      document.getElementById('themeBtn').textContent = '☀️';
+    }
+    // Adapt crop ratio to the group photo so single figurines are not distorted
+    (function () {
+      if (products.every(p => p.slug)) return; // photos individuelles : pas de grille à mesurer
+      const img = new Image();
+      img.onload = () => {
+        const ratio = (img.naturalWidth / GRID.cols) / (img.naturalHeight / GRID.rows);
+        document.documentElement.style.setProperty('--cell', ratio.toFixed(4));
+      };
+      img.src = 'images/front.jpg';
+    })();
+    window.addEventListener('hashchange', () => render(true));
+    updateBadge();
+    let initLang = 'fr';
+    try { initLang = localStorage.getItem('lang') === 'en' ? 'en' : 'fr'; } catch (e) {}
+    setLang(initLang);
+    render(false);
+    loadLikes();
+  </script>
+</body>
+</html>
